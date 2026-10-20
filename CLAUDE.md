@@ -5,7 +5,7 @@ built with it.
 
 ## What this repo is
 
-A sandbox on public SEC 10-K filings (2016–2020) with three modules:
+A sandbox on public SEC 10-K filings (2016–2020) and synthetic fund reports, with these modules:
 
 | Module | Question it answers |
 |---|---|
@@ -13,6 +13,8 @@ A sandbox on public SEC 10-K filings (2016–2020) with three modules:
 | `matching/` | Which company is this name, even after a rename, an abbreviation or a typo? Served behind an API |
 | `extraction/` | What are the revenue, net income and total assets in this filing? Every number is checked against the SEC's XBRL data, and the flow is a LangGraph graph with retries and a human-review route |
 | `extraction/qa_agent.py` | Answer a question about one filing, with citations. A tool-using agent searches the filing, reads the extracted numbers and calculates; code checks every citation and number |
+| `lake/` | Turn synthetic fund-report PDFs and 10-Ks into Parquet tables: holdings resolved to companies, XBRL and extracted metrics side by side, text passages. 50 validation checks and 57 labeled questions |
+| `agent/` | Answer analyst questions over the lake: guarded SQL, name resolution, retrieval and verification; DuckDB locally, Athena + Bedrock AgentCore on AWS |
 
 ## How it was built with Claude Code
 

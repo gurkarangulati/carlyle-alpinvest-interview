@@ -1,207 +1,204 @@
-# SEC 10-K sandbox: sector classification, company matching, number extraction
+# From fund documents to answers: a working sample on SEC filings
 
-Four problems a private-markets data team meets every week, worked end to end on public
-SEC filings (10-Ks, 2016–2020):
+A work sample for a private-markets data science team. It takes documents an investor actually
+receives, resolves every company name in them, pulls out the numbers, stores everything in one
+queryable lake, and lets an analyst ask questions that come back with sources. Each step is
+measured against an answer key, costed, and deployable with one command.
 
-1. **Sectors** (`sectors/`): tag a company's sector from its own description of its
-   business, and prove the model still works next year. Six approaches are compared: classic
-   ML, fine-tuned transformers and foundation models (zero-shot, rules, few-shot). Then
-   comes a walk-forward backtest, and the model is deployed as an API on AWS and on Google
-   Cloud.
-2. **Matching** (`matching/`): resolve a company name to the right entity through renames,
-   abbreviations and typos. It abstains when unsure and is served behind an API.
-3. **Extraction** (`extraction/`): pull revenue, net income and total assets out of a
-   filing with an LLM inside a LangGraph flow. Every number is checked against the SEC's
-   XBRL data, and the flow retries or sends the filing to a human when a check fails.
-4. **Document Q&A** (`extraction/qa_agent.py`): ask a filing a question and get a cited
-   answer from a tool-using agent. Code checks the citations and every number, and the agent
-   says "not in the document" when the answer isn't there.
-5. **Data lake + analyst agent** (`lake/`, `agent/`): fund-report PDFs and 10-Ks become
-   queryable tables. Every reported name is resolved to one company, and metrics are extracted
-   and reconciled with XBRL. A LangGraph agent answers analyst questions over those tables with
-   guarded SQL, retrieval and citations, locally on DuckDB or on Bedrock AgentCore with Athena.
-   It is scored on 57 labeled questions.
+Built by Gurkaran Gulati with [Claude Code](https://claude.com/claude-code) as a pair programmer;
+[`CLAUDE.md`](CLAUDE.md) explains how the work was divided.
 
-Built with [Claude Code](https://claude.com/claude-code); see `CLAUDE.md` for how the work
-was divided.
+## The problem
 
-**Where to look**
-- [`RESULTS.md`](RESULTS.md): every run of every task, with quality, cost per 1,000, **cost per
-  correct answer**, latency, and links to its console log and per-item predictions
-- [`results/all_runs.csv`](results/all_runs.csv): the full history, every parameter and metric of every run
-- [`docs/DECISIONS.md`](docs/DECISIONS.md): each architecture and modeling choice, the options it beat, and the evidence
-- [`docs/ITERATIONS.md`](docs/ITERATIONS.md): the order things were tried, the bugs, and what each round decided
-- [`docs/DIALS.md`](docs/DIALS.md): precision vs. coverage for every task, measured, with how to flip each dial
-- [`docs/IMPROVEMENTS.md`](docs/IMPROVEMENTS.md): what would make each part better, ranked, with how to prove it
+A secondaries team buys stakes in private funds. Before each bid, analysts read hundreds of
+fund reports and filings about the companies inside those funds, and do the same four jobs
+every time:
 
-## System map
+1. **Know what each company does.** Tag its sector consistently, and keep that model accurate
+   as companies and language change from year to year.
+2. **Know which company a name means.** Funds write "Actuant Corp" years after the company
+   became Enerpac, abbreviate names, or misspell them.
+3. **Get the numbers out.** Revenue and net income sit in long documents, sometimes in
+   sentences instead of tables.
+4. **Answer questions with sources.** For example, "Which of Fund III's holdings lost money
+   last year?" A wrong number in a valuation is worse than "I don't know".
+
+**The stand-in data, public and checkable:**
+- 5,579 SEC 10-K filings from 2016–2020;
+- the SEC's XBRL data as the answer key for numbers;
+- the SEC's current and former company names;
+- five synthetic fund reports (PDF) holding 54 positions in 50 real companies.
+
+## What I built
 
 ![System map: sources flow through the classifier, name matcher and extraction graph into a Parquet data lake that the Q&A and lake agents query](docs/img/system_map.png)
 
-Read left to right. The matcher turns every reported name into one company (the entity master),
-extraction turns text into numbers checked against XBRL, and both land in the lake that the agents
-query with cited answers. Foundation models are API calls (Bedrock, Vertex AI); nothing hosts them.
-
-## What is built, what ran, what is deployed
-
-| Component | Built | Ran and measured | Deployed |
-|---|---|---|---|
-| Sector classifier, 6 approaches | ✅ `sectors/` | ✅ 17 runs, including the backtest ([RESULTS §1](RESULTS.md)) | ✅ AWS (API Gateway → Lambda → SageMaker serverless, CDK) and ✅ Google Cloud Run |
-| Name matcher + API | ✅ `matching/` | ✅ dev, test and LLM re-rank ([RESULTS §2](RESULTS.md)) | Local API (`uvicorn matching.api:app`) |
-| Extraction graph | ✅ `extraction/` | ✅ 119 filings vs. XBRL ([RESULTS §3](RESULTS.md)) | Local |
-| Document Q&A agent | ✅ `extraction/qa_agent.py` | ✅ 91 questions ([RESULTS §4](RESULTS.md)) | Local |
-| Fund-report PDFs + data lake | ✅ `lake/` ([sample PDFs](lake/samples/fund_reports)) | ✅ 50 checks pass, 1 warning; holdings matched 54/54 ([validate.csv](lake/results/validate.csv)) | `make deploy-lake`: S3 + Glue + Athena |
-| Lake analyst agent | ✅ `agent/` | ✅ Local smoke test 10/10; full 57-question golden set via `make eval-agent` | `make deploy-agent`: Bedrock AgentCore Runtime |
-| Foundation models | Called through APIs | Bedrock Claude Haiku 4.5, Vertex AI Gemini 3.8 Flash | No infrastructure: an IAM permission and an API call |
-
-## Operating each solution: backtesting, precision vs. recall, cost, monitors, guardrails
-
-Summary only; each solution's `OPERATIONS.md` has the detail. "Flip" means how to move the dial the
-other way. Costs are measured where marked; infrastructure costs are list prices to verify.
-
-| Solution | Backtesting | Precision or recall (flip it) | Infrastructure cost: idle / per use | Monitors in place | Guardrails in place | Detail |
-|---|---|---|---|---|---|---|
-| Sector classifier | **Walk-forward by year, done:** retrained 0.73–0.75 on new companies, frozen falls to 0.65 | Precision: auto-tag at ≥ 0.8 → 71% at 86% (flip: `THRESHOLD=0.5` → 90% at 80%) | $0 idle (serverless) / fractions of a cent per call; few-shot LLM $2.71 per 1k (measured) | Lambda metadata logs, SageMaker and API Gateway metrics, usage plan | Input limits, API key + throttle, confidence routing, no text in logs, Cloud Run IAM | [sectors/OPERATIONS.md](sectors/OPERATIONS.md) |
-| Name matching | Held-out test + point-in-time `as_of`; frozen-index test recommended | Precision: abstain below tuned thresholds, 99.1% (flip: `--target-precision`) | None / ~$0 (0.2 ms per name); LLM re-rank $1.13 per 1k calls | Eval by query type, per-query predictions | Abstain, `as_of`, input validation, LLM limited to the candidate list | [matching/OPERATIONS.md](matching/OPERATIONS.md) |
-| Extraction graph | **By fiscal year:** no steady decline (small samples); frozen golden set as a regression gate | Precision: failed checks → analyst; revenue 71% → 80% precise, no correct value lost (flip: more retries) | None / **$7.86 per 1k filings** (measured) | Per-filing status, reason, trace; MLflow; review rate | Schema checked in code, evidence quote, scale and plausibility, retry cap, circuit breaker | [extraction/OPERATIONS.md](extraction/OPERATIONS.md) |
-| Document Q&A agent | By fiscal year: 77–100% numeric accuracy; golden set as a regression gate | Precision at the answer, recall at retrieval: 91% correct, right to abstain 95% (flip: relax verify, raise `k`) | None / **$28.38 per 1k questions** (measured) | Full tool trace per question; MLflow | 6-call cap, arithmetic-only calculator, citation and number verification, abstain | [extraction/OPERATIONS.md](extraction/OPERATIONS.md) |
-| Data lake | Point in time by report date; reproducible rebuild (measured) | Precision: unresolved names stay NULL + abstain; failed extractions flagged, not stored as facts | S3 cents/month, Glue free, Athena $0 idle / $5 per TB scanned | `make lake-validate`: 50 checks, exits 1 on a hard fail | Parser never sees truth; totals must reconcile; private, encrypted, TLS-only bucket | [lake/OPERATIONS.md](lake/OPERATIONS.md) |
-| Lake analyst agent | 57-question labeled golden set as a regression gate; quarterly snapshots recommended | Precision: resolve names before filtering; numbers traced to tool results (flip: more tool calls, looser verify) | AgentCore $0 with no session, Athena per query / ~$10 per 1k questions (measured locally) | Per-answer trace; eval by type; AgentCore logs and traces | SQL guard (61 attacks tested), read-only engine, 1 GB scan cutoff, least-privilege IAM, no write path | [agent/OPERATIONS.md](agent/OPERATIONS.md) |
-
-**Recommended next across all:** Bedrock Guardrails (prompt-attack filter, PII) for the agents,
-CloudWatch alarms on review rate and errors, a weekly golden-sample run with alerts, and real auth
-in place of the API key.
-
-## Results
-
-### Sectors: 853 test filings, 10 sectors, split by company
-
-| Approach | Test macro F1 | Accuracy | Training | Cost to score 1,000 filings |
-|---|---|---|---|---|
-| TF-IDF + logistic regression | 0.751 | 0.746 | 36 s on a laptop | ~$0 (2 ms) |
-| Fine-tuned DistilRoBERTa, all 82M weights | 0.758 | 0.753 | 3.3 min | ~$0 on own hardware (2.5 s) |
-| LoRA, 0.9% of weights | 0.744 | 0.734 | 1.4 min | same |
-| Zero-shot Claude Haiku 4.5 (Bedrock) | 0.748 | 0.743 | none | $1.98 |
-| Zero-shot Gemini 3.8 Flash (Vertex AI) | **0.781** | 0.770 | none | $1.52 |
-| **Few-shot Claude Haiku 4.5, 5 retrieved training examples** | **0.782** | 0.770 | none | $2.71 |
-
-Prompt versions were compared on validation, and the chosen one ran on test once. On
-validation: v1 0.756, v2 with rules 0.774, few-shot 0.804, v2 + few-shot 0.814. The
-combination was ahead by only 1.0, under the 1.5-point noise bar set before the run, so plain
-few-shot was tested. Macro F1 weights every sector equally.
-
-### Backtest: does it hold up next year?
-
-Walk-forward by year: train on every year before t, then test on year t. F1 on companies the
-model has never seen:
-
-| Year | Retrained yearly | Frozen at 2016 | Last year only |
-|---|---|---|---|
-| 2017 | 0.685 | 0.685 | 0.685 |
-| 2018 | 0.742 | 0.670 | 0.721 |
-| 2019 | 0.755 | 0.693 | 0.708 |
-| 2020 | 0.731 | 0.649 | 0.653 |
-
-Retrain yearly on all history. A frozen model is 8 points worse by 2020. Returning companies
-score 0.94–0.98, but that is memory, so quote the new-company number.
-
-### Deployment
-
-The fine-tuned model runs serverless on both clouds, at $0 while idle:
-
-| | AWS: API Gateway → Lambda → SageMaker | Google Cloud: Cloud Run |
+| Piece | What it does | Folder |
 |---|---|---|
-| Cold start | 24.3 s | 4.3 s |
-| Warm call | 0.53 s | 0.20 s |
+| Sector classifier | Six ways to tag sectors, compared; a walk-forward backtest by year; deployed on AWS and Google Cloud | [`sectors/`](sectors) |
+| Name matcher | Resolves a name through renames, typos and abbreviations, as of a date, and abstains when unsure; served as an API | [`matching/`](matching) |
+| Extraction graph | A LangGraph flow that extracts, checks every number in code, retries, and sends failures to an analyst | [`extraction/`](extraction) |
+| Document Q&A agent | A tool-using agent that answers questions about one filing, with every citation and number verified | [`extraction/qa_agent.py`](extraction/qa_agent.py) |
+| Data lake | Fund PDFs + 10-Ks → resolved holdings, XBRL and extracted metrics, and text passages, as Parquet tables | [`lake/`](lake) |
+| Lake analyst agent | Answers analyst questions over the lake with guarded SQL and citations; runs locally, or on Bedrock AgentCore with Athena | [`agent/`](agent) |
 
-At a 0.8 confidence threshold the model auto-tags 71% of filings at 86% accuracy and sends
-the rest to an analyst. See `docs/ARCHITECTURE.md`.
+## How I approached it
 
-### Matching: 8,467 held-out queries over 9,945 companies and 14,163 name aliases
+- **Score honestly before comparing models.**
+  - Split by company, never by filing; otherwise 46% of test filings would have their own
+    company in training.
+  - Choose settings on validation and open the test set once.
+  - Write each decision rule down *before* the run that tests it.
+- **Measure cost and latency next to quality.** Every row of every results table has a cost per
+  1,000 items, a cost per correct answer, and latency.
+- **Favor precision wherever a number or a company link lands.** The system abstains or routes
+  to an analyst rather than guess. Retrieval favors recall; precision is enforced afterwards,
+  with checks in code.
+- **Treat every model output as untrusted.** Schemas, citations, numbers and SQL are all checked
+  in code.
+- **Make it reproducible.** Every stage is a `make` target, every run is logged, and every
+  decision is written down with its alternatives.
 
-| Method | Top-1 | Top-5 | Notes |
+## Key decisions
+
+| Decision | Chosen | Over | Why |
 |---|---|---|---|
-| Exact (normalized) | 0.716 | 0.719 | 0.001 on typos |
-| Fuzzy (rapidfuzz) | 0.939 | 0.997 | |
-| TF-IDF character n-grams | 0.968 | 0.988 | |
-| TF-IDF without former names | 0.623 | 0.656 | **0.136 on former names** (vs. 0.995 with them) |
-| **Hybrid + abstain** (thresholds from dev) | **0.988** | 0.994 | 99.0% precision when it answers, abstains 0.2% |
-| Hybrid + Claude re-rank of close calls (dev) | 0.991 | 0.997 | +0.1 point at 21× the latency: not worth it |
+| How to tag sectors | Few-shot LLM for new or changing labels; TF-IDF for bulk | Fine-tuning alone | Few-shot scored 0.782 with no training. TF-IDF is within 3 points at ~$0 |
+| What goes in the prompt | 5 similar labeled examples | Hand-written rules | +4.9 points on validation. Examples carry the label convention in the companies' own words |
+| Keeping the model current | Retrain yearly on all history | Freeze it | A frozen model loses 8 points on new companies by 2020 |
+| Extraction | A fixed graph with checks and an analyst route | One LLM call | 71% vs. 0% of net income within 1% on unflagged filings; it knows when it doesn't know |
+| Question answering | A tool-using agent with verification | One call over a fixed window | 91% vs. 72%, and right to say "not there" 95% vs. 57%, at 7× the cost |
+| The lake | Parquet; DuckDB locally, S3 + Glue + Athena on AWS | Redshift, Postgres | $0 idle, no servers, the same files and SQL in both places |
+| Where the agent runs | Bedrock AgentCore Runtime | Lambda, ECS | Built for long, multi-step agent sessions; deployed by CDK |
+| How the agent reads data | Guarded text-to-SQL + retrieval | Pre-built queries only | Answers questions nobody planned for; the guard was tested against 61 attacks |
 
-The golden set (SEC former names plus generated variants) is easier than names found in
-documents. The mentions demo (`matching/results/mentions_demo.csv`) shows real mismatches.
+All twelve decision records, with evidence and "revisit when": [`docs/DECISIONS.md`](docs/DECISIONS.md).
 
-### Extraction: 119 test filings, scored against SEC XBRL
+## Results at a glance
 
-| | Single LLM call | LangGraph flow (locate → extract → check → retry / review) |
+| Solution | Result | Compared with | Cost per 1,000 |
+|---|---|---|---|
+| Sector tagging (853 test filings) | **0.782** macro F1, few-shot, no training | TF-IDF 0.751 · fine-tuned 0.758 · zero-shot 0.748–0.781 | $2.71 (TF-IDF ~$0) |
+| Next-year backtest | Retrained **0.73–0.75** on new companies | Frozen model falls to 0.65 by 2020 | — |
+| Name matching (8,467 held-out names) | **98.8%** top-1 at 99% precision | Without former names, renamed companies drop to 13.6% | ~$0 |
+| Extraction (119 filings vs. XBRL) | Net income within 1% on **71%** of unflagged filings; 24% to review | One LLM call: 0% | $7.86 |
+| Document Q&A (91 questions) | **91%** correct; right to abstain 95% | One call: 72%; abstain 57% | $28.38 |
+| Data lake (5 funds, 54 holdings) | 54/54 names resolved; 50 of 51 checks pass | Extracted vs. XBRL agree 82–84% | $0.46 per rebuild |
+| Lake agent (57 labeled questions) | **93%** correct; 100% on 5 of 7 question types | 50% on cross-fund joins | $13.31 |
+| Deployment | Live on AWS (SageMaker serverless) and Google Cloud Run, $0 idle | Cold start 24.3 s vs. 4.3 s | fractions of a cent per call |
+
+Tables with commentary: [`docs/RESULTS_SUMMARY.md`](docs/RESULTS_SUMMARY.md). Every individual
+run, with its log and per-item predictions: [`RESULTS.md`](RESULTS.md).
+
+## What I learned
+
+1. **How you score decides what you believe.**
+   - A filing-level split would have flattered every model.
+   - Returning companies score 0.94–0.98, but that is memory, not skill.
+   - The backtest, not the test set, says how the model ages.
+2. **Five labeled examples in a prompt beat fine-tuning here.** The signal is industry
+   vocabulary. For millions of documents, TF-IDF at ~$0 is still the economical choice.
+3. **LLM output must be checked in code.** Bedrock didn't enforce tool schemas, and one off-list
+   answer cost 6.8 points of macro F1 through the scorer until I fixed both.
+4. **Know what your data dropped.** The public corpus stripped every table, and that set the
+   ceiling for extraction, not the model.
+5. **Verification can be too strict or too loose, and only measurement tells you which:**
+   - **Too strict:** the Q&A check cut coverage from 75% to 62% without raising precision.
+   - **Too loose:** the lake agent's check passed an impossible "152.65% of NAV".
+6. **Thresholds tuned on easy data are too loose for money.** "Meta Platforms" matched SKYX
+   Platforms at a score the tuned thresholds accept.
+7. **Most deploy failures are permissions and quotas, not code:**
+   - a SageMaker memory quota;
+   - a Cloud Run build account without access;
+   - Gemini prepaid credits;
+   - a Bedrock use-case form.
+
+## What I'd do better
+
+| With more… | I would | Expected effect |
 |---|---|---|
-| Revenue within 1% | 0% | 40% (55% on filings not flagged) |
-| Net income within 1% | 0% | 57% (71% not flagged) |
-| Sent to human review | 0% | 24%, mostly "no figures in the text" |
-| Cost per 1,000 filings | $4.16 | $7.86 |
+| **Time** | Measure retrieval on its own (recall@k against labeled passages) | Know whether a miss is retrieval's fault or the model's |
+| | Add plausibility checks on agent answers; fix verification for derived numbers | Catch "152% of NAV"; Q&A coverage back to ~75% at the same precision |
+| | Add an ambiguity rule and an adversarial name set for matching | Remove most of the remaining ~1% of wrong links |
+| | Run the golden sets in CI on every change | Regressions blocked before they ship |
+| **Data** | Real fund reports: scanned, varied layouts, hand-labeled | An honest number for messy documents |
+| | About 100 filings per year for the extraction backtest; several quarters of fund reports | Drift you can actually see; point-in-time look-through |
+| | GICS labels instead of SIC | Labels that match how investors think |
+| **Money** | A larger model only on retries and cross-fund joins; two runs must agree on numbers | Precision up where errors cost most |
+| | Bedrock Knowledge Bases + a re-ranker; provisioned concurrency | Better retrieval; no cold starts |
+| **Different architecture** | Parse the filing's tables and inline XBRL; use the LLM only where no structure exists | Near-complete numbers at a fraction of the cost |
+| | Event-driven ingestion (S3 → EventBridge → parse → lake) and Iceberg tables | New reports land automatically; point-in-time queries built in |
+| | Bedrock Guardrails, real auth (IAM / Cognito) instead of an API key, prompt caching | Safer agents, proper access control, much lower agent cost |
 
-EDGAR-CORPUS removed the HTML tables, so only numbers written in sentences survive (the number
-is in the text for about 57% of questions). Total assets lives in tables, so it is rarely
-recoverable here. The single-call baseline reads the start of Item 8, which is usually the
-auditor's letter; the Q&A baseline below is the fairer one-call comparison.
+Ranked, with how to prove each: [`docs/IMPROVEMENTS.md`](docs/IMPROVEMENTS.md).
 
-### Document Q&A: 91 questions on 40 filings
+## Where to look
 
-| | One call, no tools | Agent (search, financials, calculator) |
-|---|---|---|
-| Correct within 5%, counting a right "not in the document" | 72% | **91%** |
-| Correct when it answered | 94% | 90% |
-| Abstained correctly when the number isn't there | 57% | **95%** |
-| Text questions answered (risks, customers, employees) | 20% | 93% |
-| Citations valid | 100% | 100% |
-| Cost per 1,000 questions / median latency | $3.92 / 1.2 s | $28.38 / 5.8 s |
+| Question | Read |
+|---|---|
+| Why each choice, and what it beat | [`docs/DECISIONS.md`](docs/DECISIONS.md) |
+| The order things were tried, the bugs, and how each was caught | [`docs/ITERATIONS.md`](docs/ITERATIONS.md) |
+| Every run: metrics, cost per correct answer, latency, logs, per-item predictions | [`RESULTS.md`](RESULTS.md) · [`results/all_runs.csv`](results/all_runs.csv) |
+| Precision vs. recall for every task, measured, and how to flip each dial | [`docs/DIALS.md`](docs/DIALS.md) |
+| Backtesting, cost, monitors and guardrails per solution | [`docs/OPERATIONS.md`](docs/OPERATIONS.md) |
+| Architecture: AWS vs. Google Cloud, side by side | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
+| How each piece works, file by file | [`sectors/README.md`](sectors/README.md) · [`matching/WALKTHROUGH.md`](matching/WALKTHROUGH.md) · [`extraction/WALKTHROUGH.md`](extraction/WALKTHROUGH.md) · [`lake/WALKTHROUGH.md`](lake/WALKTHROUGH.md) · [`agent/WALKTHROUGH.md`](agent/WALKTHROUGH.md) |
+| The documents and labels | [`lake/samples/`](lake/samples): fund report PDFs, truth labels, 57 golden questions |
+| Every concept used, in plain words | [`docs/THEORY.md`](docs/THEORY.md) |
+| Accounts, quotas, permissions, and every error hit | [`docs/ONBOARDING.md`](docs/ONBOARDING.md) |
 
-The agent finds what one window of text misses, and it knows when the answer isn't there, at
-7× the cost. Prompt caching is the first cost lever.
+## Get started
 
-## Read in this order
-
-1. [`docs/DECISIONS.md`](docs/DECISIONS.md) and [`RESULTS.md`](RESULTS.md): the choices and the numbers behind them
-2. `docs/THEORY.md`: every concept used, in plain words (leakage, splits, metrics, CV,
-   backtesting, fine-tuning, LoRA, prompting, serving)
-3. `docs/ITERATIONS.md`: every round, its numbers, and the decision it led to, including bugs
-4. `sectors/README.md`: the runbook
-5. `docs/ARCHITECTURE.md`: AWS vs. Google Cloud, side by side
-6. `matching/WALKTHROUGH.md` and `extraction/WALKTHROUGH.md` (part 2 is the Q&A agent)
-7. `docs/ONBOARDING.md`: accounts, quotas, permissions, and every error hit along the way
-
-## Run it
-
-Every stage is a `make` target (`make help` lists them). Settings are passed as variables or
-read from the environment, and each target checks them before starting.
+**Requirements:** [uv](https://docs.astral.sh/uv/) (Python 3.14), Node.js (for the AWS CDK),
+Docker (for the agent image), and the AWS and Google Cloud CLIs for the deploy steps. One-time
+account setup is in [`docs/ONBOARDING.md`](docs/ONBOARDING.md).
 
 ```
-make setup                                              # uv sync --all-groups (Python 3.14)
+git clone https://github.com/gurkarangulati/carlyle-alpinvest-interview && cd carlyle-alpinvest-interview
+make setup                                                   # install everything
+make help                                                    # list every stage
+
+# data: public SEC filings and names (the SEC asks for a contact in the User-Agent)
 make data names xbrl SEC_USER_AGENT="Your Name you@example.com"
 make test
-make all PROFILE=<aws-profile>                          # every experiment except the deploys
-make llm-gemini PROJECT=<gcp-project-id>
-make deploy-aws smoke-aws PROFILE=<aws-profile>         # API Gateway -> Lambda -> SageMaker
-make deploy-gcp smoke-gcp PROJECT=<gcp-project-id>      # Cloud Run
-make teardown-aws teardown-gcp PROFILE=... PROJECT=...  # then sectors/deploy/TEARDOWN.md
+
+# experiments (Bedrock needs an AWS profile)
+make all PROFILE=<aws-profile>                               # classifier, matching, extraction, Q&A
+make lake PROFILE=<aws-profile> && make lake-validate        # the lake from fund PDFs + 10-Ks
+make eval-agent PROFILE=<aws-profile>                        # the lake agent on 57 labeled questions
+make results-index                                           # rebuild RESULTS.md from the runs
+
+# deploy, check, tear down
+make deploy-aws smoke-aws PROFILE=<aws-profile>              # classifier on SageMaker serverless
+make deploy-gcp smoke-gcp PROJECT=<gcp-project-id>           # classifier on Cloud Run
+make deploy-all PROFILE=<aws-profile>                        # lake (S3, Glue, Athena) + agent (AgentCore)
+make ask-aws Q="Which funds hold CSX CORP?" PROFILE=<aws-profile>
+make teardown-all teardown-aws PROFILE=<aws-profile>         # remove everything on AWS
+make teardown-gcp PROJECT=<gcp-project-id>
 ```
 
-`make -n <target>` prints the commands without running them. `make results-index` rebuilds `RESULTS.md` after new runs. Experiment tracking:
-`uv run mlflow ui --backend-store-uri sqlite:///mlflow.db`.
+`make -n <target>` shows what a target runs without running it. Browse the experiment history
+with `uv run mlflow ui --backend-store-uri sqlite:///mlflow.db`. Data comes from
+[EDGAR-CORPUS](https://huggingface.co/datasets/eloukas/edgar-corpus) (Apache 2.0) and the
+SEC's public APIs; nothing in `data/` is committed.
 
-Data comes from [EDGAR-CORPUS](https://huggingface.co/datasets/eloukas/edgar-corpus) (Apache
-2.0) and the SEC's public APIs. Nothing in `data/` is committed. Cloud steps need your own
-AWS and Google Cloud accounts (`docs/ONBOARDING.md`).
+## Repo map
 
-## Weak points
+```
+sectors/      classifier: split, baseline, CV, backtest, fine-tune, LLM; deploy/ (FastAPI, CDK, Cloud Run)
+matching/     name matcher, golden set, evaluation, API
+extraction/   extraction graph, document Q&A agent, evaluations
+lake/         fund PDFs -> bronze / silver / gold Parquet, validation, golden questions, samples/
+agent/        lake analyst agent, DuckDB / Athena backends, AgentCore app, deploy/ (CDK)
+docs/         decisions, results summary, dials, operations, architecture, iterations, theory, onboarding
+results/      every run's parameters and metrics (all_runs.csv), precision-coverage curves
+tests/        220 tests
+```
 
-- **The labels are SIC codes mapped to 10 sectors.** Investors use GICS, and some "errors"
-  (oilfield equipment as energy) are right under GICS.
-- **The transformer read only the first 256 tokens.** It needs 512 tokens or chunking for
-  a fair contest with TF-IDF's 4,000 characters.
-- **The test set is small:** 853 filings, with 32–34 in the smallest sectors. Differences
-  under about 1.5 points are noise.
-- **EDGAR-CORPUS stripped the HTML tables,** so extraction works from numbers in sentences.
-  On real filings, parse the tables or the XBRL directly.
-- **The cloud stacks are demos:** API-key auth, no VPC, no CI/CD. `docs/ARCHITECTURE.md`
-  lists what production needs.
+## Limits, stated plainly
+
+- **Labels:** sector labels come from SIC codes; investors use GICS.
+- **Data:** the corpus has no tables. The fund reports are synthetic and cleaner than real ones.
+  Test sets are small, and differences under about 1.5 points are noise.
+- **Production gaps:** the cloud stacks are demos, with API-key auth and no VPC or CI/CD.
+  [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) lists what production needs.
