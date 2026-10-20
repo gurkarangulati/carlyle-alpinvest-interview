@@ -17,7 +17,7 @@ Scoring by answer_kind (score() below, tested in tests/test_agent.py):
 
 Reports accuracy by question type, citation validity, review rate, average tool calls,
 cost per 1,000 questions and latency. Saves agent/results/eval_<target>.csv and
-agent/results/examples.md (8 traces).
+agent/results/examples_<target>.md (8 traces).
 """
 
 import argparse
@@ -255,7 +255,7 @@ def main() -> None:
 
     RESULTS.mkdir(exist_ok=True)
     df.to_csv(RESULTS / f"eval_{args.target}.csv", index=False)
-    write_examples(rows, RESULTS / "examples.md")
+    write_examples(rows, RESULTS / f"examples_{args.target}.md")  # one per target, never overwritten by the other
 
     summary = summarize(df)
     by_type = df.groupby("type")["correct"].agg(["mean", "count"]).round(3)
@@ -265,9 +265,11 @@ def main() -> None:
     print("\n" + "\n".join(f"{k:>20}  {v}" for k, v in summary.items()))
     total = df["cost_usd"].fillna(0).sum()
     print(f"{'llm spend this run':>20}  ${total:.4f}")
-    print(f"\nsaved {RESULTS / f'eval_{args.target}.csv'} and {RESULTS / 'examples.md'}")
+    print(f"\nsaved {RESULTS / f'eval_{args.target}.csv'} and {RESULTS / f'examples_{args.target}.md'}")
 
-    if not args.limit and not args.ids:
+    if summary["error_rate"] > 0.05:  # a broken run (e.g. the runtime isn't deployed) is not a result
+        print(f"error rate {summary['error_rate']:.0%}: not logged to MLflow (fix the target and rerun)")
+    elif not args.limit and not args.ids:
         log_mlflow(args.target, summary, by_type, df)
 
 
@@ -287,7 +289,7 @@ def log_mlflow(target: str, summary: dict, by_type, df) -> None:
         mlflow.log_metrics({k: float(v) for k, v in summary.items() if k != "n"})
         mlflow.log_metrics({f"acc_{t}": float(v) for t, v in by_type["mean"].items()})
         mlflow.log_artifact(str(RESULTS / f"eval_{target}.csv"))
-        mlflow.log_artifact(str(RESULTS / "examples.md"))
+        mlflow.log_artifact(str(RESULTS / f"examples_{target}.md"))
     print("logged to MLflow experiment 'agent'")
 
 

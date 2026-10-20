@@ -32,7 +32,7 @@ LOG_DIRS = {"sectors": (f"{SECT}/logs", "sectors/results/logs"),
             "extraction": ("extraction/results/logs", "extraction/results/logs"),
             "matching": ("matching/results/logs", "matching/results/logs"),
             "lake": ("lake/results/logs", "lake/results/logs"),
-            "agent": ("agent/results/logs", "agent/results/logs")}
+            "agent": ("agent/results", "agent/results")}
 
 
 def public(path: str) -> str:
@@ -57,8 +57,8 @@ def fmt(x, digits=3, pct=False, money=False):
 def log_files(module):
     here, _ = LOG_DIRS[module]
     out = []
-    for f in sorted((ROOT / here).glob("*.txt")):
-        m = re.match(r"(.*)_(\d{4}-\d{2}-\d{2})_(\d{4})\.txt$", f.name)
+    for f in sorted([*(ROOT / here).glob("*.txt"), *(ROOT / here).glob("*.log")]):
+        m = re.match(r"(.*)_(\d{4}-\d{2}-\d{2})_(\d{4})\.(?:txt|log)$", f.name)
         if m:  # stamped at the start of the run
             stem = m.group(1)
             t = datetime.strptime(m.group(2) + m.group(3), "%Y-%m-%d%H%M").replace(tzinfo=CT)
@@ -304,6 +304,33 @@ def extraction_section():
     return lines + qa
 
 
+def agent_section():
+    df = runs("agent")
+    if df.empty:
+        return []
+    lines = ["## 6. Lake analyst agent (57 labeled questions over the lake)", "",
+             "Answers are scored against the truth files and XBRL, never the lake the agent queries. "
+             "**$ / 1k correct** = cost per 1,000 questions ÷ accuracy.", "",
+             "| When (CT) | Target | Accuracy | Entity | Look-through | Aggregation | Financials "
+             "| Cross-cutting | Text | Unanswerable | Citations valid | Review | Tool calls "
+             "| $ / 1k questions | $ / 1k correct | p50 / p90 latency |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    for _, r in df.iterrows():
+        acc, c1k = m(r, "accuracy"), m(r, "cost_per_1000_usd")
+        lines.append(
+            f"| {r['when']} | {r.get('params.target', '–')} | {fmt(acc, pct=True)} "
+            + " ".join(f"| {fmt(m(r, 'acc_' + t), pct=True)}" for t in
+                       ["entity_resolution", "look_through", "aggregation", "financials",
+                        "cross_cutting", "text", "unanswerable"])
+            + f" | {fmt(m(r, 'citation_validity'), pct=True)} | {fmt(m(r, 'review_rate'), pct=True)} "
+            f"| {fmt(m(r, 'avg_tool_calls'), 2)} | {fmt(c1k, money=True)} "
+            f"| {fmt(c1k / acc, money=True) if c1k and acc else '–'} "
+            f"| {fmt(m(r, 'latency_p50_s'), 1)} s / {fmt(m(r, 'latency_p90_s'), 1)} s |")
+    files = sorted(f.name for f in (ROOT / "agent" / "results").glob("*") if f.is_file())
+    lines += ["", "Data and logs: " + " · ".join(link(f"agent/results/{f}", f) for f in files), ""]
+    return lines
+
+
 def folder_section(module, title):
     """Lake and agent: list whatever results and logs exist (they are added after this script)."""
     res = ROOT / module / "results"
@@ -319,7 +346,7 @@ def folder_section(module, title):
 def all_logs_section():
     lines = ["## Every console log", ""]
     for module, (here, _) in LOG_DIRS.items():
-        files = sorted((ROOT / here).glob("*.txt")) if (ROOT / here).exists() else []
+        files = sorted([*(ROOT / here).glob("*.txt"), *(ROOT / here).glob("*.log")]) if (ROOT / here).exists() else []
         if files:
             lines.append(f"**{module}:** " + " · ".join(link(f"{here}/{f.name}", public(f.stem))
                                                        for f in files))
@@ -340,7 +367,7 @@ if __name__ == "__main__":
             "- **Why each run happened and what it decided:** `docs/ITERATIONS.md`", ""]
     page += sectors_section() + matching_section() + extraction_section()
     page += folder_section("lake", "5. Data lake: build and validation")
-    page += folder_section("agent", "6. Lake agent (LangGraph, local and on AgentCore)")
+    page += agent_section()
     page += all_logs_section()
     (ROOT / "RESULTS.md").write_text("\n".join(page) + "\n")
     print(f"wrote RESULTS.md and results/all_runs.csv ({n} runs)")

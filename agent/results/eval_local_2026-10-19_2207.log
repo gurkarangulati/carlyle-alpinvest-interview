@@ -1,0 +1,92 @@
+57 questions, target local
+  ok  entity_resolution-01       entity  done  "In Larkspur Hollow Growth Fund II's Q4 2019 report, the holding listed as 'CITRIX SYSTEMS "
+  ok  entity_resolution-02       entity  done  "In Tidewrack Energy & Real Assets Fund's Q4 2019 report, the holding listed as 'QUAKRE CHE"
+  ok  entity_resolution-03       entity  done  "In Larkspur Hollow Growth Fund II's Q4 2019 report, the holding listed as 'ALEXION PHARMAC"
+  ok  entity_resolution-04       entity  done  "In Cobaltine Industrial Partners III's Q4 2019 report, the holding listed as 'UNITED STATE"
+  ok  entity_resolution-05       entity  done  "In Larkspur Hollow Growth Fund II's Q4 2019 report, the holding listed as 'NortonLifeLock "
+  ok  entity_resolution-06       entity  done  "In Tidewrack Energy & Real Assets Fund's Q4 2019 report, the holding listed as 'Valariis L"
+  ok  entity_resolution-07          set  done  'Ensco Rowan plc, now known as Valaris Ltd (CIK 314808), is held by two funds: F04 (Tidewra'
+  ok  entity_resolution-08          set  done  'Yes, NEWMONT Corp /DE/ (formerly NEWMONT MINING CORP) is held by one fund: F02 (Cobaltine '
+  ok  entity_resolution-09          set  done  'Progressive Waste Solutions Ltd. is now known as Waste Connections, Inc. (CIK 1318220) and'
+  ok  entity_resolution-10          set  done  'Exxon Mobil Corp is not held by any fund in the data lake. The company could not be matche'
+  ok  look_through-01          set  done  'Larkspur Hollow Growth Fund II held four healthcare sector companies as of 2019-12-31: Abb'
+  ok  look_through-02          set  done  'Larkspur Hollow Growth Fund II held 7 technology sector companies as of 2019-12-31: Citrix'
+  ok  look_through-03          set  done  'Cobaltine Industrial Partners III held 6 companies in the industrials sector as of 2019-12'
+  ok  look_through-04          set  done  'Cobaltine Industrial Partners III held five companies in the materials sector as of 2019-1'
+  ok  look_through-05          set  done  'Bramblecrest Consumer & Media Fund I held five companies in the communications_media secto'
+  ok  look_through-06          set  done  'Bramblecrest Consumer & Media Fund I held five companies in the consumer sector as of 2019'
+  ok  look_through-07          set  done  'CSX CORP is held by two funds: Cobaltine Industrial Partners III (F02) and Quillfeather Di'
+  ok  look_through-08          set  done  'Valaris Ltd is held by two funds: Tidewrack Energy & Real Assets Fund (F04) and Quillfeath'
+  ok  aggregation-01       number  done  "The total fair value of Larkspur Hollow Growth Fund II's technology holdings is $656,978,0"
+  ok  aggregation-02       number  done  "Cobaltine Industrial Partners III's materials holdings have a total fair value of $359,837"
+  ok  aggregation-03       number  done  "The total fair value of Tidewrack Energy & Real Assets Fund's real_estate holdings is $529"
+  ok  aggregation-04       number  done  'Bramblecrest Consumer & Media Fund I has 45.16% of its NAV in consumer holdings.'
+  ok  aggregation-05       number  done  'Quillfeather Diversified Opportunities Fund IV has 62.61% of its NAV in financials holding'
+  ok  aggregation-06       number  done  'Cobaltine Industrial Partners III (F02) has a gross multiple of 1.12x on its holdings, cal'
+  ok  aggregation-07       number  done  "Tidewrack Energy & Real Assets Fund's gross multiple on its holdings is 1.79x, calculated "
+  ok  aggregation-08       number  done  'Quillfeather Diversified Opportunities Fund IV reports 10 holdings.'
+  ok  aggregation-09       number  done  'Bramblecrest Consumer & Media Fund I has $128,053,000 in uncalled commitments, calculated '
+  ok  aggregation-10       number  done  'Across all five funds, the total fair value of energy holdings is $783,094,000 USD.'
+  ok  aggregation-11       entity  done  'Tidewrack Energy & Real Assets Fund (F04) has the largest NAV at $1,533,944,000.'
+  ok  financials-01       number  done  "CORPAY, INC.'s revenue grew from $2,433,492,000 in fiscal 2018 to $2,648,848,000 in fiscal"
+  ok  financials-02       number  done  "HEALTHPEAK PROPERTIES, INC.'s revenue growth from fiscal 2018 to fiscal 2019 was 8.16 perc"
+  ok  financials-03       number  done  "CLEAN HARBORS INC's revenue growth from fiscal 2018 to fiscal 2019 was 3.39 percent."
+  ok  financials-04       number  done  "Univar Solutions Inc.'s revenue growth from fiscal 2018 to fiscal 2019 was 7.58 percent."
+  ok  financials-05       number  done  "ITRON, INC.'s net income for fiscal 2019 was $49,006,000 USD."
+  ok  financials-06       number  done  "Gen Digital Inc.'s net income for fiscal 2019 was $31,000,000 USD."
+  ok  financials-07       number  done  "Groupon, Inc.'s net income for fiscal 2019 was -$22,377,000 (a net loss)."
+  ok  financials-08       number  done  "GRAY MEDIA, INC's total assets at the end of fiscal 2019 were $6,972,000,000 USD."
+  ok  financials-09       number  done  "Anywhere Real Estate Inc.'s total assets at the end of fiscal 2019 were $7,543,000,000 USD"
+  ok  financials-10       entity  done  'Emerson Electric Co, a Cobaltine Industrial Partners III holding, had the highest fiscal 2'
+  ok  cross_cutting-01       entity  done  'Tidewrack Energy & Real Assets Fund (F04) has the largest share of its NAV in companies th'
+  BAD cross_cutting-02       number  done  'Tidewrack Energy & Real Assets Fund has 152.65% of its NAV in companies with negative fisc'
+  ok  cross_cutting-03          set  done  'Four companies are held by more than one fund: CSX Corp (CIK 277948), Valaris Ltd (CIK 314'
+  BAD cross_cutting-04       number  done  'The total fair value across all funds of holdings whose company has changed its SEC name s'
+  BAD cross_cutting-05       number  needs_human_review  'The fair-value-weighted average fiscal 2018-to-2019 revenue growth of Larkspur Hollow Grow'
+  ok  cross_cutting-06       entity  done  'Larkspur Hollow Growth Fund II (F01) has the most fair value in technology holdings at $65'
+  ok   text-01         text  done  "JPMorgan Chase's fiscal-2019 10-K discusses LIBOR transition risks in its risk factors sec"
+  ok   text-02         text  done  "CVS HEALTH Corp's fiscal-2019 10-K discloses opioid litigation risk in its risk factors se"
+  ok   text-03         text  done  "Micron Technology's fiscal-2019 10-K discusses tariffs and trade restrictions in its risk "
+  ok   text-04         text  done  "Meta Platforms, Inc.'s fiscal-2019 10-K discusses user privacy risks extensively in its ri"
+  ok   text-05         text  done  "Anywhere Real Estate Inc.'s fiscal-2019 10-K states in its risk factors about the housing "
+  ok   text-06         text  done  "Transocean Ltd.'s fiscal-2019 10-K discusses climate change in its risk factors by noting "
+  BAD  text-07          set  done  'Three fund reports mention portfolio companies that filed with the SEC under different nam'
+  ok  unanswerable-01 unanswerable  done  'This is not in the data lake. The company_financials table only contains data for fiscal y'
+  ok  unanswerable-02 unanswerable  done  'The data lake does not contain the net IRR for Cobaltine Industrial Partners III. While th'
+  ok  unanswerable-03 unanswerable  needs_human_review  'Tidewrack Energy & Real Assets Fund does not have a NAV reported for 2020-06-30 in the dat'
+  ok  unanswerable-04 unanswerable  done  'The management fee rate for Larkspur Hollow Growth Fund II is not disclosed in the fund re'
+  ok  unanswerable-05 unanswerable  needs_human_review  'The data lake does not contain holdings data for Bramblecrest Consumer & Media Fund I as o'
+
+accuracy by type:
+                    mean  count
+type                           
+aggregation        1.000     11
+cross_cutting      0.500      6
+entity_resolution  1.000     10
+financials         1.000     10
+look_through       1.000      8
+text               0.857      7
+unanswerable       1.000      5
+
+accuracy by answer kind:
+               mean  count
+answer_kind               
+entity        1.000     10
+number        0.864     22
+set           0.929     14
+text          1.000      6
+unanswerable  1.000      5
+
+                   n  57
+            accuracy  0.93
+   citation_validity  0.947
+         review_rate  0.053
+          error_rate  0.0
+      avg_tool_calls  2.25
+   cost_per_1000_usd  13.31
+       latency_p50_s  3.62
+       latency_p90_s  7.04
+  llm spend this run  $0.7589
+
+saved agent/results/eval_local.csv and agent/results/examples.md
+logged to MLflow experiment 'agent'
