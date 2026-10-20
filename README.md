@@ -84,8 +84,8 @@ All twelve decision records, with evidence and "revisit when": [`docs/DECISIONS.
 | Extraction (119 filings vs. XBRL) | Net income within 1% on **71%** of unflagged filings; 24% to review | One LLM call: 0% | $7.86 |
 | Document Q&A (91 questions) | **91%** correct; right to abstain 95% | One call: 72%; abstain 57% | $28.38 |
 | Data lake (5 funds, 54 holdings) | 54/54 names resolved; 50 of 51 checks pass | Extracted vs. XBRL agree 82–84% | $0.46 per rebuild |
-| Lake agent (57 labeled questions) | **93%** correct; 100% on 5 of 7 question types | 50% on cross-fund joins | $13.31 |
-| Deployment | Live on AWS (SageMaker serverless) and Google Cloud Run, $0 idle | Cold start 24.3 s vs. 4.3 s | fractions of a cent per call |
+| Lake agent (57 labeled questions) | **95%** on AWS AgentCore, 93% locally; 100% on 5 of 7 question types | Cross-fund joins 50–67%: the weak spot | $13.31–14.84 |
+| Deployment | Classifier live on AWS (SageMaker serverless) and Cloud Run; lake agent live on Bedrock AgentCore + Athena | Agent latency p50 11.5 s on AWS vs. 3.6 s locally (Athena per-query overhead) | $0 idle |
 
 Tables with commentary: [`docs/RESULTS_SUMMARY.md`](docs/RESULTS_SUMMARY.md). Every individual
 run, with its log and per-item predictions: [`RESULTS.md`](RESULTS.md).
@@ -104,7 +104,9 @@ run, with its log and per-item predictions: [`RESULTS.md`](RESULTS.md).
    ceiling for extraction, not the model.
 5. **Verification can be too strict or too loose, and only measurement tells you which:**
    - **Too strict:** the Q&A check cut coverage from 75% to 62% without raising precision.
-   - **Too loose:** the lake agent's check passed an impossible "152.65% of NAV".
+   - **Too loose:** the lake agent's check passed an impossible "152.65% of NAV". The
+     same question came back right (40.6%) on the next run, so plausibility checks are
+     needed rather than hoping the model writes the SQL correctly.
 6. **Thresholds tuned on easy data are too loose for money.** "Meta Platforms" matched SKYX
    Platforms at a score the tuned thresholds accept.
 7. **Most deploy failures are permissions and quotas, not code:**

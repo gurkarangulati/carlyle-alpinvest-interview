@@ -99,8 +99,13 @@ harder probes fool the thresholds ("Meta Platforms" → SKYX Platforms).
 | Entity resolution, look-through, aggregation, financials, unanswerable | 100% (44 questions) |
 | Text from risk factors | 86% (7) |
 | Cross-cutting joins | 50% (6) |
-| **Overall** | **93%** at $13.31 per 1,000 questions; 3.6 s median |
+| **Overall, local (DuckDB)** | **93%** at $13.31 per 1,000 questions; 3.6 s median |
+| **Overall, AWS (AgentCore + Athena)** | **95%** at $14.84 per 1,000 questions; 11.5 s median, 21.4 s p90 |
 
-One cross-cutting answer reported "152.65% of NAV" and passed verification. Verify proves a number
+Locally, one cross-cutting answer reported "152.65% of NAV" and passed verification. On AWS the
+same question came back right (40.6%): same code and model, different SQL from the LLM. A 1–2
+question difference on 57 questions is noise. The cloud is about 3× slower because each Athena
+query carries 1–2 s of startup; for a small lake, DuckDB inside the container reading Parquet from
+S3 would be sub-second. Verify proves a number
 came from a query, not that the query was right, so the next guardrail is a plausibility check on
 the answer itself.
