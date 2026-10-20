@@ -76,19 +76,97 @@ All twelve decision records, with evidence and "revisit when": [`docs/DECISIONS.
 
 ## Results at a glance
 
-| Solution | Result | Compared with | Cost per 1,000 |
-|---|---|---|---|
-| Sector tagging (853 test filings) | **0.782** macro F1, few-shot, no training | TF-IDF 0.751 · fine-tuned 0.758 · zero-shot 0.748–0.781 | $2.71 (TF-IDF ~$0) |
-| Next-year backtest | Retrained **0.73–0.75** on new companies | Frozen model falls to 0.65 by 2020 | — |
-| Name matching (8,467 held-out names) | **98.8%** top-1 at 99% precision | Without former names, renamed companies drop to 13.6% | ~$0 |
-| Extraction (119 filings vs. XBRL) | Net income within 1% on **71%** of unflagged filings; 24% to review | One LLM call: 0% | $7.86 |
-| Document Q&A (91 questions) | **91%** correct; right to abstain 95% | One call: 72%; abstain 57% | $28.38 |
-| Data lake (5 funds, 54 holdings) | 54/54 names resolved; 50 of 51 checks pass | Extracted vs. XBRL agree 82–84% | $0.46 per rebuild |
-| Lake agent (57 labeled questions) | **95%** on AWS AgentCore, 93% locally; 100% on 5 of 7 question types | Cross-fund joins 50–67%: the weak spot | $13.31–14.84 |
-| Deployment | Classifier live on AWS (SageMaker serverless) and Cloud Run; lake agent live on Bedrock AgentCore + Athena | Agent latency p50 11.5 s on AWS vs. 3.6 s locally (Athena per-query overhead) | $0 idle |
+Every problem was solved at least two ways and measured on held-out data for **quality,
+precision vs. coverage, latency and cost**. The chosen approach is in **bold**. Every run behind
+these numbers, with its log and per-item predictions, is in [`RESULTS.md`](RESULTS.md).
 
-Tables with commentary: [`docs/RESULTS_SUMMARY.md`](docs/RESULTS_SUMMARY.md). Every individual
-run, with its log and per-item predictions: [`RESULTS.md`](RESULTS.md).
+### 1. Sector tagging: 7 approaches, 853 held-out filings, 10 sectors
+
+| Approach | Training | Macro precision | Macro recall | **Macro F1** | Accuracy | Latency per filing | Cost per 1,000 |
+|---|---|---|---|---|---|---|---|
+| TF-IDF + logistic regression | 36 s | 0.794 | 0.730 | 0.751 | 0.746 | 0.002 ms | ~$0 |
+| TF-IDF + LR, balanced class weights | 36 s | 0.776 | 0.736 | 0.750 | 0.743 | 0.002 ms | ~$0 |
+| Fine-tuned DistilRoBERTa (82M weights) | 3.3 min | 0.759 | 0.763 | 0.758 | 0.753 | 2.5 ms | ~$0 (own compute) |
+| LoRA (0.9% of weights) | 1.4 min | 0.758 | 0.740 | 0.744 | 0.734 | 2.7 ms | ~$0 (own compute) |
+| Zero-shot Claude Haiku 4.5 | none | 0.776 | 0.757 | 0.748 | 0.743 | 0.61 s | $1.98 |
+| Zero-shot Gemini 3.8 Flash | none | 0.783 | 0.793 | 0.781 | 0.770 | 3.4 s | $1.52 |
+| **Few-shot Claude (5 retrieved examples)** | **none** | **0.793** | **0.788** | **0.782** | **0.770** | **0.63 s** | **$2.71** |
+
+- **Prompt versions, chosen on validation:** sector list 0.756 → + rules 0.774 → + examples
+  **0.804** → rules + examples 0.814. The last was not tested: +1.0 was under the 1.5-point
+  noise bar set before the run.
+- **Precision vs. coverage dial:** auto-tag at confidence ≥ 0.8 → 71% tagged at **86%
+  precision**; ≥ 0.9 → 60% at 91%; tag everything → 100% at 75%.
+- **Next year (walk-forward backtest, F1 on companies never seen):**
+
+| Model | 2017 | 2018 | 2019 | 2020 |
+|---|---|---|---|---|
+| **Retrained yearly on all history** | 0.685 | **0.742** | **0.755** | **0.731** |
+| Frozen at 2016 | 0.685 | 0.670 | 0.693 | 0.649 |
+| Trained on last year only | 0.685 | 0.721 | 0.708 | 0.653 |
+
+### 2. Name matching: 6 methods, 8,467 held-out names over 9,945 companies
+
+| Method | Top-1 | Top-5 | **Precision when it answers** | Coverage | Renamed companies (top-1) | Latency per name | Cost per 1,000 |
+|---|---|---|---|---|---|---|---|
+| Exact match after normalizing | 0.716 | 0.719 | 0.716 | 100% | 0.997 | 0.04 ms | $0 |
+| Fuzzy string score | 0.939 | 0.997 | 0.939 | 100% | 0.935 | 0.59 ms | $0 |
+| TF-IDF character n-grams | 0.968 | 0.988 | 0.968 | 100% | 0.995 | 0.13 ms | $0 |
+| TF-IDF without former names | 0.623 | 0.656 | 0.623 | 100% | **0.136** | 0.12 ms | $0 |
+| **Hybrid + abstain** (thresholds from dev) | **0.988** | **0.994** | **0.990** | **99.8%** | **0.994** | **0.22 ms** | **$0** |
+| Hybrid + Claude re-rank of close calls (dev) | 0.991 | 0.997 | 0.994 | 99.7% | 0.991 | 4.6 ms | $0.03 |
+
+Former-name aliases are the biggest single gain (renamed companies 0.136 → 0.994). The LLM
+re-rank adds 0.1 point for 21× the latency.
+
+### 3. Number extraction: 2 designs, 119 filings scored against SEC XBRL
+
+| Design | Revenue: answered / precision | Net income: answered / precision | Sent to an analyst | Median latency | Cost per 1,000 |
+|---|---|---|---|---|---|
+| One LLM call | 0% / – | 0% / – | 0% | 1.8 s | $4.16 |
+| LangGraph flow, accept every value | 55% / 71% | 66% / 86% | 0% | 3.4 s | $7.86 |
+| **LangGraph flow, accept only values that pass checks** | **49% / 80%** | **63% / 87%** | **24%** | **3.4 s** | **$7.86** |
+
+The checks removed only wrong revenue values: precision went from 71% to 80%, and no correct
+value was lost. Coverage is capped by the data: the public corpus stripped the financial tables.
+In the lake build (50 filings), checked extractions agree with XBRL for 82% of revenue and 84%
+of net income values.
+
+### 4. Document Q&A: 2 designs, 91 questions on 40 filings
+
+| Design | **Accuracy** | Answered | Precision when it answers | Right to say "not there" | Citations valid | Median latency | Cost per 1,000 |
+|---|---|---|---|---|---|---|---|
+| One call over a fixed text window | 72% | 38% | 94% | 57% | 100% | 1.2 s | $3.92 |
+| **Tool-using agent + code verification** | **91%** | **78%** | **90%** | **95%** | **100%** | **5.8 s** | **$28.38** |
+
+The agent answers twice as many questions, gives up 4 points of precision, and knows when the
+answer isn't there, at 7× the cost.
+
+### 5. Data lake and analyst agent: 5 fund reports, 54 holdings, 57 labeled questions
+
+**Lake build:**
+- 54 of 54 holdings resolved to the right company (precision and recall 1.000).
+- PDF totals reconcile exactly for all 5 funds.
+- 50 of 51 checks pass; the one warning is total assets, which the corpus stripped.
+
+| Agent target | **Accuracy** | Entity | Look-through | Aggregation | Financials | Cross-fund joins | Text | Unanswerable | Citations valid | Latency p50 / p90 | Cost per 1,000 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Local (DuckDB) | 93% | 100% | 100% | 100% | 100% | 50% | 86% | 100% | 95% | 3.6 s / 7.0 s | $13.31 |
+| **AWS (AgentCore + Athena)** | **95%** | 100% | 100% | 100% | 100% | 67% | 86% | 100% | 95% | 11.5 s / 21.4 s | $14.84 |
+
+Cross-fund joins are the weak spot. One local answer reported an impossible "152.65% of NAV",
+so the next guardrail is a plausibility check on the answer itself.
+
+### 6. Deployment
+
+| Service | Cold start | Warm call | Idle cost |
+|---|---|---|---|
+| Classifier on AWS: API Gateway → Lambda → SageMaker serverless | 24.3 s | 0.53 s | $0 |
+| Classifier on Google Cloud Run | 4.3 s | 0.20 s | $0 |
+| Lake agent on Bedrock AgentCore + Athena | — | 11.5 s per question (LLM + SQL) | $0 |
+
+Commentary on each table: [`docs/RESULTS_SUMMARY.md`](docs/RESULTS_SUMMARY.md). The
+precision vs. coverage curves behind each dial: [`docs/DIALS.md`](docs/DIALS.md).
 
 ## What I learned
 
