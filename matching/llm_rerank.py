@@ -10,12 +10,14 @@ Credentials: boto3 reads the AWS profile from the AWS_PROFILE environment variab
 import threading
 import time
 
+import os
+
 import boto3
 from botocore.config import Config
 from botocore.exceptions import BotoCoreError, ClientError
 
 MODEL_ID = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
-REGION = "us-east-1"
+REGION = os.environ.get("AWS_REGION", "us-east-1")
 PRICE_IN, PRICE_OUT = 1.00, 5.00  # USD per 1M tokens, list price. Verify before quoting.
 LLM_MARGIN = 5.0  # send a query when its top two scores are this close
 LLM_MIN_SCORE = 70.0  # ...and the best one is at least plausible

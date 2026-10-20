@@ -14,12 +14,14 @@ import random
 import threading
 import time
 
+import os
+
 import boto3
 from botocore.config import Config
 from botocore.exceptions import BotoCoreError, ClientError
 
 MODEL_ID = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
-REGION = "us-east-1"
+REGION = os.environ.get("AWS_REGION", "us-east-1")
 PRICE_IN, PRICE_OUT = 1.00, 5.00  # USD per 1M tokens, Haiku 4.5 list price
 
 TRANSIENT_CODES = {"ThrottlingException", "TooManyRequestsException", "ServiceUnavailableException",

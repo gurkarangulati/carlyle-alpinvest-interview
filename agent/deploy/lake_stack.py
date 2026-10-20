@@ -66,17 +66,18 @@ class LakeStack(cdk.Stack):
                 memory_limit=512)
 
         # 3. The Glue catalog: one database, one table per contract table.
-        self.database_name = DATABASE
+        # Names can be overridden per environment: cdk deploy -c lake_database=... -c workgroup=...
+        self.database_name = self.node.try_get_context("lake_database") or DATABASE
         db = glue.CfnDatabase(
             self, "Database", catalog_id=self.account,
             database_input=glue.CfnDatabase.DatabaseInputProperty(
-                name=DATABASE, description="Analyst agent lake (silver + gold Parquet)"))
+                name=self.database_name, description="Analyst agent lake (silver + gold Parquet)"))
         self.table_names = []
         for table, (layer, purpose, cols) in TABLES.items():
             t = glue.CfnTable(
                 self, f"Table{''.join(w.title() for w in table.split('_'))}",
                 catalog_id=self.account,
-                database_name=DATABASE,
+                database_name=self.database_name,
                 table_input=glue.CfnTable.TableInputProperty(
                     name=table,
                     description=purpose,
@@ -96,10 +97,10 @@ class LakeStack(cdk.Stack):
         # 4. The Athena workgroup: results in our bucket, a per-query scan cap, and the
         #    settings enforced so a client cannot point results elsewhere or lift the cap.
         self.results_location = f"s3://{self.bucket.bucket_name}/{RESULTS_PREFIX}/"
-        self.workgroup_name = WORKGROUP
+        self.workgroup_name = self.node.try_get_context("workgroup") or WORKGROUP
         athena.CfnWorkGroup(
             self, "WorkGroup",
-            name=WORKGROUP,
+            name=self.workgroup_name,
             description="Analyst agent queries",
             recursive_delete_option=True,   # destroy also deletes its query history
             state="ENABLED",
@@ -115,6 +116,6 @@ class LakeStack(cdk.Stack):
                         encryption_option="SSE_S3"))))
 
         cdk.CfnOutput(self, "BucketName", value=self.bucket.bucket_name)
-        cdk.CfnOutput(self, "GlueDatabase", value=DATABASE)
-        cdk.CfnOutput(self, "AthenaWorkgroup", value=WORKGROUP)
+        cdk.CfnOutput(self, "GlueDatabase", value=self.database_name)
+        cdk.CfnOutput(self, "AthenaWorkgroup", value=self.workgroup_name)
         cdk.CfnOutput(self, "AthenaOutput", value=self.results_location)

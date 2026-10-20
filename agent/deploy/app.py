@@ -17,7 +17,7 @@ from agent_stack import AgentStack  # noqa: E402
 from lake_stack import LakeStack  # noqa: E402
 
 app = cdk.App()
-env = cdk.Environment(account=os.environ.get("CDK_DEFAULT_ACCOUNT"), region="us-east-1")
+env = cdk.Environment(account=os.environ.get("CDK_DEFAULT_ACCOUNT"), region=os.environ.get("AWS_REGION", "us-east-1"))
 lake = LakeStack(app, "AnalystLake", env=env)
 AgentStack(app, "AnalystAgent", lake=lake, env=env)
 for stack in app.node.children:

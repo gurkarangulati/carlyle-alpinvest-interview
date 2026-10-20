@@ -15,6 +15,8 @@ import uuid
 from functools import lru_cache
 from pathlib import Path
 
+import os
+
 import boto3
 from botocore.config import Config
 
@@ -22,7 +24,7 @@ if __name__ == "__main__":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 STACK = "AnalystAgent"
-REGION = "us-east-1"
+REGION = os.environ.get("AWS_REGION", "us-east-1")
 
 
 @lru_cache(maxsize=1)

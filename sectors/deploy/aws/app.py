@@ -9,5 +9,5 @@ from sector_stack import SectorStack
 app = cdk.App()
 SectorStack(app, "SectorClassifier",
             env=cdk.Environment(account=os.environ.get("CDK_DEFAULT_ACCOUNT"),
-                                region="us-east-1"))
+                                region=os.environ.get("AWS_REGION", "us-east-1")))
 app.synth()

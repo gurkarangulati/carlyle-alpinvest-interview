@@ -13,7 +13,8 @@ from constructs import Construct
 TARBALL = Path(__file__).resolve().parents[2] / "out" / "model.tar.gz"
 # AWS's prebuilt Hugging Face inference container (CPU). It loads model.tar.gz
 # and serves it; HF_TASK tells it which pipeline to build. No inference code needed.
-HF_IMAGE = ("763104351884.dkr.ecr.us-east-1.amazonaws.com/huggingface-pytorch-inference:"
+# 763104351884 is AWS's public Deep Learning Containers account, not ours; the region is the stack's.
+HF_IMAGE = ("763104351884.dkr.ecr.{region}.amazonaws.com/huggingface-pytorch-inference:"
             "2.6.0-transformers5.5.3-cpu-py312-ubuntu22.04")
 
 
@@ -42,7 +43,7 @@ class SectorStack(cdk.Stack):
             self, "Model",
             execution_role_arn=role.role_arn,
             primary_container=sagemaker.CfnModel.ContainerDefinitionProperty(
-                image=HF_IMAGE,
+                image=HF_IMAGE.format(region=self.region),
                 model_data_url=model_data.s3_object_url,
                 environment={"HF_TASK": "text-classification"}))
         model.node.add_dependency(role)  # permissions exist before SageMaker uses them
@@ -69,7 +70,7 @@ class SectorStack(cdk.Stack):
             code=_lambda.Code.from_asset(str(Path(__file__).parent / "lambda_fn")),
             timeout=cdk.Duration.seconds(60),
             memory_size=256,
-            environment={"ENDPOINT_NAME": endpoint.attr_endpoint_name, "THRESHOLD": "0.8"})
+            environment={"ENDPOINT_NAME": endpoint.attr_endpoint_name, "THRESHOLD": str(self.node.try_get_context("threshold") or "0.8")})  # cdk deploy -c threshold=0.9
         fn.add_to_role_policy(iam.PolicyStatement(
             actions=["sagemaker:InvokeEndpoint"], resources=[endpoint.ref]))  # ref = its ARN
 

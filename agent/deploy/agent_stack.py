@@ -112,7 +112,7 @@ class AgentStack(cdk.Stack):
         # 3. The runtime. L2 construct; it wires the image and the role together.
         runtime = agentcore.Runtime(
             self, "Runtime",
-            runtime_name=RUNTIME_NAME,
+            runtime_name=self.node.try_get_context("runtime_name") or RUNTIME_NAME,  # -c runtime_name=...
             description="LangGraph analyst agent over the S3/Glue/Athena lake",
             agent_runtime_artifact=agentcore.AgentRuntimeArtifact.from_ecr_repository(
                 image.repository, image.image_tag),

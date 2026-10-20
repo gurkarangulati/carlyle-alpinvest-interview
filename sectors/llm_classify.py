@@ -127,7 +127,7 @@ def gemini_caller():
 def bedrock_caller():
     import boto3
 
-    client = boto3.Session(region_name="us-east-1").client("bedrock-runtime")
+    client = boto3.Session(region_name=os.environ.get("AWS_REGION", "us-east-1")).client("bedrock-runtime")
     # Forcing a tool whose input is an enum = structured output on Bedrock.
     tool = {"toolSpec": {"name": "record_sector", "description": "Record the sector.",
                          "inputSchema": {"json": {

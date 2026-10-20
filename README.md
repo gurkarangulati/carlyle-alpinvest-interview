@@ -148,6 +148,7 @@ Ranked, with how to prove each: [`docs/IMPROVEMENTS.md`](docs/IMPROVEMENTS.md).
 | The documents and labels | [`lake/samples/`](lake/samples): fund report PDFs, truth labels, 57 golden questions |
 | Every concept used, in plain words | [`docs/THEORY.md`](docs/THEORY.md) |
 | Accounts, quotas, permissions, and every error hit | [`docs/ONBOARDING.md`](docs/ONBOARDING.md) |
+| How secrets and account details are kept out, how the deployed pieces are locked down, and how that is checked | [`SECURITY.md`](SECURITY.md) |
 
 ## Get started
 
@@ -179,6 +180,7 @@ make teardown-all teardown-aws PROFILE=<aws-profile>         # remove everything
 make teardown-gcp PROJECT=<gcp-project-id>
 ```
 
+Nothing account-specific is in the code: the account, profile, project and regions come from your environment or `make` variables ([`SECURITY.md`](SECURITY.md)). `make security-scan` and `make deps-audit` run the same checks as CI.
 `make -n <target>` shows what a target runs without running it. Browse the experiment history
 with `uv run mlflow ui --backend-store-uri sqlite:///mlflow.db`. Data comes from
 [EDGAR-CORPUS](https://huggingface.co/datasets/eloukas/edgar-corpus) (Apache 2.0) and the

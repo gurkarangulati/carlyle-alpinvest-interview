@@ -3,8 +3,9 @@
 # Run from the repo root:  GOOGLE_CLOUD_PROJECT=<project-id> bash sectors/deploy/gcp/smoke.sh
 set -euo pipefail
 PROJECT=${GOOGLE_CLOUD_PROJECT:-$(gcloud config get-value project 2>/dev/null)}
+REGION=${GCP_REGION:-us-central1}
 : "${PROJECT:?set GOOGLE_CLOUD_PROJECT}"
-URL=$(gcloud run services describe sector-classifier --region us-central1 --project "$PROJECT" \
+URL=$(gcloud run services describe sector-classifier --region "$REGION" --project "$PROJECT" \
   --format='value(status.url)')
 TOKEN=$(gcloud auth print-identity-token)   # short-lived, tied to who you are
 BODY='{"text": "We explore for, develop and produce crude oil and natural gas from our wells in the Permian Basin and operate pipelines that carry it to refineries."}'

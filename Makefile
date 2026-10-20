@@ -8,6 +8,7 @@
 PROFILE ?= $(AWS_PROFILE)
 PROJECT ?= $(GOOGLE_CLOUD_PROJECT)
 REGION  ?= us-east-1
+GCP_REGION ?= us-central1
 # C: regularization for the backtest (chosen by CV).
 # LLM_TEST: the prompt version chosen on validation, run on test once.
 C       ?= 100
@@ -16,7 +17,7 @@ STAMP   := $(shell date +%Y-%m-%d_%H%M)
 PY      := uv run python
 AWS     := AWS_PROFILE=$(PROFILE) AWS_REGION=$(REGION)
 
-.PHONY: precision-curves results-index help setup data names xbrl test classic finetune llm-val llm-test llm-gemini \
+.PHONY: deps-audit security-scan precision-curves results-index help setup data names xbrl test classic finetune llm-val llm-test llm-gemini \
 	    matching matching-llm extraction qa report all package image serve serve-docker \
 	    deploy-aws smoke-aws deploy-gcp smoke-gcp teardown-aws teardown-gcp \
 	    check-aws check-sec check-gcp
@@ -86,6 +87,15 @@ report:  ## every classifier run in one table (sectors/out/results.csv)
 precision-curves:  ## precision vs. coverage for every dial, from saved predictions
 	$(PY) precision_curves.py
 
+security-scan:  ## scan the repo and its full git history for secrets (gitleaks, via Docker)
+	docker run --rm -v "$$PWD:/repo" zricethezav/gitleaks:v8.21.2 detect --source /repo --log-opts="--all" --redact -v
+
+deps-audit:  ## check every locked and container dependency against known vulnerabilities (pip-audit)
+	uv export -q --all-groups --no-hashes --format requirements-txt > /tmp/requirements-audit.txt
+	uvx pip-audit@2.9.0 --no-deps --disable-pip -r /tmp/requirements-audit.txt
+	uvx pip-audit@2.9.0 --no-deps --disable-pip -r sectors/deploy/app/requirements.txt
+	uvx pip-audit@2.9.0 --no-deps --disable-pip -r agent/requirements.txt
+
 results-index:  ## RESULTS.md: every run of every task with metrics, cost, latency and links
 	$(PY) results_index.py
 
@@ -133,16 +143,16 @@ smoke-aws: check-aws  ## call the AWS API: cold, warm, and without a key
 	$(AWS) bash sectors/deploy/aws/smoke.sh
 
 deploy-gcp: check-gcp  ## build with Cloud Build, run on Cloud Run (private)
-	GOOGLE_CLOUD_PROJECT=$(PROJECT) bash sectors/deploy/gcp/deploy.sh
+	GOOGLE_CLOUD_PROJECT=$(PROJECT) GCP_REGION=$(GCP_REGION) bash sectors/deploy/gcp/deploy.sh
 
 smoke-gcp: check-gcp  ## call the Cloud Run service: twice with a token, once without
-	GOOGLE_CLOUD_PROJECT=$(PROJECT) bash sectors/deploy/gcp/smoke.sh
+	GOOGLE_CLOUD_PROJECT=$(PROJECT) GCP_REGION=$(GCP_REGION) bash sectors/deploy/gcp/smoke.sh
 
 teardown-aws: check-aws  ## delete the AWS stack (then see sectors/deploy/TEARDOWN.md for logs and assets)
 	cd sectors/deploy/aws && $(AWS) npx aws-cdk@latest destroy
 
 teardown-gcp: check-gcp  ## delete the Cloud Run service (then see TEARDOWN.md for the image and source)
-	gcloud run services delete sector-classifier --region us-central1 --project $(PROJECT)
+	gcloud run services delete sector-classifier --region $(GCP_REGION) --project $(PROJECT)
 
 # ---- data lake and lake agent (their targets live with the modules) ----
 -include lake/lake.mk
