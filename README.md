@@ -8,6 +8,20 @@ measured against an answer key, costed, and deployable with one command.
 Built by Gurkaran Gulati with [Claude Code](https://claude.com/claude-code) as a pair programmer;
 [`CLAUDE.md`](CLAUDE.md) explains how the work was divided.
 
+## Quick links
+
+| Looking for | Links |
+|---|---|
+| **Data** | [Fund report PDFs](lake/samples/fund_reports) (synthetic) · [labels: true company per reported name](lake/samples/fund_truth.csv) · [57 golden questions with answers](lake/samples/questions.jsonl) · sources: [EDGAR-CORPUS 10-Ks](https://huggingface.co/datasets/eloukas/edgar-corpus) + SEC names and XBRL APIs, rebuilt by [`fixtures/make_companies.py`](fixtures/make_companies.py), [`matching/golden.py`](matching/golden.py), [`extraction/fetch_xbrl.py`](extraction/fetch_xbrl.py), [`lake/funds.py`](lake/funds.py) |
+| **Every run** | [`RESULTS.md`](RESULTS.md): one row per run with metrics, cost, latency and links · [`results/all_runs.csv`](results/all_runs.csv): every parameter and metric · console logs: [sectors](sectors/results/logs) · [matching](matching/results/logs) · [extraction and Q&A](extraction/results/logs) · [agent](agent/results) |
+| **Full numbers** | Sectors: [all runs](sectors/results/results.csv) · [per-sector precision/recall/F1](sectors/results/tfidf_logreg_per_sector.csv) · [confusion matrix](sectors/results/tfidf_logreg_confusion.csv) · [backtest by year](sectors/results/backtest.csv) · [CV folds](sectors/results/cv_folds.csv) · [split options](sectors/results/split_options.csv) · Matching: [by method and query type](matching/results/eval_test.csv) · Extraction: [by field](extraction/results/eval_graph.csv) · Q&A: [by question type](extraction/results/qa_eval_agent.csv) · Lake: [50 validation checks](lake/results/validate.csv) · Agent: [AWS](agent/results/eval_aws.csv) and [local](agent/results/eval_local.csv) by question · [precision vs. coverage curves](results/precision_coverage.csv) |
+| **Per-item predictions** | [Every test filing's sector](sectors/results/llm_classify_bedrock_fewshot5_test_preds.csv) · [every matched name](matching/results/per_item/preds_test_hybrid.csv) · [every Q&A answer with its tool trace](extraction/results/per_item/qa_preds_agent.csv) · example traces: [Q&A](extraction/results/qa_examples.md), [lake agent](agent/results/examples_aws.md) |
+| **Infrastructure: AWS** (CDK, Python) | Classifier: [API Gateway + Lambda + SageMaker stack](sectors/deploy/aws/sector_stack.py) · [Lambda handler](sectors/deploy/aws/lambda_fn/handler.py) · Lake: [S3 + Glue + Athena stack](agent/deploy/lake_stack.py) · Agent: [AgentCore Runtime + IAM stack](agent/deploy/agent_stack.py) · [agent container](agent/Dockerfile) · teardown: [classifier](sectors/deploy/TEARDOWN.md), [lake and agent](agent/deploy/TEARDOWN.md) |
+| **Infrastructure: Google Cloud** | [Cloud Run deploy script](sectors/deploy/gcp/deploy.sh) · [serving app (FastAPI)](sectors/deploy/app/main.py) · [container](sectors/deploy/app/Dockerfile) |
+| **AWS vs. Google, side by side** | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md): services, auth, cold start, idle cost, when to choose which |
+| **Decisions and reasoning** | [Decisions](docs/DECISIONS.md) · [Iterations and bugs](docs/ITERATIONS.md) · [Precision vs. coverage dials](docs/DIALS.md) · [Operations: backtesting, cost, monitors, guardrails](docs/OPERATIONS.md) · [Improvements](docs/IMPROVEMENTS.md) · [Security](SECURITY.md) |
+| **Run it** | [Get started](#get-started) · [`Makefile`](Makefile) (`make help`) · [Onboarding: accounts, quotas, permissions](docs/ONBOARDING.md) · [CI: secret scan and dependency audit](.github/workflows/security.yml) |
+
 ## The problem
 
 A secondaries team buys stakes in private funds. Before each bid, analysts read hundreds of
