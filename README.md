@@ -26,6 +26,63 @@ was divided.
 - [`results/all_runs.csv`](results/all_runs.csv): the full history, every parameter and metric of every run
 - [`docs/DECISIONS.md`](docs/DECISIONS.md): each architecture and modeling choice, the options it beat, and the evidence
 - [`docs/ITERATIONS.md`](docs/ITERATIONS.md): the order things were tried, the bugs, and what each round decided
+- [`docs/DIALS.md`](docs/DIALS.md): precision vs. coverage for every task, measured, with how to flip each dial
+- [`docs/IMPROVEMENTS.md`](docs/IMPROVEMENTS.md): what would make each part better, ranked, with how to prove it
+
+## System map
+
+```mermaid
+flowchart LR
+  subgraph SRC["Sources (public SEC data + synthetic fund reports)"]
+    K["10-K filings<br/>EDGAR-CORPUS"]
+    X["XBRL facts<br/>the answer key"]
+    N["SEC names<br/>current + former"]
+    F["Fund reports (PDF)<br/>synthetic GP reports"]
+  end
+  subgraph PIPE["Pipelines"]
+    C["Sector classifier<br/>TF-IDF · fine-tuned · few-shot LLM"]
+    M["Name matcher<br/>aliases + abstain"]
+    E["Extraction graph<br/>LangGraph + checks"]
+  end
+  subgraph LAKE["Data lake (Parquet: DuckDB locally, S3 + Glue + Athena on AWS)"]
+    T1[("companies")]
+    T2[("funds · holdings")]
+    T3[("metrics")]
+    T4[("doc_chunks")]
+  end
+  subgraph SERVE["Serving"]
+    A1["Classifier API<br/>AWS: API Gateway → Lambda → SageMaker<br/>Google: Cloud Run"]
+    A2["Q&A agent<br/>one filing, cited answers"]
+    A3["Lake analyst agent<br/>LangGraph on AgentCore Runtime"]
+  end
+  LLM["Foundation models<br/>Bedrock (Claude) · Vertex AI (Gemini)"]
+  K --> C --> A1
+  N --> M
+  F --> M --> T2
+  N --> T1
+  K --> E --> T3
+  X --> T3
+  K --> T4
+  F --> T4
+  T1 & T2 & T3 & T4 --> A3
+  K --> A2
+  E -.-> LLM
+  A2 -.-> LLM
+  A3 -.-> LLM
+  C -.-> LLM
+```
+
+## What is built, what ran, what is deployed
+
+| Component | Built | Ran and measured | Deployed |
+|---|---|---|---|
+| Sector classifier, 6 approaches | ✅ `sectors/` | ✅ 17 runs, including the backtest ([RESULTS §1](RESULTS.md)) | ✅ AWS (API Gateway → Lambda → SageMaker serverless, CDK) and ✅ Google Cloud Run |
+| Name matcher + API | ✅ `matching/` | ✅ dev, test and LLM re-rank ([RESULTS §2](RESULTS.md)) | Local API (`uvicorn matching.api:app`) |
+| Extraction graph | ✅ `extraction/` | ✅ 119 filings vs. XBRL ([RESULTS §3](RESULTS.md)) | Local |
+| Document Q&A agent | ✅ `extraction/qa_agent.py` | ✅ 91 questions ([RESULTS §4](RESULTS.md)) | Local |
+| Fund-report PDFs + data lake | 🔄 building | – | `make deploy-lake`: S3 + Glue + Athena |
+| Lake analyst agent | 🔄 building | – | `make deploy-agent`: Bedrock AgentCore Runtime |
+| Foundation models | Called through APIs | Bedrock Claude Haiku 4.5, Vertex AI Gemini 3.8 Flash | No infrastructure: an IAM permission and an API call |
 
 ## Results
 

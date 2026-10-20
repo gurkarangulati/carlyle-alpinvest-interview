@@ -16,7 +16,7 @@ STAMP   := $(shell date +%Y-%m-%d_%H%M)
 PY      := uv run python
 AWS     := AWS_PROFILE=$(PROFILE) AWS_REGION=$(REGION)
 
-.PHONY: results-index help setup data names xbrl test classic finetune llm-val llm-test llm-gemini \
+.PHONY: precision-curves results-index help setup data names xbrl test classic finetune llm-val llm-test llm-gemini \
 	    matching matching-llm extraction qa report all package image serve serve-docker \
 	    deploy-aws smoke-aws deploy-gcp smoke-gcp teardown-aws teardown-gcp \
 	    check-aws check-sec check-gcp
@@ -82,6 +82,9 @@ llm-gemini: check-gcp  ## Gemini zero-shot on Vertex AI, on TEST (needs gcloud A
 
 report:  ## every classifier run in one table (sectors/out/results.csv)
 	$(PY) sectors/report.py
+
+precision-curves:  ## precision vs. coverage for every dial, from saved predictions
+	$(PY) precision_curves.py
 
 results-index:  ## RESULTS.md: every run of every task with metrics, cost, latency and links
 	$(PY) results_index.py
