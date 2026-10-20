@@ -36,46 +36,11 @@ was divided.
 
 ## System map
 
-```mermaid
-flowchart LR
-  subgraph SRC["Sources (public SEC data + synthetic fund reports)"]
-    K["10-K filings<br/>EDGAR-CORPUS"]
-    X["XBRL facts<br/>the answer key"]
-    N["SEC names<br/>current + former"]
-    F["Fund reports (PDF)<br/>synthetic GP reports"]
-  end
-  subgraph PIPE["Pipelines"]
-    C["Sector classifier<br/>TF-IDF · fine-tuned · few-shot LLM"]
-    M["Name matcher<br/>aliases + abstain"]
-    E["Extraction graph<br/>LangGraph + checks"]
-  end
-  subgraph LAKE["Data lake (Parquet: DuckDB locally, S3 + Glue + Athena on AWS)"]
-    T1[("companies")]
-    T2[("funds · holdings")]
-    T3[("metrics")]
-    T4[("doc_chunks")]
-  end
-  subgraph SERVE["Serving"]
-    A1["Classifier API<br/>AWS: API Gateway → Lambda → SageMaker<br/>Google: Cloud Run"]
-    A2["Q&A agent<br/>one filing, cited answers"]
-    A3["Lake analyst agent<br/>LangGraph on AgentCore Runtime"]
-  end
-  LLM["Foundation models<br/>Bedrock (Claude) · Vertex AI (Gemini)"]
-  K --> C --> A1
-  N --> M
-  F --> M --> T2
-  N --> T1
-  K --> E --> T3
-  X --> T3
-  K --> T4
-  F --> T4
-  T1 & T2 & T3 & T4 --> A3
-  K --> A2
-  E -.-> LLM
-  A2 -.-> LLM
-  A3 -.-> LLM
-  C -.-> LLM
-```
+![System map: sources flow through the classifier, name matcher and extraction graph into a Parquet data lake that the Q&A and lake agents query](docs/img/system_map.png)
+
+Read left to right. The matcher turns every reported name into one company (the entity master),
+extraction turns text into numbers checked against XBRL, and both land in the lake that the agents
+query with cited answers. Foundation models are API calls (Bedrock, Vertex AI); nothing hosts them.
 
 ## What is built, what ran, what is deployed
 

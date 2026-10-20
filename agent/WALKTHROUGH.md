@@ -15,7 +15,11 @@ This builds on two earlier pieces of this repo:
 
 ## 1. Architecture
 
-```mermaid
+![Lake agent architecture: AgentCore Runtime, Bedrock, Athena over the S3 lake](img/agent_diagram_0.png)
+
+<details><summary>Diagram source (Mermaid)</summary>
+
+```text
 flowchart LR
     subgraph Sources["Documents"]
         K["10-K filings<br/>(SEC EDGAR)"]
@@ -44,6 +48,8 @@ flowchart LR
     RT -- converse + tools --> B
     IAM -. assumed by .- RT
 ```
+
+</details>
 
 The lake module (`lake/`, built separately) turns documents into Parquet tables. This
 module is everything to the right of that: the agent, its tools, and the AWS deployment.

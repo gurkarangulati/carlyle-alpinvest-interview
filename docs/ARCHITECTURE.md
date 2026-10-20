@@ -5,13 +5,19 @@ measured.
 
 ## AWS: API Gateway → Lambda → SageMaker serverless (CDK, Python)
 
-```mermaid
+![AWS architecture: API Gateway, Lambda, SageMaker serverless](img/docs_diagram_0.png)
+
+<details><summary>Diagram source (Mermaid)</summary>
+
+```text
 flowchart LR
   C[Client] -->|POST /classify + x-api-key| G[API Gateway<br/>key, 5 req/s, 1,000/day]
   G --> L[Lambda<br/>validate input, threshold 0.8,<br/>log metadata only]
   L -->|InvokeEndpoint, IAM| S[SageMaker serverless endpoint<br/>AWS Hugging Face container, 3 GB]
   S -.->|cold start: pull image,<br/>download model.tar.gz| B[(S3: CDK assets bucket)]
 ```
+
+</details>
 
 `sectors/deploy/aws/sector_stack.py` creates 17 resources; the numbered comments follow the
 flow:
@@ -28,12 +34,18 @@ flow:
 
 ## Google Cloud: one Cloud Run service (container from source)
 
-```mermaid
+![Google Cloud architecture: Cloud Build, Artifact Registry, Cloud Run](img/docs_diagram_1.png)
+
+<details><summary>Diagram source (Mermaid)</summary>
+
+```text
 flowchart LR
   C[Client] -->|POST /classify + Google identity token| R[Cloud Run service<br/>FastAPI + model in the image<br/>2 vCPU, 4 GiB, 0–2 instances]
   B[Cloud Build] -->|build from Dockerfile| A[(Artifact Registry)]
   A --> R
 ```
+
+</details>
 
 `sectors/deploy/gcp/deploy.sh` copies the model into the image and runs
 `gcloud run deploy --source`. Cloud Build builds the image on Google's machines, pushes it to

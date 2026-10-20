@@ -136,7 +136,11 @@ What this means:
 
 ## 5. The graph
 
-```mermaid
+![Extraction graph: locate, extract, normalize, check, retry or review, analyze](img/extraction_diagram_0.png)
+
+<details><summary>Diagram source (Mermaid)</summary>
+
+```text
 graph TD;
 	__start__([<p>__start__</p>]):::first
 	locate(locate)
@@ -162,6 +166,8 @@ graph TD;
 	classDef first fill-opacity:0
 	classDef last fill:#bfb6fc
 ```
+
+</details>
 
 Solid arrows always happen. Dotted arrows are choices (conditional edges).
 LangGraph drew this itself: `uv run python extraction/graph.py --mermaid`.
@@ -445,7 +451,11 @@ The risks of letting the model choose, and the guard for each:
 
 ## 13. The parts
 
-```mermaid
+![Document Q&A agent: agent and tools loop, verify, revise or review](img/extraction_diagram_1.png)
+
+<details><summary>Diagram source (Mermaid)</summary>
+
+```text
 graph TD;
 	__start__([<p>__start__</p>]):::first
 	agent(agent)
@@ -470,6 +480,8 @@ graph TD;
 	classDef first fill-opacity:0
 	classDef last fill:#bfb6fc
 ```
+
+</details>
 
 Printed by `uv run python extraction/qa_agent.py --mermaid`. The loop `agent → tools →
 agent` is the agent. `verify → revise → agent` is the single second chance.
