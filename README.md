@@ -20,6 +20,13 @@ SEC filings (10-Ks, 2016–2020):
 Built with [Claude Code](https://claude.com/claude-code); see `CLAUDE.md` for how the work
 was divided.
 
+**Where to look**
+- [`RESULTS.md`](RESULTS.md): every run of every task, with quality, cost per 1,000, **cost per
+  correct answer**, latency, and links to its console log and per-item predictions
+- [`results/all_runs.csv`](results/all_runs.csv): the full history, every parameter and metric of every run
+- [`docs/DECISIONS.md`](docs/DECISIONS.md): each architecture and modeling choice, the options it beat, and the evidence
+- [`docs/ITERATIONS.md`](docs/ITERATIONS.md): the order things were tried, the bugs, and what each round decided
+
 ## Results
 
 ### Sectors: 853 test filings, 10 sectors, split by company
@@ -109,13 +116,14 @@ The agent finds what one window of text misses, and it knows when the answer isn
 
 ## Read in this order
 
-1. `docs/THEORY.md`: every concept used, in plain words (leakage, splits, metrics, CV,
+1. [`docs/DECISIONS.md`](docs/DECISIONS.md) and [`RESULTS.md`](RESULTS.md): the choices and the numbers behind them
+2. `docs/THEORY.md`: every concept used, in plain words (leakage, splits, metrics, CV,
    backtesting, fine-tuning, LoRA, prompting, serving)
-2. `docs/ITERATIONS.md`: every round, its numbers, and the decision it led to, including bugs
-3. `sectors/README.md`: the runbook
-4. `docs/ARCHITECTURE.md`: AWS vs. Google Cloud, side by side
-5. `matching/WALKTHROUGH.md` and `extraction/WALKTHROUGH.md` (part 2 is the Q&A agent)
-6. `docs/ONBOARDING.md`: accounts, quotas, permissions, and every error hit along the way
+3. `docs/ITERATIONS.md`: every round, its numbers, and the decision it led to, including bugs
+4. `sectors/README.md`: the runbook
+5. `docs/ARCHITECTURE.md`: AWS vs. Google Cloud, side by side
+6. `matching/WALKTHROUGH.md` and `extraction/WALKTHROUGH.md` (part 2 is the Q&A agent)
+7. `docs/ONBOARDING.md`: accounts, quotas, permissions, and every error hit along the way
 
 ## Run it
 
@@ -133,7 +141,7 @@ make deploy-gcp smoke-gcp PROJECT=<gcp-project-id>      # Cloud Run
 make teardown-aws teardown-gcp PROFILE=... PROJECT=...  # then sectors/deploy/TEARDOWN.md
 ```
 
-`make -n <target>` prints the commands without running them. Experiment tracking:
+`make -n <target>` prints the commands without running them. `make results-index` rebuilds `RESULTS.md` after new runs. Experiment tracking:
 `uv run mlflow ui --backend-store-uri sqlite:///mlflow.db`.
 
 Data comes from [EDGAR-CORPUS](https://huggingface.co/datasets/eloukas/edgar-corpus) (Apache
