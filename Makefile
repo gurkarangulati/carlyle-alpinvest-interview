@@ -22,7 +22,7 @@ AWS     := AWS_PROFILE=$(PROFILE) AWS_REGION=$(REGION)
 	    check-aws check-sec check-gcp
 
 help:  ## list the stages
-	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-14s %s\n", $$1, $$2}'
+	@grep -hE '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-14s %s\n", $$1, $$2}'
 
 # ---- guards: stop early with a clear message instead of failing halfway ----
 check-aws:

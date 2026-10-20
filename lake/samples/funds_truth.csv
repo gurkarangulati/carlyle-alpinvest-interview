@@ -1,0 +1,6 @@
+fund_id,fund_name,vintage,commitment_usd,called_usd,nav_usd,as_of,n_holdings
+F01,Larkspur Hollow Growth Fund II,2016,925000000.0,790846000.0,1202269000.0,2019-12-31,11
+F02,Cobaltine Industrial Partners III,2015,950000000.0,810062000.0,881265000.0,2019-12-31,11
+F03,Bramblecrest Consumer & Media Fund I,2014,700000000.0,571947000.0,929035000.0,2019-12-31,11
+F04,Tidewrack Energy & Real Assets Fund,2013,975000000.0,894671000.0,1533944000.0,2019-12-31,11
+F05,Quillfeather Diversified Opportunities Fund IV,2018,800000000.0,723170000.0,1145971000.0,2019-12-31,10

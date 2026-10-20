@@ -1,0 +1,7 @@
+{
+  "app": "uv run --group deploy python app.py",
+  "context": {
+    "@aws-cdk/aws-iam:minimizePolicies": true,
+    "@aws-cdk/core:defaultCrossStackReferences": "strong"
+  }
+}

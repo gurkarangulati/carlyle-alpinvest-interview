@@ -1,0 +1,52 @@
+check,level,status,value,threshold,detail
+schema:companies,hard,pass,5.0,5,
+schema:funds,hard,pass,8.0,8,
+schema:holdings,hard,pass,13.0,13,
+schema:metrics,hard,pass,8.0,8,
+schema:doc_chunks,hard,pass,8.0,8,
+rows:companies,hard,pass,50.0,> 0,
+rows:funds,hard,pass,5.0,> 0,
+rows:holdings,hard,pass,54.0,> 0,
+rows:metrics,hard,pass,750.0,> 0,
+rows:doc_chunks,hard,pass,8490.0,> 0,
+rows:company_financials,hard,pass,100.0,> 0,
+rows:fund_exposure,hard,pass,15.0,> 0,
+rows:metric_reconciliation,soft,pass,250.0,> 0,
+null_keys:companies,hard,pass,0.0,0,"cik,name"
+null_keys:funds,hard,pass,0.0,0,"fund_id,as_of"
+null_keys:holdings,hard,pass,0.0,0,"fund_id,reported_name,match_decision"
+null_keys:metrics,hard,pass,0.0,0,"cik,fiscal_year,metric,source,status"
+null_keys:doc_chunks,hard,pass,0.0,0,"chunk_id,doc_id,doc_type,text"
+unique:companies(cik),hard,pass,0.0,0,
+unique:funds(fund_id),hard,pass,0.0,0,
+unique:doc_chunks(chunk_id),hard,pass,0.0,0,
+"unique:metrics(cik, fiscal_year, metric, source)",hard,pass,0.0,0,
+holdings.cik in companies,hard,pass,0.0,0,every matched holding must exist in the entity master
+parse:F01 holdings count,hard,pass,11.0,11.0,
+parse:F01 cost total,hard,pass,753407000.0,753407000.0,
+parse:F01 fair value total,hard,pass,1186096000.0,1186096000.0,
+parse:F02 holdings count,hard,pass,11.0,11.0,
+parse:F02 cost total,hard,pass,756344000.0,756344000.0,
+parse:F02 fair value total,hard,pass,848934000.0,848934000.0,
+parse:F03 holdings count,hard,pass,11.0,11.0,
+parse:F03 cost total,hard,pass,548876000.0,548876000.0,
+parse:F03 fair value total,hard,pass,895674000.0,895674000.0,
+parse:F04 holdings count,hard,pass,11.0,11.0,
+parse:F04 cost total,hard,pass,823479000.0,823479000.0,
+parse:F04 fair value total,hard,pass,1476313000.0,1476313000.0,
+parse:F05 holdings count,hard,pass,10.0,10.0,
+parse:F05 cost total,hard,pass,691854000.0,691854000.0,
+parse:F05 fair value total,hard,pass,1123480000.0,1123480000.0,
+parse:funds commitment_usd,hard,pass,0.0,0,
+parse:funds called_usd,hard,pass,0.0,0,
+parse:funds nav_usd,hard,pass,0.0,0,
+matching precision,hard,pass,1.0,0.95,54/54 matches right.
+matching recall,soft,pass,1.0,0.9,54/54 holdings resolved correctly
+extracted vs xbrl:revenue,soft,pass,0.818,0.8,"18/22 status=ok rows within 1%; 2 sent to review, 26 missing"
+extracted vs xbrl:net_income,soft,pass,0.842,0.8,"16/19 status=ok rows within 1%; 0 sent to review, 31 missing"
+extracted vs xbrl:total_assets,soft,warn,0.0,0.8,"0/0 status=ok rows within 1%; 0 sent to review, 50 missing"
+nav vs fair value:F01,hard,pass,0.0135,0..0.1,share of NAV not in holdings
+nav vs fair value:F02,hard,pass,0.0367,0..0.1,share of NAV not in holdings
+nav vs fair value:F03,hard,pass,0.0359,0..0.1,share of NAV not in holdings
+nav vs fair value:F04,hard,pass,0.0376,0..0.1,share of NAV not in holdings
+nav vs fair value:F05,hard,pass,0.0196,0..0.1,share of NAV not in holdings

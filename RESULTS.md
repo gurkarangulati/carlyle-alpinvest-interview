@@ -95,6 +95,15 @@ Numeric answers scored against XBRL; a right “not in the document” counts as
 
 Data (per-question rows include the agent's full tool trace): [qa_eval_baseline.csv](extraction/results/qa_eval_baseline.csv) · [qa_eval_agent.csv](extraction/results/qa_eval_agent.csv) · [qa_examples.md](extraction/results/qa_examples.md) · [per_item/qa_preds_baseline.csv](extraction/results/per_item/qa_preds_baseline.csv) · [per_item/qa_preds_agent.csv](extraction/results/per_item/qa_preds_agent.csv)
 
+## 5. Data lake: build and validation
+
+- [lake/results/validate.csv](lake/results/validate.csv)
+
+## 6. Lake agent (LangGraph, local and on AgentCore)
+
+- [agent/results/eval_local.csv](agent/results/eval_local.csv)
+- [agent/results/examples.md](agent/results/examples.md)
+
 ## Every console log
 
 **sectors:** [backtest_2026-10-19_1349](sectors/results/logs/backtest_2026-10-19_1349.txt) · [baseline_2026-10-19_0858](sectors/results/logs/baseline_2026-10-19_0858.txt) · [baseline_2026-10-19_1343](sectors/results/logs/baseline_2026-10-19_1343.txt) · [baseline_balanced_2026-10-19_1345](sectors/results/logs/baseline_balanced_2026-10-19_1345.txt) · [cv_2026-10-19_1346](sectors/results/logs/cv_2026-10-19_1346.txt) · [finetune_2026-10-19_1512](sectors/results/logs/finetune_2026-10-19_1512.txt) · [finetune_2026-10-19_1517](sectors/results/logs/finetune_2026-10-19_1517.txt) · [llm_classify_2026-10-19_2101](sectors/results/logs/llm_classify_2026-10-19_2101.txt) · [llm_classify_2026-10-19_2105](sectors/results/logs/llm_classify_2026-10-19_2105.txt) · [llm_classify_2026-10-19_2106](sectors/results/logs/llm_classify_2026-10-19_2106.txt) · [llm_classify_2026-10-19_1902](sectors/results/logs/llm_classify_2026-10-19_1902.txt) · [llm_classify_2026-10-19_1916](sectors/results/logs/llm_classify_2026-10-19_1916.txt) · [llm_classify_2026-10-19_1922](sectors/results/logs/llm_classify_2026-10-19_1922.txt) · [llm_classify_2026-10-19_1924](sectors/results/logs/llm_classify_2026-10-19_1924.txt) · [llm_classify_2026-10-19_1925](sectors/results/logs/llm_classify_2026-10-19_1925.txt) · [llm_classify_2026-10-19_1931](sectors/results/logs/llm_classify_2026-10-19_1931.txt) · [llm_classify_2026-10-19_2010](sectors/results/logs/llm_classify_2026-10-19_2010.txt) · [llm_classify_2026-10-19_2013](sectors/results/logs/llm_classify_2026-10-19_2013.txt) · [llm_classify_2026-10-19_2015](sectors/results/logs/llm_classify_2026-10-19_2015.txt) · [report_2026-10-19_2121](sectors/results/logs/report_2026-10-19_2121.txt) · [split_options_2026-10-19_1339](sectors/results/logs/split_options_2026-10-19_1339.txt)

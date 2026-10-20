@@ -54,6 +54,12 @@ raises precision. The curves below are measured on saved per-item predictions by
   and the API read. A lower `--target-precision` answers more.
 - **The better lever** is an ambiguity rule: abstain when two or more companies share the
   normalized name and no `as_of` date separates them. See IMPROVEMENTS.
+- **Warning from the lake build:** harder names fool these thresholds. As of 2019-12-31,
+  "Meta Platforms" matched SKYX Platforms (score 71) and "Symantec" matched Stantec (score 80).
+  Both cleared min score 70 and margin 0. The thresholds were tuned on a golden set that is easier
+  than real names, so **for money decisions, tune on adversarial names**: near-miss companies,
+  renames newer than the index, and short names. Raise `--target-precision` and require a margin
+  over the runner-up.
 
 ## 3. Extraction: review routing
 

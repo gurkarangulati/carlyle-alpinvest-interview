@@ -1,0 +1,13 @@
+# The agent container's packages, pinned to the versions it was tested with locally.
+# Only what the cloud path imports: no duckdb (the cloud reads the lake through Athena),
+# no torch, no CDK.
+bedrock-agentcore==1.24.2   # BedrockAgentCoreApp: /invocations + /ping on port 8080
+langgraph==1.2.16           # the agent graph
+boto3==1.43.115             # Bedrock converse + Athena
+botocore==1.43.115
+sqlglot==30.23.0            # the SQL guard
+scikit-learn==1.9.1         # TF-IDF for search_docs and the name matcher
+numpy==2.5.4
+rapidfuzz==3.14.6           # the name matcher's re-scoring
+pandas==3.0.6               # imported by extraction/common.py (via qa_tools)
+mlflow-skinny==3.17.1       # imported by extraction/common.py; the light build of mlflow

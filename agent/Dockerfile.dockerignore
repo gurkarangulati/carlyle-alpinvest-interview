@@ -1,0 +1,12 @@
+# Docker (BuildKit) reads <Dockerfile>.dockerignore next to the Dockerfile.
+# The context is sprint/ml, which holds GBs of data: send only what the image needs.
+*
+!agent/*.py
+!agent/requirements.txt
+!matching/__init__.py
+!matching/matcher.py
+!matching/results/hybrid_thresholds.json
+!extraction/llm.py
+!extraction/qa_tools.py
+!extraction/qa_agent.py
+!extraction/common.py

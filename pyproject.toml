@@ -5,16 +5,22 @@ description = "Sector classification, company matching and number extraction on 
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "bedrock-agentcore>=1.24.2",
     "boto3>=1.43.115",
+    "duckdb>=1.5.6",
     "fastapi>=0.150.0",
     "google-genai>=2.31.0",
     "httpx>=0.28.1",
     "langgraph>=1.2.16",
     "mlflow>=3.17.1",
     "pandas>=3.0.6",
+    "pdfplumber>=0.11.10",
+    "pyarrow>=25.0.1",
     "pydantic>=2.14.1",
     "rapidfuzz>=3.14.6",
+    "reportlab>=5.0.1",
     "scikit-learn>=1.9.1",
+    "sqlglot>=30.23.0",
     "uvicorn>=0.54.0",
 ]
 

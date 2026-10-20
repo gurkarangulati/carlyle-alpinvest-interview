@@ -413,6 +413,12 @@ def res(**kw):
 
 
 def test_score_number():
+    assert E.score({"answer_kind": "number", "expected": 656978000.0, "tolerance": {"rel": 0.005}},
+                   res(answer_value=657e6))["correct"]
+    assert E.score({"answer_kind": "number", "expected": 5.5, "tolerance": {"abs": 0.1}},
+                   res(answer_value="5.45"))["correct"]
+    assert not E.score({"answer_kind": "number", "expected": 3, "tolerance": {"abs": 0}},
+                       res(answer_value=4))["correct"]
     q = {"answer_kind": "number", "expected": 100.0, "tolerance": 0.01}
     assert E.score(q, res(answer_value=100.5))["correct"]
     assert not E.score(q, res(answer_value=103))["correct"]
@@ -434,11 +440,25 @@ def test_score_entity():
     assert not E.score(q, res(entity_cik=21344))["correct"]
     assert E.score({"answer_kind": "entity", "expected": {"cik": 320193}},
                    res(entity_cik=320193))["correct"]
+    assert E.score({"answer_kind": "entity", "expected": {"cik": 320193}},
+                   res(answer_value=320193))["correct"]
+    fund = {"answer_kind": "entity", "expected": {"fund_id": "F04", "fund_name": "Tidewrack Fund"}}
+    assert E.score(fund, res(answer_value="F04"))["correct"]
+    assert E.score(fund, res(answer_value="Tidewrack Fund"))["correct"]
+    assert not E.score(fund, res(answer_value="F05"))["correct"]
+
+
+def test_score_set_of_ciks_and_empty():
+    q = {"answer_kind": "set", "expected": [1800, 899866]}
+    assert E.score(q, res(answer_value=["899866", 1800]))["correct"]
+    empty = {"answer_kind": "set", "expected": []}
+    assert E.score(empty, res(answer_value=[]))["correct"]
+    assert not E.score(empty, res(answer_value=["F01"]))["correct"]
 
 
 def test_score_text():
-    q = {"answer_kind": "text", "expected": "supply chain disruption",
-         "expected_sources": ["aapl-2020"]}
+    q = {"answer_kind": "text", "expected": "Discusses supply chain risk (look for 'supply').",
+         "expected_sources": {"chunk_prefixes": ["aapl-2020"], "keywords": ["supply"]}}
     good = res(answer="The main risk is supply chain disruption.",
                citations=["aapl-2020-risk-000"])
     assert E.score(q, good)["correct"]
@@ -477,3 +497,8 @@ def test_real_parquet_matches_contract(table):
         ok = got[c] == arrow[t] or (t == "string" and got[c] in ("large_string", "string_view")) \
             or (got[c] == "null")
         assert ok, f"{table}.{c}: Parquet {got[c]} vs Glue {t}"
+
+
+def test_verify_ignores_ids_with_digits(lake):
+    f = final(answer="Fund F04 (see its 10-K style report) holds $274.5 billion.")
+    assert G.verify_answer(f, state_with()) == []
