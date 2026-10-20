@@ -1,0 +1,22 @@
+$ uv run python sectors/backtest.py --c 100
+
+2017  retrained  trained on 1,186  macro F1 0.748  seen 0.976  new 0.685
+2017  frozen     trained on 1,186  macro F1 0.748  seen 0.976  new 0.685
+2017  last_year  trained on 1,186  macro F1 0.748  seen 0.976  new 0.685
+2018  retrained  trained on 2,335  macro F1 0.822  seen 0.975  new 0.742
+2018  frozen     trained on 1,186  macro F1 0.724  seen 0.825  new 0.670
+2018  last_year  trained on 1,149  macro F1 0.772  seen 0.871  new 0.721
+2019  retrained  trained on 3,443  macro F1 0.837  seen 0.940  new 0.755
+2019  frozen     trained on 1,186  macro F1 0.744  seen 0.810  new 0.693
+2019  last_year  trained on 1,108  macro F1 0.764  seen 0.834  new 0.708
+2020  retrained  trained on 4,500  macro F1 0.840  seen 0.942  new 0.731
+2020  frozen     trained on 1,186  macro F1 0.720  seen 0.789  new 0.649
+2020  last_year  trained on 1,057  macro F1 0.719  seen 0.780  new 0.653
+
+Macro F1 by test year:
+model      frozen  last_year  retrained
+test_year                              
+2017        0.748      0.748      0.748
+2018        0.724      0.772      0.822
+2019        0.744      0.764      0.837
+2020        0.720      0.719      0.840

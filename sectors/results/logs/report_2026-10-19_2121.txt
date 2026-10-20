@@ -1,0 +1,20 @@
+$ uv run python sectors/report.py
+
+       when                                  run     C                            C_tried class_weight  val_f1  cv_mean_f1  cv_spread  test_f1  test_acc  train_s  ms_per_1k  usd_per_1k  llm_median_s  llm_errors
+10-19 08:58                         tfidf_logreg    30                                NaN          NaN   0.733         NaN        NaN    0.751     0.746   35.524      2.308         NaN           NaN         NaN
+10-19 13:39                        split_options   NaN                                NaN          NaN     NaN         NaN        NaN      NaN       NaN      NaN        NaN         NaN           NaN         NaN
+10-19 13:43                         tfidf_logreg 100.0 [10.0, 30.0, 100.0, 300.0, 1000.0]         None   0.741         NaN        NaN    0.751     0.746   42.012      2.389         NaN           NaN         NaN
+10-19 13:45                tfidf_logreg_balanced 100.0 [10.0, 30.0, 100.0, 300.0, 1000.0]     balanced   0.758         NaN        NaN    0.750     0.743   36.446      2.209         NaN           NaN         NaN
+10-19 13:46                     tfidf_logreg_cv5 300.0 [10.0, 30.0, 100.0, 300.0, 1000.0]          NaN     NaN       0.732      0.014    0.749     0.741   41.473        NaN         NaN           NaN         NaN
+10-19 13:49                backtest_walk_forward 100.0                                NaN          NaN     NaN         NaN        NaN      NaN       NaN      NaN        NaN         NaN           NaN         NaN
+10-19 15:15                        finetune_full   NaN                                NaN          NaN   0.758         NaN        NaN    0.758     0.753  198.100   2522.673         NaN           NaN         NaN
+10-19 15:18                        finetune_lora   NaN                                NaN          NaN   0.766         NaN        NaN    0.744     0.734   84.781   2682.855         NaN           NaN         NaN
+10-19 19:26                 llm_classify_bedrock   NaN                                NaN          NaN     NaN         NaN        NaN    0.680     0.743      NaN        NaN       1.981         0.669         0.0
+10-19 19:33                 llm_classify_bedrock   NaN                                NaN          NaN     NaN         NaN        NaN    0.748     0.743      NaN        NaN       1.981         0.649         0.0
+10-19 19:44                  llm_classify_vertex   NaN                                NaN          NaN     NaN         NaN        NaN    0.781     0.770      NaN        NaN       1.520         3.416         0.0
+10-19 20:12             llm_classify_bedrock_val   NaN                                NaN          NaN   0.756         NaN        NaN      NaN       NaN      NaN        NaN       1.975         0.649         0.0
+10-19 20:14          llm_classify_bedrock_v2_val   NaN                                NaN          NaN   0.774         NaN        NaN      NaN       NaN      NaN        NaN       2.213         0.640         0.0
+10-19 20:17    llm_classify_bedrock_fewshot5_val   NaN                                NaN          NaN   0.804         NaN        NaN      NaN       NaN      NaN        NaN       2.701         0.635         0.0
+10-19 21:02 llm_classify_bedrock_v2_fewshot5_val   NaN                                NaN          NaN   0.814         NaN        NaN      NaN       NaN      NaN        NaN       2.939         0.674         0.0
+10-19 21:06                 llm_classify_bedrock   NaN                                NaN          NaN     NaN         NaN        NaN    0.748     0.743      NaN        NaN       1.981         0.610         0.0
+10-19 21:07        llm_classify_bedrock_fewshot5   NaN                                NaN          NaN     NaN         NaN        NaN    0.782     0.770      NaN        NaN       2.715         0.626         0.0

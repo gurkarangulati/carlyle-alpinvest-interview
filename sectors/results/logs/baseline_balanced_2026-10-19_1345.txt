@@ -1,0 +1,1 @@
+run 3 (--balanced, 13:45): console output not captured; per-sector scores in out/tfidf_logreg_balanced_per_sector.csv; MLflow run tfidf_logreg_balanced (val 0.758, test 0.750)

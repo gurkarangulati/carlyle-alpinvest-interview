@@ -1,0 +1,44 @@
+doc_cik,doc_name,mention,start,decision,match_cik,match_name,score,is_filer
+1532595,Sincerity Applied Materials Holdings Corp.,Sincerity Applied Materials Holdings Corp.,142,match,1532595,Sincerity Applied Materials Holdings Corp.,100.0,True
+1532595,Sincerity Applied Materials Holdings Corp.,Sincerity Australia Pty Ltd.,218,abstain,1083743,"Flux Power Holdings, Inc.",62.7,False
+1532595,Sincerity Applied Materials Holdings Corp.,Symbid Corp.,754,match,1532595,Sincerity Applied Materials Holdings Corp.,100.0,True
+1123360,GLOBAL PAYMENTS INC,Global Payments Inc.,643,match,1123360,GLOBAL PAYMENTS INC,100.0,True
+1123360,GLOBAL PAYMENTS INC,"Heartland Payment Systems, Inc.",1899,match,1088034,"Usio, Inc.",85.1,False
+1605481,Nevada Canyon Gold Corp.,"Tech Foundry Ventures, Inc.",188,match,1605481,Nevada Canyon Gold Corp.,100.0,True
+1605481,Nevada Canyon Gold Corp.,Nevada Canyon Gold Corp.,1182,match,1605481,Nevada Canyon Gold Corp.,100.0,True
+1605481,Nevada Canyon Gold Corp.,Nevada Canyon Gold Corporation,1719,match,1605481,Nevada Canyon Gold Corp.,100.0,True
+1605481,Nevada Canyon Gold Corp.,Walker River Resources Corp.,1967,match,849146,Lifevantage Corp,85.7,False
+6955,ENERPAC TOOL GROUP CORP,Actuant Corporation,25,match,6955,ENERPAC TOOL GROUP CORP,100.0,True
+830524,CHASE CORP,Primary Operating Divisions and Facilities and Industry Segments Chase Corporation,18,abstain,830524,CHASE CORP,56.7,False
+830524,CHASE CORP,"Paper Tyger, LLC",2392,match,1421182,Billerud Americas Corp,72.7,False
+1046050,TIMBERLAND BANCORP INC,"Timberland Bancorp, Inc.",25,match,1046050,TIMBERLAND BANCORP INC,100.0,True
+1046050,TIMBERLAND BANCORP INC,Timberland Service Corporation,714,abstain,1341141,"CatchMark Timber Trust, Inc.",69.2,False
+1046050,TIMBERLAND BANCORP INC,Federal Deposit Insurance Corporation,1085,abstain,1401521,AMERICAN COASTAL INSURANCE Corp,62.7,False
+1125345,MACROGENICS INC,"MacroGenics, Inc.",201,match,1125345,MACROGENICS INC,100.0,True
+889331,LITTELFUSE INC /DE,"Littelfuse, Inc.",26,match,889331,LITTELFUSE INC /DE,100.0,True
+889331,LITTELFUSE INC /DE,Mosaic and Potash Corporation,2440,match,1285785,MOSAIC CO,76.1,False
+889331,LITTELFUSE INC /DE,"SymCom, Inc.",3558,abstain,724742,Trinity Place Holdings Inc.,60.0,False
+1164888,"Kyto Technology & Life Science, Inc.","Kyto Biopharma, Inc.",42,match,1164888,"Kyto Technology & Life Science, Inc.",100.0,True
+1164888,"Kyto Technology & Life Science, Inc.","Twelve, Inc.",106,match,1164888,"Kyto Technology & Life Science, Inc.",92.9,True
+1164888,"Kyto Technology & Life Science, Inc.",Florida Business Corporation,1193,abstain,37637,"DUKE ENERGY FLORIDA, LLC",62.9,False
+1164888,"Kyto Technology & Life Science, Inc.","President of Kyto Biopharma, Inc.",3016,match,1164888,"Kyto Technology & Life Science, Inc.",84.1,True
+1164888,"Kyto Technology & Life Science, Inc.","Bylaws of Kyto Biopharma, Inc.",3159,match,1164888,"Kyto Technology & Life Science, Inc.",86.8,True
+887343,"COLUMBIA BANKING SYSTEM, INC.","Columbia Banking System, Inc.",25,match,887343,"COLUMBIA BANKING SYSTEM, INC.",100.0,True
+1473579,NANOMIX Corp,"Boston Therapeutics, Inc.",52,match,1473579,NANOMIX Corp,100.0,True
+1473579,NANOMIX Corp,"Avanyx Therapeutics, Inc.",166,match,1473579,NANOMIX Corp,100.0,True
+729580,BEL FUSE INC /NJ,Bel Fuse Inc.,17,match,729580,BEL FUSE INC /NJ,100.0,True
+729580,BEL FUSE INC /NJ,ABB Ltd.,2820,match,1091587,ABB LTD,100.0,False
+729580,BEL FUSE INC /NJ,Emerson Electric Co.,3820,match,32604,EMERSON ELECTRIC CO,100.0,False
+1128361,HOPE BANCORP INC,"Hope Bancorp, Inc.",25,match,1128361,HOPE BANCORP INC,100.0,True
+1128361,HOPE BANCORP INC,Federal Deposit Insurance Corporation,989,abstain,1401521,AMERICAN COASTAL INSURANCE Corp,62.7,False
+1549346,"Shutterstock, Inc.","Shutterstock, Inc.",27,match,1549346,"Shutterstock, Inc.",100.0,True
+1549346,"Shutterstock, Inc.","TurboSquid, Inc.",1098,abstain,2088375,Turbogen Ltd.,55.6,False
+1001614,"Riley Exploration Permian, Inc.","Onasco Companies, Inc.",123,match,909832,COSTCO WHOLESALE CORP /NEW,87.5,False
+1001614,"Riley Exploration Permian, Inc.","Tengasco, Inc.",228,match,1001614,"Riley Exploration Permian, Inc.",100.0,True
+1001614,"Riley Exploration Permian, Inc.",Tengasco Pipeline Corporation,846,match,1001614,"Riley Exploration Permian, Inc.",82.0,True
+1001614,"Riley Exploration Permian, Inc.",Manufactured Methane Corporation,1134,match,67347,MODINE MANUFACTURING CO,70.0,False
+1001614,"Riley Exploration Permian, Inc.","Hoactzin Partners, L.P.",3121,match,1578932,OCI Partners LP,82.8,False
+1001614,"Riley Exploration Permian, Inc.","Dolphin Offshore Partners, L.P.",3361,match,1564180,KNOT Offshore Partners LP,84.0,False
+38984,"Elah Holdings, Inc.",Fremont General Corporation,1692,match,38984,"Elah Holdings, Inc.",100.0,True
+1697412,Migom Global Corp.,Migom Global Corp.,1456,match,1697412,Migom Global Corp.,100.0,True
+1697412,Migom Global Corp.,Alfacourse Inc.,1511,match,1697412,Migom Global Corp.,100.0,True

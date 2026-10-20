@@ -1,0 +1,32 @@
+$ uv run python sectors/llm_classify.py --provider vertex --limit 30
+
+vertex gemini-3.8-flash: 30 test filings, 8 at a time
+                      precision    recall  f1-score   support
+
+communications_media      1.000     1.000     1.000         2
+            consumer      0.750     0.750     0.750         4
+              energy      1.000     1.000     1.000         1
+          financials      0.667     1.000     0.800         4
+          healthcare      1.000     1.000     1.000         2
+         industrials      0.667     0.667     0.667         3
+           materials      1.000     0.500     0.667         2
+         real_estate      1.000     1.000     1.000         4
+          technology      1.000     0.857     0.923         7
+           utilities      1.000     1.000     1.000         1
+
+            accuracy                          0.867        30
+           macro avg      0.908     0.877     0.881        30
+        weighted avg      0.889     0.867     0.866        30
+
+  test_macro_f1      0.8806
+  test_accuracy      0.8667
+  cost_usd           0.0412
+  cost_per_1k_usd    1.3720
+  latency_median_s   3.3342
+  latency_p95_s      9.2164
+  wall_seconds       87.1351
+  avg_tokens_in      1157.7333
+  avg_tokens_out     134.3333
+  errors             0
+smoke test: not logged to MLflow
+{"saved": "sectors/out/llm_classify_vertex_test_preds.csv"}

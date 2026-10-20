@@ -1,0 +1,3 @@
+{
+  "app": "uv run --group deploy python app.py"
+}

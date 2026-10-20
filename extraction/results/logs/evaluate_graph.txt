@@ -1,0 +1,155 @@
+graph: 119 filings, model us.anthropic.claude-haiku-4-5-20251001-v1:0, 4 at a time
+loading filing texts...
+  [1/119] 1460329 2019 done                 4.3s  elapsed 4s  eta 513s
+  [2/119] 71557 2017 done                 4.3s  elapsed 4s  eta 254s
+  [3/119] 1051512 2017 needs_human_review   5.1s  elapsed 5s  eta 199s
+  [4/119] 726513 2018 needs_human_review   5.9s  elapsed 6s  eta 171s
+  [5/119] 23217 2018 done                 3.2s  elapsed 7s  eta 171s
+  [6/119] 76149 2018 done                 3.9s  elapsed 8s  eta 156s
+  [7/119] 95574 2018 done                 3.6s  elapsed 9s  eta 139s
+  [8/119] 799288 2016 needs_human_review   4.6s  elapsed 11s  eta 147s
+  [9/119] 916365 2018 done                 3.6s  elapsed 11s  eta 136s
+  [10/119] 1005276 2018 done                 2.9s  elapsed 12s  eta 127s
+  [11/119] 1206264 2018 done                 3.4s  elapsed 14s  eta 137s
+  [12/119] 1289460 2017 done                 3.3s  elapsed 14s  eta 128s
+  [13/119] 1361658 2020 done                 3.1s  elapsed 15s  eta 120s
+  [14/119] 949870 2019 done                 8.1s  elapsed 16s  eta 123s
+  [15/119] 1464865 2016 needs_human_review   3.7s  elapsed 18s  eta 122s
+  [16/119] 1487197 2017 done                 3.7s  elapsed 18s  eta 116s
+  [17/119] 1574815 2016 done                 3.3s  elapsed 18s  eta 108s
+  [18/119] 1755672 2019 done                 3.2s  elapsed 20s  eta 110s
+  [19/119] 1434842 2016 done                 5.0s  elapsed 23s  eta 119s
+  [20/119] 1540729 2016 needs_human_review   4.1s  elapsed 24s  eta 117s
+  [21/119] 1510295 2016 needs_human_review   7.2s  elapsed 25s  eta 118s
+  [22/119] 1552000 2017 needs_human_review   4.0s  elapsed 27s  eta 117s
+  [23/119] 36506 2016 done                 3.2s  elapsed 27s  eta 112s
+  [24/119] 1490054 2018 done                 9.6s  elapsed 28s  eta 109s
+  [25/119] 310522 2017 needs_human_review   3.9s  elapsed 29s  eta 110s
+  [26/119] 709337 2019 done                 3.0s  elapsed 30s  eta 106s
+  [27/119] 729986 2016 done                 3.3s  elapsed 30s  eta 103s
+  [28/119] 736772 2016 done                 4.9s  elapsed 33s  eta 106s
+  [29/119] 754811 2019 done                 3.7s  elapsed 33s  eta 102s
+  [30/119] 886982 2016 done                 3.1s  elapsed 33s  eta 99s
+  [31/119] 776867 2018 needs_human_review   3.9s  elapsed 33s  eta 95s
+  [32/119] 944696 2016 done                 3.4s  elapsed 36s  eta 99s
+  [33/119] 887343 2016 done                 4.0s  elapsed 37s  eta 95s
+  [34/119] 1001171 2016 done                 3.3s  elapsed 37s  eta 92s
+  [35/119] 944745 2018 needs_human_review   3.8s  elapsed 37s  eta 89s
+  [36/119] 1377167 2019 done                 3.4s  elapsed 40s  eta 91s
+  [37/119] 1430723 2020 done                 3.0s  elapsed 40s  eta 88s
+  [38/119] 1381197 2017 needs_human_review   3.6s  elapsed 40s  eta 86s
+  [39/119] 1725911 2019 done                 3.3s  elapsed 43s  eta 88s
+  [40/119] 1573766 2016 done                 3.4s  elapsed 43s  eta 85s
+  [41/119] 1464300 2016 done                 6.2s  elapsed 43s  eta 82s
+  [42/119] 722723 2016 done                 3.2s  elapsed 43s  eta 80s
+  [43/119] 874710 2017 done                 3.3s  elapsed 46s  eta 82s
+  [44/119] 883984 2016 done                 3.1s  elapsed 46s  eta 79s
+  [45/119] 812796 2019 done                 3.4s  elapsed 46s  eta 76s
+  [46/119] 1016169 2016 done                 3.3s  elapsed 47s  eta 74s
+  [47/119] 1053691 2020 done                 3.1s  elapsed 50s  eta 76s
+  [48/119] 1261249 2019 done                 3.2s  elapsed 50s  eta 73s
+  [49/119] 1280600 2019 done                 3.1s  elapsed 50s  eta 71s
+  [50/119] 1016708 2017 needs_human_review   3.8s  elapsed 50s  eta 69s
+  [51/119] 1374690 2016 done                 3.4s  elapsed 53s  eta 71s
+  [52/119] 1337553 2019 done                 3.6s  elapsed 53s  eta 68s
+  [53/119] 1443863 2019 done                 3.7s  elapsed 54s  eta 67s
+  [54/119] 1479419 2019 done                 3.9s  elapsed 54s  eta 65s
+  [55/119] 1516551 2018 done                 3.2s  elapsed 56s  eta 66s
+  [56/119] 1632275 2017 done                 3.2s  elapsed 57s  eta 64s
+  [57/119] 1657312 2020 done                 2.8s  elapsed 57s  eta 62s
+  [58/119] 1505497 2016 done                 5.4s  elapsed 59s  eta 62s
+  [59/119] 1693415 2018 done                 3.5s  elapsed 60s  eta 61s
+  [60/119] 1718108 2020 done                 3.6s  elapsed 61s  eta 60s
+  [61/119] 1713863 2018 needs_human_review   4.1s  elapsed 61s  eta 58s
+  [62/119] 1729427 2019 done                 2.9s  elapsed 61s  eta 56s
+  [63/119] 40987 2019 done                 3.5s  elapsed 64s  eta 57s
+  [64/119] 55242 2020 done                 3.7s  elapsed 65s  eta 56s
+  [65/119] 277509 2020 needs_human_review   3.8s  elapsed 65s  eta 54s
+  [66/119] 4457 2017 done                 6.4s  elapsed 66s  eta 53s
+  [67/119] 319016 2017 done                 2.9s  elapsed 67s  eta 52s
+  [68/119] 766792 2019 done                 3.4s  elapsed 68s  eta 51s
+  [69/119] 851205 2018 done                 3.1s  elapsed 68s  eta 50s
+  [70/119] 912061 2017 needs_human_review   3.9s  elapsed 71s  eta 50s
+  [71/119] 1020710 2019 needs_human_review   3.9s  elapsed 72s  eta 49s
+  [72/119] 1034592 2018 done                 5.6s  elapsed 74s  eta 48s
+  [73/119] 875582 2020 done                 9.5s  elapsed 76s  eta 48s
+  [74/119] 1061164 2019 needs_human_review   5.0s  elapsed 76s  eta 46s
+  [75/119] 1103090 2019 done                 4.2s  elapsed 76s  eta 45s
+  [76/119] 1171155 2020 needs_human_review   4.8s  elapsed 79s  eta 45s
+  [77/119] 1425287 2017 done                 3.2s  elapsed 79s  eta 43s
+  [78/119] 1235468 2018 done                 3.7s  elapsed 80s  eta 42s
+  [79/119] 1414382 2018 done                 6.0s  elapsed 82s  eta 41s
+  [80/119] 1466258 2020 done                 3.2s  elapsed 82s  eta 40s
+  [81/119] 1509957 2017 done                 3.2s  elapsed 83s  eta 39s
+  [82/119] 1524872 2018 done                 4.1s  elapsed 84s  eta 38s
+  [83/119] 31462 2019 done                 3.0s  elapsed 86s  eta 37s
+  [84/119] 105132 2019 done                 3.0s  elapsed 87s  eta 36s
+  [85/119] 1600347 2020 done                 5.3s  elapsed 87s  eta 35s
+  [86/119] 1759509 2020 done                 6.9s  elapsed 89s  eta 34s
+  [87/119] 1110783 2017 needs_human_review   3.9s  elapsed 91s  eta 33s
+  [88/119] 812074 2017 done                 5.7s  elapsed 91s  eta 32s
+  [89/119] 1137855 2017 needs_human_review   4.9s  elapsed 92s  eta 31s
+  [90/119] 1304280 2016 done                 3.6s  elapsed 92s  eta 30s
+  [91/119] 1448597 2020 done                 3.5s  elapsed 94s  eta 29s
+  [92/119] 1519061 2018 done                 4.4s  elapsed 96s  eta 28s
+  [93/119] 20639 2016 needs_human_review   3.6s  elapsed 96s  eta 27s
+  [94/119] 74208 2016 done                 3.1s  elapsed 97s  eta 26s
+  [95/119] 1621832 2020 needs_human_review   5.6s  elapsed 98s  eta 25s
+  [96/119] 711665 2016 done                 3.2s  elapsed 99s  eta 24s
+  [97/119] 798359 2020 done                 3.1s  elapsed 99s  eta 22s
+  [98/119] 1553023 2016 done                 3.1s  elapsed 101s  eta 22s
+  [99/119] 1025378 2017 needs_human_review   3.7s  elapsed 101s  eta 20s
+  [100/119] 1553079 2020 done                 3.0s  elapsed 102s  eta 19s
+  [101/119] 1651286 2017 done                 3.3s  elapsed 103s  eta 18s
+  [102/119] 22252 2016 done                 2.9s  elapsed 104s  eta 17s
+  [103/119] 88941 2019 done                 2.9s  elapsed 104s  eta 16s
+  [104/119] 945699 2016 needs_human_review   3.8s  elapsed 106s  eta 15s
+  [105/119] 903651 2018 needs_human_review   5.2s  elapsed 107s  eta 14s
+  [106/119] 1014473 2019 done                 3.6s  elapsed 107s  eta 13s
+  [107/119] 1093207 2016 done                 4.5s  elapsed 108s  eta 12s
+  [108/119] 1110647 2018 needs_human_review   4.4s  elapsed 111s  eta 11s
+  [109/119] 1178727 2019 done                 3.5s  elapsed 111s  eta 10s
+  [110/119] 1327318 2017 done                 3.1s  elapsed 111s  eta 9s
+  [111/119] 1114995 2020 needs_human_review   4.2s  elapsed 111s  eta 8s
+  [112/119] 1450708 2016 done                 3.2s  elapsed 114s  eta 7s
+  [113/119] 1438423 2016 done                 3.2s  elapsed 114s  eta 6s
+  [114/119] 1514056 2019 done                 3.1s  elapsed 114s  eta 5s
+  [115/119] 1487952 2020 done                 3.7s  elapsed 115s  eta 4s
+  [116/119] 1631282 2016 done                 3.2s  elapsed 117s  eta 3s
+  [117/119] 1032208 2018 needs_human_review   3.8s  elapsed 118s  eta 2s
+  [118/119] 1553404 2017 done                 3.2s  elapsed 118s  eta 1s
+  [119/119] 753308 2020 done                 5.7s  elapsed 120s  eta 0s
+
+           field  n_truth  coverage  acc_1pct  acc_5pct  scale_errors  sign_errors  n_not_flagged  acc_1pct_not_flagged
+         revenue       80     0.562     0.400     0.438             1            0             58                 0.552
+      net_income      111     0.658     0.568     0.613             0            0             86                 0.709
+    total_assets      117     0.128     0.111     0.111             0            0             90                 0.133
+operating_income       93     0.118     0.108     0.118             0            0             73                 0.123
+            cash      105     0.362     0.295     0.295             0            0             79                 0.291
+
+  n_filings          119
+  review_rate        0.2353
+  error_rate         0.0000
+  retry_rate         0.3361
+  cost_usd           0.9355
+  cost_per_1k_usd    7.8616
+  latency_median_s   3.5750
+  latency_p95_s      6.2255
+  wall_seconds       119.6251
+  avg_tokens_in      5017.1597
+  avg_tokens_out     568.8824
+
+review reasons (first 60 chars):
+reason
+checks failed after retry: no revenue, net income or total a    20
+checks failed after retry: revenue: the value '1,961' is not     1
+checks failed after retry: revenue: the value '1555.0' is no     1
+checks failed after retry: fiscal year end 2017-12-31 does n     1
+checks failed after retry: revenue: the value '0' is not in      1
+checks failed after retry: revenue: evidence quote is not in     1
+checks failed after retry: revenue: the value '125523' is no     1
+checks failed after retry: |net income| is over 100x revenue     1
+checks failed after retry: net_income: the value '0.011' is      1
+
+logged MLflow run extraction_graph
+{"summary": "extraction/results/eval_graph.csv", "per_filing": "extraction/out/preds_graph.csv"}

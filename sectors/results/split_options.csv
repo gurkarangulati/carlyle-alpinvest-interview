@@ -1,0 +1,5 @@
+method,filings % (seed 14),"worst gap, seed 14","worst gap, avg of 20 seeds","worst gap, range of 20 seeds"
+no stratify (plain random),69.8/15.1/15.1,2.5,3.9,2.5-5.9
+stratify by sector (ours),69.5/15.2/15.3,1.7,1.5,1.1-2.2
+stratify by sector + filing count,70.0/15.0/14.9,1.0,0.9,0.5-1.2
+StratifiedGroupKFold (20 x 5%),70.0/15.0/15.0,0.3,0.3,0.2-0.4

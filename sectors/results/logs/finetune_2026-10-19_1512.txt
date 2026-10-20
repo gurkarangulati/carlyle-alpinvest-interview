@@ -1,0 +1,40 @@
+$ uv run python sectors/finetune.py
+
+finetune_full: training 82,126,090 of 82,126,090 weights (100.00%)
+{'loss': '2.301', 'grad_norm': '3.827', 'learning_rate': '1.644e-05', 'epoch': '0.1029'}
+{'loss': '2.043', 'grad_norm': '6.015', 'learning_rate': '3.356e-05', 'epoch': '0.2058'}
+{'loss': '1.352', 'grad_norm': '9.608', 'learning_rate': '4.992e-05', 'epoch': '0.3086'}
+{'loss': '1.188', 'grad_norm': '8.218', 'learning_rate': '4.802e-05', 'epoch': '0.4115'}
+{'loss': '1.125', 'grad_norm': '7.816', 'learning_rate': '4.611e-05', 'epoch': '0.5144'}
+{'loss': '1.096', 'grad_norm': '11.71', 'learning_rate': '4.421e-05', 'epoch': '0.6173'}
+{'loss': '1.024', 'grad_norm': '6.587', 'learning_rate': '4.23e-05', 'epoch': '0.7202'}
+{'loss': '0.8802', 'grad_norm': '17.28', 'learning_rate': '4.04e-05', 'epoch': '0.823'}
+{'loss': '0.7363', 'grad_norm': '17.9', 'learning_rate': '3.849e-05', 'epoch': '0.9259'}
+{'eval_loss': '0.7965', 'eval_macro_f1': '0.73', 'eval_runtime': '2.213', 'eval_samples_per_second': '382.8', 'eval_steps_per_second': '12.2', 'epoch': '1'}
+{'loss': '0.8168', 'grad_norm': '6.998', 'learning_rate': '3.659e-05', 'epoch': '1.029'}
+{'loss': '0.769', 'grad_norm': '12.46', 'learning_rate': '3.468e-05', 'epoch': '1.132'}
+{'loss': '0.6638', 'grad_norm': '10.24', 'learning_rate': '3.277e-05', 'epoch': '1.235'}
+{'loss': '0.7416', 'grad_norm': '8.725', 'learning_rate': '3.087e-05', 'epoch': '1.337'}
+{'loss': '0.6933', 'grad_norm': '10.46', 'learning_rate': '2.896e-05', 'epoch': '1.44'}
+{'loss': '0.6797', 'grad_norm': '8.525', 'learning_rate': '2.706e-05', 'epoch': '1.543'}
+{'loss': '0.6031', 'grad_norm': '11.1', 'learning_rate': '2.515e-05', 'epoch': '1.646'}
+{'loss': '0.5833', 'grad_norm': '10.29', 'learning_rate': '2.325e-05', 'epoch': '1.749'}
+{'loss': '0.6794', 'grad_norm': '11.46', 'learning_rate': '2.134e-05', 'epoch': '1.852'}
+{'loss': '0.6038', 'grad_norm': '9.663', 'learning_rate': '1.944e-05', 'epoch': '1.955'}
+{'eval_loss': '0.7546', 'eval_macro_f1': '0.7439', 'eval_runtime': '2.256', 'eval_samples_per_second': '375.5', 'eval_steps_per_second': '11.97', 'epoch': '2'}
+{'loss': '0.5485', 'grad_norm': '14.57', 'learning_rate': '1.753e-05', 'epoch': '2.058'}
+{'loss': '0.3933', 'grad_norm': '9.406', 'learning_rate': '1.563e-05', 'epoch': '2.16'}
+{'loss': '0.5504', 'grad_norm': '8.622', 'learning_rate': '1.372e-05', 'epoch': '2.263'}
+{'loss': '0.4483', 'grad_norm': '9.897', 'learning_rate': '1.181e-05', 'epoch': '2.366'}
+{'loss': '0.3938', 'grad_norm': '3.916', 'learning_rate': '9.909e-06', 'epoch': '2.469'}
+{'loss': '0.5084', 'grad_norm': '11.77', 'learning_rate': '8.003e-06', 'epoch': '2.572'}
+{'loss': '0.3533', 'grad_norm': '9.477', 'learning_rate': '6.098e-06', 'epoch': '2.675'}
+{'loss': '0.4082', 'grad_norm': '8.255', 'learning_rate': '4.192e-06', 'epoch': '2.778'}
+{'loss': '0.4169', 'grad_norm': '5.001', 'learning_rate': '2.287e-06', 'epoch': '2.881'}
+{'loss': '0.4981', 'grad_norm': '13.1', 'learning_rate': '3.811e-07', 'epoch': '2.984'}
+{'eval_loss': '0.7608', 'eval_macro_f1': '0.7582', 'eval_runtime': '2.206', 'eval_samples_per_second': '384', 'eval_steps_per_second': '12.24', 'epoch': '3'}
+{'train_runtime': '197.8', 'train_samples_per_second': '58.83', 'train_steps_per_second': '3.685', 'train_loss': '0.7948', 'epoch': '3'}
+
+finetune_full: val macro F1 0.758   TEST macro F1 0.758  accuracy 0.753
+Train 3.3 min; predict 2523 ms per 1,000 filings
+Saved sectors/out/models/finetune_full (332 MB)

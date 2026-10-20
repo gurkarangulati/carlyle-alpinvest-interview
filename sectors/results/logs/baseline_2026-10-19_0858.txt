@@ -1,0 +1,28 @@
+$ uv run python sectors/baseline.py      (run 1: C grid 0.3-30)
+
+3,879 training filings x 210,300 word columns
+  C=0.3  val macro F1 0.589
+  C=1    val macro F1 0.675
+  C=3    val macro F1 0.698
+  C=10   val macro F1 0.716
+  C=30   val macro F1 0.733
+
+Best C=30.  TEST macro F1 0.751  accuracy 0.746
+Train 35.5s total; predict 2 ms per 1,000 filings
+
+                      precision    recall  f1-score   support
+
+communications_media      0.933     0.438     0.596        32
+            consumer      0.664     0.696     0.679       102
+              energy      0.829     0.763     0.795        38
+          financials      0.922     0.869     0.895       122
+          healthcare      0.823     0.859     0.841       135
+         industrials      0.572     0.693     0.627       166
+           materials      0.762     0.542     0.634        59
+         real_estate      0.889     0.903     0.896        62
+          technology      0.660     0.660     0.660       103
+           utilities      0.935     0.853     0.892        34
+
+            accuracy                          0.746       853
+           macro avg      0.799     0.728     0.751       853
+        weighted avg      0.759     0.746     0.746       853

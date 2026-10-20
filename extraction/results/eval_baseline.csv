@@ -1,0 +1,7 @@
+field,n_truth,coverage,acc_1pct,acc_5pct,scale_errors,sign_errors,n_not_flagged,acc_1pct_not_flagged,n_filings,review_rate,error_rate,retry_rate,cost_usd,cost_per_1k_usd,latency_median_s,latency_p95_s,wall_seconds,avg_tokens_in,avg_tokens_out
+revenue,80.0,0.0,0.0,0.0,0.0,0.0,80.0,0.0,,,,,,,,,,,
+net_income,111.0,0.0,0.0,0.0,0.0,0.0,111.0,0.0,,,,,,,,,,,
+total_assets,117.0,0.0,0.0,0.0,0.0,0.0,117.0,0.0,,,,,,,,,,,
+operating_income,93.0,0.0,0.0,0.0,0.0,0.0,93.0,0.0,,,,,,,,,,,
+cash,105.0,0.009523809523809525,0.009523809523809525,0.009523809523809525,0.0,0.0,105.0,0.009523809523809525,,,,,,,,,,,
+all,,,,,,,,,119.0,0.0,0.0,0.0,0.495605,4.164747899159664,1.7793087500031106,2.2197512621642064,55.991049749951344,2443.9495798319326,344.15966386554624

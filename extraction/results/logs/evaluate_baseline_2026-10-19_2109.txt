@@ -1,0 +1,143 @@
+baseline: 119 filings, model us.anthropic.claude-haiku-4-5-20251001-v1:0, 4 at a time
+loading filing texts...
+  [1/119] 1460329 2019 done                 2.7s  elapsed 3s  eta 315s
+  [2/119] 726513 2018 done                 2.7s  elapsed 3s  eta 158s
+  [3/119] 1051512 2017 done                 2.8s  elapsed 3s  eta 107s
+  [4/119] 71557 2017 done                 2.8s  elapsed 3s  eta 81s
+  [5/119] 76149 2018 done                 1.8s  elapsed 4s  eta 102s
+  [6/119] 23217 2018 done                 1.9s  elapsed 5s  eta 85s
+  [7/119] 799288 2016 done                 1.7s  elapsed 5s  eta 73s
+  [8/119] 95574 2018 done                 1.9s  elapsed 5s  eta 64s
+  [9/119] 916365 2018 done                 1.8s  elapsed 6s  eta 76s
+  [10/119] 1005276 2018 done                 1.7s  elapsed 6s  eta 68s
+  [11/119] 949870 2019 done                 1.9s  elapsed 6s  eta 63s
+  [12/119] 1206264 2018 done                 2.0s  elapsed 7s  eta 59s
+  [13/119] 1361658 2020 done                 1.8s  elapsed 8s  eta 66s
+  [14/119] 1289460 2017 done                 1.9s  elapsed 8s  eta 61s
+  [15/119] 1464865 2016 done                 1.8s  elapsed 8s  eta 57s
+  [16/119] 1487197 2017 done                 1.7s  elapsed 8s  eta 54s
+  [17/119] 1574815 2016 done                 1.8s  elapsed 10s  eta 59s
+  [18/119] 1755672 2019 done                 1.7s  elapsed 10s  eta 55s
+  [19/119] 1434842 2016 done                 1.8s  elapsed 10s  eta 53s
+  [20/119] 1490054 2018 done                 1.8s  elapsed 10s  eta 50s
+  [21/119] 1510295 2016 done                 1.9s  elapsed 12s  eta 55s
+  [22/119] 1540729 2016 done                 1.8s  elapsed 12s  eta 52s
+  [23/119] 1552000 2017 done                 1.8s  elapsed 12s  eta 49s
+  [24/119] 36506 2016 done                 1.8s  elapsed 12s  eta 47s
+  [25/119] 310522 2017 done                 1.7s  elapsed 13s  eta 50s
+  [26/119] 709337 2019 done                 1.9s  elapsed 14s  eta 48s
+  [27/119] 729986 2016 done                 1.7s  elapsed 14s  eta 46s
+  [28/119] 736772 2016 done                 1.8s  elapsed 14s  eta 45s
+  [29/119] 754811 2019 done                 1.7s  elapsed 15s  eta 47s
+  [30/119] 776867 2018 done                 1.7s  elapsed 15s  eta 45s
+  [31/119] 886982 2016 done                 1.8s  elapsed 15s  eta 44s
+  [32/119] 887343 2016 done                 1.9s  elapsed 16s  eta 42s
+  [33/119] 944696 2016 done                 1.7s  elapsed 17s  eta 44s
+  [34/119] 944745 2018 done                 1.8s  elapsed 17s  eta 42s
+  [35/119] 1001171 2016 done                 1.7s  elapsed 17s  eta 41s
+  [36/119] 1377167 2019 done                 1.8s  elapsed 17s  eta 40s
+  [37/119] 1381197 2017 done                 1.8s  elapsed 19s  eta 41s
+  [38/119] 1430723 2020 done                 1.8s  elapsed 19s  eta 40s
+  [39/119] 1573766 2016 done                 1.6s  elapsed 19s  eta 39s
+  [40/119] 1464300 2016 done                 2.0s  elapsed 19s  eta 38s
+  [41/119] 1725911 2019 done                 1.7s  elapsed 20s  eta 39s
+  [42/119] 722723 2016 done                 1.7s  elapsed 21s  eta 38s
+  [43/119] 812796 2019 done                 1.7s  elapsed 21s  eta 37s
+  [44/119] 874710 2017 done                 1.7s  elapsed 21s  eta 35s
+  [45/119] 883984 2016 done                 1.8s  elapsed 22s  eta 36s
+  [46/119] 1016169 2016 done                 1.8s  elapsed 22s  eta 35s
+  [47/119] 1016708 2017 done                 1.8s  elapsed 22s  eta 34s
+  [48/119] 1053691 2020 done                 1.9s  elapsed 23s  eta 34s
+  [49/119] 1261249 2019 done                 1.9s  elapsed 24s  eta 34s
+  [50/119] 1280600 2019 done                 1.8s  elapsed 24s  eta 33s
+  [51/119] 1337553 2019 done                 1.7s  elapsed 24s  eta 32s
+  [52/119] 1374690 2016 done                 1.9s  elapsed 25s  eta 32s
+  [53/119] 1443863 2019 done                 1.7s  elapsed 26s  eta 32s
+  [54/119] 1505497 2016 done                 1.8s  elapsed 26s  eta 31s
+  [55/119] 1516551 2018 done                 1.7s  elapsed 26s  eta 31s
+  [56/119] 1632275 2017 done                 1.8s  elapsed 28s  eta 31s
+  [57/119] 1657312 2020 done                 1.7s  elapsed 28s  eta 30s
+  [58/119] 1693415 2018 done                 1.8s  elapsed 28s  eta 30s
+  [59/119] 1479419 2019 done                 4.1s  elapsed 28s  eta 29s
+  [60/119] 1713863 2018 done                 1.7s  elapsed 29s  eta 29s
+  [61/119] 1718108 2020 done                 1.8s  elapsed 29s  eta 28s
+  [62/119] 4457 2017 done                 1.8s  elapsed 30s  eta 27s
+  [63/119] 1729427 2019 done                 1.9s  elapsed 30s  eta 27s
+  [64/119] 40987 2019 done                 1.9s  elapsed 31s  eta 27s
+  [65/119] 55242 2020 done                 1.8s  elapsed 31s  eta 26s
+  [66/119] 277509 2020 done                 1.7s  elapsed 32s  eta 25s
+  [67/119] 319016 2017 done                 1.8s  elapsed 32s  eta 25s
+  [68/119] 766792 2019 done                 1.9s  elapsed 33s  eta 25s
+  [69/119] 851205 2018 done                 1.9s  elapsed 33s  eta 24s
+  [70/119] 912061 2017 done                 1.7s  elapsed 33s  eta 23s
+  [71/119] 875582 2020 done                 1.9s  elapsed 33s  eta 23s
+  [72/119] 1034592 2018 done                 1.7s  elapsed 35s  eta 23s
+  [73/119] 1020710 2019 done                 1.9s  elapsed 35s  eta 22s
+  [74/119] 1103090 2019 done                 1.7s  elapsed 35s  eta 21s
+  [75/119] 1061164 2019 done                 2.0s  elapsed 35s  eta 21s
+  [76/119] 1171155 2020 done                 1.8s  elapsed 37s  eta 21s
+  [77/119] 1235468 2018 done                 1.7s  elapsed 37s  eta 20s
+  [78/119] 1414382 2018 done                 1.8s  elapsed 37s  eta 19s
+  [79/119] 1425287 2017 done                 1.8s  elapsed 37s  eta 19s
+  [80/119] 1466258 2020 done                 1.7s  elapsed 38s  eta 19s
+  [81/119] 1509957 2017 done                 1.6s  elapsed 38s  eta 18s
+  [82/119] 1524872 2018 done                 1.7s  elapsed 39s  eta 17s
+  [83/119] 1600347 2020 done                 1.9s  elapsed 39s  eta 17s
+  [84/119] 1759509 2020 done                 1.7s  elapsed 40s  eta 17s
+  [85/119] 31462 2019 done                 1.9s  elapsed 40s  eta 16s
+  [86/119] 105132 2019 done                 1.7s  elapsed 40s  eta 16s
+  [87/119] 812074 2017 done                 1.8s  elapsed 41s  eta 15s
+  [88/119] 1110783 2017 done                 1.8s  elapsed 42s  eta 15s
+  [89/119] 1137855 2017 done                 1.8s  elapsed 42s  eta 14s
+  [90/119] 1304280 2016 done                 1.8s  elapsed 42s  eta 14s
+  [91/119] 1448597 2020 done                 1.9s  elapsed 43s  eta 13s
+  [92/119] 1519061 2018 done                 1.8s  elapsed 44s  eta 13s
+  [93/119] 1621832 2020 done                 1.7s  elapsed 44s  eta 12s
+  [94/119] 20639 2016 done                 1.8s  elapsed 44s  eta 12s
+  [95/119] 74208 2016 done                 2.1s  elapsed 45s  eta 11s
+  [96/119] 711665 2016 done                 1.8s  elapsed 45s  eta 11s
+  [97/119] 798359 2020 done                 1.8s  elapsed 45s  eta 10s
+  [98/119] 1025378 2017 done                 2.0s  elapsed 46s  eta 10s
+  [99/119] 1553023 2016 done                 1.9s  elapsed 47s  eta 9s
+  [100/119] 1553079 2020 done                 1.7s  elapsed 47s  eta 9s
+  [101/119] 1651286 2017 done                 1.7s  elapsed 47s  eta 8s
+  [102/119] 88941 2019 done                 1.9s  elapsed 49s  eta 8s
+  [103/119] 945699 2016 done                 1.7s  elapsed 49s  eta 8s
+  [104/119] 903651 2018 done                 1.8s  elapsed 49s  eta 7s
+  [105/119] 22252 2016 done                 3.0s  elapsed 49s  eta 7s
+  [106/119] 1014473 2019 done                 1.9s  elapsed 50s  eta 6s
+  [107/119] 1110647 2018 done                 1.8s  elapsed 51s  eta 6s
+  [108/119] 1093207 2016 done                 1.8s  elapsed 51s  eta 5s
+  [109/119] 1114995 2020 done                 1.8s  elapsed 51s  eta 5s
+  [110/119] 1178727 2019 done                 1.8s  elapsed 52s  eta 4s
+  [111/119] 1438423 2016 done                 1.7s  elapsed 52s  eta 4s
+  [112/119] 1327318 2017 done                 1.8s  elapsed 52s  eta 3s
+  [113/119] 1450708 2016 done                 1.7s  elapsed 52s  eta 3s
+  [114/119] 1487952 2020 done                 1.7s  elapsed 54s  eta 2s
+  [115/119] 1631282 2016 done                 1.7s  elapsed 54s  eta 2s
+  [116/119] 1514056 2019 done                 1.8s  elapsed 54s  eta 1s
+  [117/119] 753308 2020 done                 2.2s  elapsed 55s  eta 1s
+  [118/119] 1032208 2018 done                 1.9s  elapsed 56s  eta 0s
+  [119/119] 1553404 2017 done                 1.9s  elapsed 56s  eta 0s
+
+           field  n_truth  coverage  acc_1pct  acc_5pct  scale_errors  sign_errors  n_not_flagged  acc_1pct_not_flagged
+         revenue       80      0.00      0.00      0.00             0            0             80                  0.00
+      net_income      111      0.00      0.00      0.00             0            0            111                  0.00
+    total_assets      117      0.00      0.00      0.00             0            0            117                  0.00
+operating_income       93      0.00      0.00      0.00             0            0             93                  0.00
+            cash      105      0.01      0.01      0.01             0            0            105                  0.01
+
+  n_filings          119
+  review_rate        0.0000
+  error_rate         0.0000
+  retry_rate         0.0000
+  cost_usd           0.4956
+  cost_per_1k_usd    4.1647
+  latency_median_s   1.7793
+  latency_p95_s      2.2198
+  wall_seconds       55.9910
+  avg_tokens_in      2443.9496
+  avg_tokens_out     344.1597
+
+logged MLflow run extraction_baseline
+{"summary": "extraction/results/eval_baseline.csv", "per_filing": "extraction/out/preds_baseline.csv"}

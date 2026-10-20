@@ -1,0 +1,11 @@
+,communications_media,consumer,energy,financials,healthcare,industrials,materials,real_estate,technology,utilities
+communications_media,14,4,0,1,0,6,0,0,7,0
+consumer,0,71,0,0,4,19,2,1,5,0
+energy,0,0,29,0,1,5,1,0,0,2
+financials,0,3,0,106,1,6,1,2,3,0
+healthcare,0,7,0,0,116,9,0,3,0,0
+industrials,0,13,5,3,10,115,1,0,19,0
+materials,0,3,0,1,3,19,32,0,1,0
+real_estate,0,0,1,2,2,1,0,56,0,0
+technology,1,6,0,2,4,18,4,0,68,0
+utilities,0,0,0,0,0,3,1,1,0,29

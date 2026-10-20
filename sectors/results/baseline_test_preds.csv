@@ -1,0 +1,854 @@
+cik,year,name,sic_description,sector,pred,confidence
+1042642,2016,DISH DBS CORP,"Communications Services, NEC",communications_media,communications_media,0.5624273908596272
+1662574,2016,"Grom Social Enterprises, Inc.","Services-Computer Programming, Data Processing, Etc.",technology,industrials,0.6006852718920923
+1016169,2016,"ANTARES PHARMA, INC.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9954036036496393
+1503707,2016,"NorthStar Healthcare Income, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.9928461806265823
+1659207,2016,Fellazo Corp,Commercial Printing,communications_media,industrials,0.5449044195460988
+898174,2016,REINSURANCE GROUP OF AMERICA INC,Life Insurance,financials,financials,0.9503556097187706
+1627811,2016,Mr. Amazing Loans Corp,Personal Credit Institutions,financials,financials,0.4305670955549409
+912615,2016,URBAN OUTFITTERS INC,Retail-Family Clothing Stores,consumer,consumer,0.9829803591851553
+788329,2016,JOHNSON OUTDOORS INC,"Sporting & Athletic Goods, NEC",consumer,industrials,0.580545331690836
+1631282,2016,DATASEA INC.,Services-Prepackaged Software,technology,consumer,0.43392690219897223
+727634,2016,iSign Solutions Inc.,Services-Prepackaged Software,technology,technology,0.9312481893874255
+791915,2016,CYPRESS SEMICONDUCTOR CORP /DE/,Semiconductors & Related Devices,technology,technology,0.9223305606468266
+1334586,2016,JAMMIN JAVA CORP.,Miscellaneous Food Preparations & Kindred Products,consumer,consumer,0.6580645075626014
+1032208,2016,SEMPRA,Gas & Other Services Combined,utilities,utilities,0.6759782686734426
+1078075,2016,NETSCOUT SYSTEMS INC,Services-Computer Integrated Systems Design,technology,technology,0.7354389771490148
+1577882,2016,Vortex Blockchain Technologies Inc.,Cut Stone & Stone Products,materials,materials,0.3158905930533611
+1098996,2016,ORANCO INC,Beverages,consumer,industrials,0.22765898182034283
+1542013,2016,"JOEY NEW YORK, INC.","Wholesale-Drugs, Proprietaries & Druggists' Sundries",industrials,consumer,0.3594653815369228
+1093207,2016,CROSSROADS SYSTEMS INC,"Computer Peripheral Equipment, NEC",technology,industrials,0.30443159200623837
+1456016,2016,"Griffin Capital Essential Asset REIT, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.8956265881268755
+1304280,2016,Novelis Inc.,Rolling Drawing & Extruding of  Nonferrous Metals,materials,materials,0.7910362230850997
+945699,2016,"IXYS, LLC",Semiconductors & Related Devices,technology,technology,0.9128629974971539
+351569,2016,Ameris Bancorp,State Commercial Banks,financials,financials,0.9846289383386935
+1672754,2016,Rich Uncles Real Estate Investment Trust I,Real Estate Investment Trusts,real_estate,real_estate,0.9950452993380418
+1003410,2016,DUKE REALTY Ltd PARTNERSHIP/,Real Estate,real_estate,real_estate,0.9692890035804009
+1087294,2016,CUMBERLAND PHARMACEUTICALS INC,Pharmaceutical Preparations,healthcare,healthcare,0.9987069703671503
+1404624,2016,"Affinion Group Holdings, Inc.","Services-Business Services, NEC",industrials,technology,0.36084399227118424
+1300938,2016,"ABCO Energy, Inc.",Construction - Special Trade Contractors,industrials,industrials,0.6857131868387385
+1510295,2016,Marathon Petroleum Corp,Petroleum Refining,energy,energy,0.47792542946357225
+741516,2016,AMERICAN NATIONAL BANKSHARES INC.,National Commercial Banks,financials,financials,0.9907021533925235
+1446714,2016,"Macquarie Equipment Leasing Fund, LLC","Services-Equipment Rental & Leasing, NEC",industrials,industrials,0.4378278879023021
+864749,2016,TRIMBLE INC.,"Measuring & Controlling Devices, NEC",industrials,technology,0.8755443884427596
+1122020,2016,"PCS Edventures!, Inc.",Services-Educational Services,consumer,technology,0.41059595691687734
+36506,2016,MACKINAC FINANCIAL CORP /MI/,State Commercial Banks,financials,financials,0.8974642208542009
+1572386,2016,"GREENWAY TECHNOLOGIES, INC. & SUBSIDIARIES",Industrial Organic Chemicals,materials,industrials,0.27163379102573054
+316709,2016,SCHWAB CHARLES CORP,"Security Brokers, Dealers & Flotation Companies",financials,financials,0.9797415570082776
+1324772,2016,Apigee Corp,Services-Prepackaged Software,technology,technology,0.9779788838233083
+1605331,2016,AI Era Corp.,Patent Owners & Lessors,financials,technology,0.309777837206434
+1035201,2016,CALIFORNIA WATER SERVICE GROUP,Water Supply,utilities,industrials,0.4710998464523622
+883984,2016,ICU MEDICAL INC/DE,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.5871521868029677
+725876,2016,Function(x) Inc.,"Services-Computer Programming, Data Processing, Etc.",technology,communications_media,0.48888373810591945
+1452872,2016,"ARC Group, Inc.",Patent Owners & Lessors,financials,consumer,0.9327968761806863
+22252,2016,COMARCO INC,Radio & Tv Broadcasting & Communications Equipment,technology,technology,0.17297963303889036
+88572,2016,SECURITY LAND & DEVELOPMENT CORP,Real Estate Dealers (For Their Own Account),real_estate,real_estate,0.6143169950932966
+1672326,2016,"Yuma Energy, Inc.",Crude Petroleum & Natural Gas,energy,energy,0.7329481133039654
+1080014,2016,"Innoviva, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9137547538692219
+1092570,2016,FULLNET COMMUNICATIONS INC,Telephone Communications (No Radiotelephone),communications_media,technology,0.47638027897780844
+1628908,2016,"Evolent Health, Inc.",Services-Management Services,industrials,technology,0.7355054906571525
+1469367,2016,Sunrun Inc.,Construction - Special Trade Contractors,industrials,technology,0.39563304716870357
+88205,2016,"SPX Technologies, Inc.",Metalworkg Machinery & Equipment,industrials,industrials,0.2687664841582152
+1201792,2016,AMERICAN PUBLIC EDUCATION INC,Services-Educational Services,consumer,consumer,0.5743993717890783
+1106644,2016,"CHINA PHARMA HOLDINGS, INC.",Pharmaceutical Preparations,healthcare,healthcare,0.8404237342937897
+722723,2016,"HANGER, INC.","Services-Specialty Outpatient Facilities, NEC",healthcare,healthcare,0.7597949406962755
+1522327,2016,Entegra Financial Corp.,"Savings Institutions, Not Federally Chartered",financials,financials,0.994543972999429
+1620702,2016,"TERRAFORM GLOBAL, INC.",Electric Services,utilities,utilities,0.3992958981600658
+1505497,2016,"BioRestorative Therapies, Inc.","Services-Misc Health & Allied Services, NEC",healthcare,healthcare,0.9913648091583995
+1573766,2016,Sky Constant Century Inc.,Commodity Contracts Brokers & Dealers,financials,technology,0.3751672157887542
+922330,2016,REGI U S INC,Engines & Turbines,industrials,industrials,0.677276159581167
+1464865,2016,"Accredited Solutions, Inc.",Beverages,consumer,technology,0.23293271418746042
+70318,2016,TENET HEALTHCARE CORP,"Services-General Medical & Surgical Hospitals, NEC",healthcare,healthcare,0.550943867251613
+1294632,2016,IASIS Healthcare LLC,"Services-General Medical & Surgical Hospitals, NEC",healthcare,healthcare,0.6964143187517173
+1540729,2016,Foresight Energy LP,Silver Ores,energy,materials,0.2657621691796156
+74208,2016,"UDR, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.9941159390118481
+1499717,2016,"Staffing 360 Solutions, Inc.",Services-Help Supply Services,industrials,industrials,0.8628247857191664
+1017793,2016,SUN BANCORP INC /NJ/,"Commercial Banks, NEC",financials,financials,0.9950165080498101
+1490636,2016,"G-Estate Liquidation Stores, Inc.",Retail-Apparel & Accessory Stores,consumer,consumer,0.9708966674253119
+797542,2016,QUANTUM X LABS INC.,Services-Prepackaged Software,technology,healthcare,0.6959346189119053
+1610114,2016,New Senior Investment Group Inc.,Real Estate Investment Trusts,real_estate,real_estate,0.6110700107046666
+1528061,2016,Community Choice Financial Inc.,"Functions Related To Depository Banking, NEC",financials,financials,0.6616621882655344
+78311,2016,SoOum Corp.,Wholesale-Miscellaneous Nondurable Goods,industrials,industrials,0.6555233888804567
+1110607,2016,"Koil Energy Solutions, Inc.",Oil & Gas Field Machinery & Equipment,industrials,industrials,0.5315341816464597
+818677,2016,SECURITY FEDERAL CORP,State Commercial Banks,financials,financials,0.9882382169175559
+1537028,2016,"Independence Contract Drilling, Inc.",Drilling Oil & Gas Wells,energy,energy,0.979458412771096
+887343,2016,"COLUMBIA BANKING SYSTEM, INC.",State Commercial Banks,financials,financials,0.9915795796647041
+1507277,2016,Park Sterling Corp,State Commercial Banks,financials,financials,0.9645975363949121
+1606180,2016,"AAC Holdings, Inc.","Services-Specialty Outpatient Facilities, NEC",healthcare,healthcare,0.5082179683181677
+1483195,2016,Oritani Financial Corp,State Commercial Banks,financials,financials,0.8280012404499179
+1127703,2016,PROASSURANCE CORP,"Fire, Marine & Casualty Insurance",financials,financials,0.9031583190623017
+799288,2016,"LANDS' END, INC.",Retail-Family Clothing Stores,consumer,consumer,0.6598559992274347
+1124198,2016,FLUOR CORP,Heavy Construction Other Than Bldg Const - Contractors,industrials,industrials,0.8952126247245602
+100591,2016,ARGAN INC,Construction - Special Trade Contractors,industrials,industrials,0.8998011362170325
+1027838,2016,TACTILE SYSTEMS TECHNOLOGY INC,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9779591174338877
+1103795,2016,"QS Energy, Inc.",Oil & Gas Field Machinery & Equipment,industrials,industrials,0.44228656069534844
+1378125,2016,Toga Ltd,Services-Computer Programming Services,technology,consumer,0.3970641570346607
+1495231,2016,"IZEA Worldwide, Inc.",Services-Advertising,communications_media,technology,0.7176377592944833
+1374690,2016,"Larimar Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.996310945045202
+944696,2016,"Capital Financial Holdings, Inc","Security Brokers, Dealers & Flotation Companies",financials,financials,0.5457448918667157
+1659617,2016,"Moleculin Biotech, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9822524622092956
+1285550,2016,"ClearPoint Neuro, Inc.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9955847159564327
+736772,2016,CNB FINANCIAL CORP/PA,State Commercial Banks,financials,financials,0.9864465149059808
+1567503,2016,"TurnKey Capital, Inc.",Services-Management Consulting Services,industrials,industrials,0.420249247423056
+1329842,2016,Federal Home Loan Bank of New York,Federal & Federally-Sponsored Credit Agencies,financials,financials,0.9804968432940335
+1357615,2016,"KBR, INC.",Heavy Construction Other Than Bldg Const - Contractors,industrials,industrials,0.9376538309307593
+1438423,2016,EVERSPIN TECHNOLOGIES INC.,Semiconductors & Related Devices,technology,technology,0.762274412216257
+20639,2016,AmBase Corp,Opeators of  Nonresidential Buildings,real_estate,financials,0.5702911748265393
+729986,2016,UNITED BANKSHARES INC/WV,State Commercial Banks,financials,financials,0.9877423987108679
+3153,2016,ALABAMA POWER CO,Electric Services,utilities,utilities,0.9548209680973405
+1676580,2016,VISION ENERGY Corp,Industrial Inorganic Chemicals,materials,healthcare,0.6049528843270504
+1532158,2016,"Rebel Group, Inc.",Services-Miscellaneous Amusement & Recreation,consumer,consumer,0.23197798920509066
+711665,2016,"Gadsden Properties, Inc.",Real Estate,real_estate,healthcare,0.3162202997435388
+1574815,2016,"BMC STOCK HOLDINGS, INC.",Retail-Lumber & Other Building Materials Dealers,consumer,industrials,0.43973963051752546
+1236275,2016,"QXO, Inc.",Wholesale-Lumber & Other Construction Materials,industrials,technology,0.9610832872381682
+1133470,2016,CALAVO GROWERS INC,Agricultural Services,consumer,consumer,0.7227083129315254
+1464300,2016,"ALL MARKETING SOLUTIONS, INC.",Patent Owners & Lessors,financials,technology,0.47174561687522854
+1512890,2016,Excel Corp,Patent Owners & Lessors,financials,industrials,0.639710047727339
+27673,2016,DEERE JOHN CAPITAL CORP,Short-Term Business Credit Institutions,financials,industrials,0.5946412539787501
+1652871,2016,UNICOBE CORP.,"Coating, Engraving & Allied Services",industrials,industrials,0.6151476518036781
+886982,2016,GOLDMAN SACHS GROUP INC,"Security Brokers, Dealers & Flotation Companies",financials,financials,0.9653038705716221
+949870,2016,BOSTON BEER CO INC,Malt Beverages,consumer,consumer,0.62786969935923
+1453122,2016,"3DX Industries, Inc.",Commercial Printing,communications_media,industrials,0.47049351118032434
+708819,2016,MCDERMOTT INTERNATIONAL INC,Fabricated Plate Work (Boiler Shops),industrials,industrials,0.8371597133407391
+1415332,2016,Lithium Corp,Metal Mining,materials,industrials,0.3764460089088685
+1089815,2016,Elite Health Systems Inc.,"Services-Specialty Outpatient Facilities, NEC",healthcare,industrials,0.2182604922899016
+87050,2016,Neonode Inc.,"Electronic Components, NEC",technology,technology,0.4424413914305973
+712515,2016,ELECTRONIC ARTS INC.,Services-Prepackaged Software,technology,technology,0.7092393675511935
+1156041,2016,"ABUNDIA GLOBAL IMPACT GROUP, INC.",Crude Petroleum & Natural Gas,energy,energy,0.9711030581787506
+1087423,2016,RED HAT INC,"Services-Computer Programming, Data Processing, Etc.",technology,technology,0.989858306950104
+1156815,2016,WNC HOUSING TAX CREDIT FUND VI LP SERIES 10,Operators of  Apartment Buildings,real_estate,real_estate,0.6522678346116965
+88941,2016,SEMTECH CORP,Semiconductors & Related Devices,technology,technology,0.952528549832104
+71829,2016,NPK International Inc.,Services-Miscellaneous Equipment Rental & Leasing,industrials,energy,0.5442103386185019
+1018979,2016,AMERISAFE INC,"Fire, Marine & Casualty Insurance",financials,financials,0.8981769809684893
+100517,2016,"United Airlines Holdings, Inc.","Air Transportation, Scheduled",industrials,industrials,0.8336686048802783
+1367832,2016,AURORA DIAGNOSTICS HOLDINGS LLC,Services-Medical Laboratories,healthcare,healthcare,0.8399824771955803
+812074,2016,"O-I Glass, Inc. /DE/",Glass Containers,materials,industrials,0.42949481707024273
+1402479,2016,"MedAvail Holdings, Inc.",Retail-Drug Stores and Proprietary Stores,consumer,healthcare,0.9503564365747368
+98752,2016,TOROTEL INC,"Electronic Coils, Transformers & Other Inductors",technology,industrials,0.7986444848693476
+1518548,2016,"Xfuels, Inc.",Retail-Lumber & Other Building Materials Dealers,consumer,industrials,0.2848344574966596
+948072,2016,BIRNER DENTAL MANAGEMENT SERVICES INC,Services-Health Services,healthcare,healthcare,0.30774150781126414
+1293971,2016,"bluebird bio, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.998840500200142
+1436425,2016,"HOME BANCORP, INC.","Savings Institutions, Not Federally Chartered",financials,financials,0.9964242083615584
+828530,2016,ADMIRAL FINANCIAL CORP,"Savings Institution, Federally Chartered",financials,financials,0.21661861829199355
+1001601,2016,"MGT CAPITAL INVESTMENTS, INC.",Finance Services,financials,industrials,0.2744693031144832
+1223533,2016,"Frelii, Inc.",Real Estate,real_estate,energy,0.9045100173417435
+1401257,2016,"FORUM ENERGY TECHNOLOGIES, INC.",Oil & Gas Field Machinery & Equipment,industrials,energy,0.4821192059995328
+1103090,2016,"REFLECT SCIENTIFIC, INC.",Laboratory Apparatus & Furniture,industrials,industrials,0.6184554577653375
+1616788,2016,LEGACY VENTURES INTERNATIONAL INC.,Surgical & Medical Instruments & Apparatus,healthcare,consumer,0.5095415606949947
+1007019,2016,COFFEE HOLDING CO INC,Miscellaneous Food Preparations & Kindred Products,consumer,consumer,0.8397060116425427
+719413,2016,HECLA MINING CO/DE/,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),materials,materials,0.7916360595317
+1497275,2016,STATE BANK FINANCIAL CORP,State Commercial Banks,financials,financials,0.9969874701879029
+1682325,2016,GTY Technology Holdings Inc.,Services-Computer Processing & Data Preparation,technology,financials,0.41110493951756183
+1568969,2016,Techlott Inc.,Services-Computer Programming Services,technology,technology,0.42913879462896876
+910679,2016,WVS FINANCIAL CORP,"Savings Institutions, Not Federally Chartered",financials,financials,0.9335596693335027
+928576,2016,MIDAMERICAN ENERGY CO,Electric Services,utilities,utilities,0.9846608048223024
+40987,2016,GENUINE PARTS CO,Wholesale-Motor Vehicle Supplies & New Parts,industrials,consumer,0.43584299992589887
+1553023,2016,CyrusOne Holdco LLC,Real Estate Investment Trusts,real_estate,real_estate,0.4393812238908801
+921113,2016,LIBERTY PROPERTY LIMITED PARTNERSHIP,Real Estate,real_estate,real_estate,0.9955767375081437
+1490873,2016,"ECO SCIENCE SOLUTIONS, INC.",Retail-Miscellaneous Retail,consumer,consumer,0.541640687791839
+1280058,2016,BLACKBAUD INC,Services-Prepackaged Software,technology,technology,0.8568842569690452
+743870,2016,RANCON REALTY FUND IV,Real Estate,real_estate,real_estate,0.589392156365117
+884624,2016,Orthofix Medical Inc.,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.8025178187436937
+1005817,2016,TOMPKINS FINANCIAL CORP,State Commercial Banks,financials,financials,0.9965891177896182
+804269,2016,"General Motors Financial Company, Inc.",Finance Services,financials,industrials,0.35210422791942003
+849399,2016,Gen Digital Inc.,Services-Prepackaged Software,technology,technology,0.7382551306697889
+870753,2016,NUMEREX CORP /PA/,"Communications Equipment, NEC",technology,technology,0.9576166257728829
+314489,2016,FIRST BUSEY CORP /NV/,State Commercial Banks,financials,financials,0.9830193572189153
+931015,2016,Polaris Inc.,Miscellaneous Transportation Equipment,industrials,industrials,0.862217317840045
+1324410,2016,Guaranty Bancorp,State Commercial Banks,financials,financials,0.9972829530365798
+4457,2016,U-Haul Holding Co /NV/,Services-Auto Rental & Leasing (No Drivers),industrials,industrials,0.43378164218520693
+769397,2016,"Autodesk, Inc.",Services-Prepackaged Software,technology,technology,0.6039905729432651
+1629702,2016,"LONG TERM CARE OPERATIONS 360, INC.",Services-Skilled Nursing Care Facilities,healthcare,industrials,0.3926670446018521
+1402453,2016,Her Imports,Services-Computer Processing & Data Preparation,technology,consumer,0.519499991429663
+1580670,2016,"LGI Homes, Inc.",Operative Builders,industrials,industrials,0.5441069485934437
+1653099,2016,"VIGILANT DIVERSIFIED HOLDINGS, INC./NV",Services-Management Consulting Services,industrials,industrials,0.4246360147044005
+31462,2016,ECOLAB INC.,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",materials,industrials,0.8055393517759531
+1114927,2016,FIRST NORTHERN COMMUNITY BANCORP,"Savings Institution, Federally Chartered",financials,financials,0.9979388612402328
+1398137,2016,"Generation Alpha, Inc.",Services-Miscellaneous Business Services,industrials,industrials,0.42368386942375247
+1617351,2016,"Mu Yan Technology Group Co., Ltd","Wholesale-Drugs, Proprietaries & Druggists' Sundries",industrials,industrials,0.302273421145114
+1327318,2016,"TrueCar, Inc.","Services-Computer Programming, Data Processing, Etc.",technology,technology,0.5064085239265348
+943034,2016,AUTOSCOPE TECHNOLOGIES CORP,"Measuring & Controlling Devices, NEC",industrials,industrials,0.7503602091629116
+29534,2016,DOLLAR GENERAL CORP,Retail-Variety Stores,consumer,consumer,0.9364696316364238
+1450708,2016,"Aurum, Inc.",Services-Prepackaged Software,technology,materials,0.2899971242829243
+1001171,2016,BROADWAY FINANCIAL CORP \DE\,"Savings Institution, Federally Chartered",financials,financials,0.990401347939161
+1114220,2016,KERYX BIOPHARMACEUTICALS INC,Pharmaceutical Preparations,healthcare,healthcare,0.9897809958165522
+1323648,2016,Community Bankers Trust Corp,State Commercial Banks,financials,financials,0.9875488823680283
+1389772,2016,FIRST PRIORITY FINANCIAL CORP.,State Commercial Banks,financials,financials,0.9996619185406073
+889936,2016,"PRIVATEBANCORP, INC",State Commercial Banks,financials,financials,0.9806217285137687
+1446152,2016,"SAUER ENERGY, INC.",Engines & Turbines,industrials,energy,0.5619496168326485
+1434842,2016,Forbes Energy Services Ltd.,"Oil & Gas Field Services, NEC",energy,energy,0.8839452537008742
+1416697,2016,"Blue Line Protection Group, Inc.",Retail-Miscellaneous Retail,consumer,industrials,0.5315377638745086
+939767,2016,"EXELIXIS, INC.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9966441483288339
+1552845,2016,Natur International Corp.,Services-Home Health Care Services,healthcare,healthcare,0.414661219408975
+822370,2016,"Emmaus Life Sciences, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9467879531459658
+1625941,2017,ARES INDUSTRIAL REAL ESTATE INCOME TRUST Inc.,Real Estate Investment Trusts,real_estate,real_estate,0.9879462753995382
+1139812,2017,MB FINANCIAL INC /MD,National Commercial Banks,financials,financials,0.9850430501530164
+1610114,2017,New Senior Investment Group Inc.,Real Estate Investment Trusts,real_estate,real_estate,0.6619233685723
+4457,2017,U-Haul Holding Co /NV/,Services-Auto Rental & Leasing (No Drivers),industrials,industrials,0.4332553750323636
+1106644,2017,"CHINA PHARMA HOLDINGS, INC.",Pharmaceutical Preparations,healthcare,healthcare,0.84550639161814
+1016708,2017,"RenovaCare, Inc.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.6472379397065877
+1651577,2017,Capstone Systems Inc,"Millwood, Veneer, Plywood, & Structural Wood Members",materials,healthcare,0.320603348442988
+861838,2017,"Aceragen, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9974910904828607
+98752,2017,TOROTEL INC,"Electronic Coils, Transformers & Other Inductors",technology,industrials,0.7548172301177513
+1401914,2017,"Dare Bioscience, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.982975570138433
+1227654,2017,COMPASS MINERALS INTERNATIONAL INC,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),materials,materials,0.7837591604738421
+1156815,2017,WNC HOUSING TAX CREDIT FUND VI LP SERIES 10,Operators of  Apartment Buildings,real_estate,real_estate,0.6547268003944791
+1191334,2017,CHUN CAN CAPITAL GROUP,Semiconductors & Related Devices,technology,technology,0.5190703185934997
+825542,2017,SCOTTS MIRACLE-GRO CO,Agricultural Chemicals,materials,industrials,0.6464534019052677
+1659183,2017,nDivision Inc.,Services-Computer Processing & Data Preparation,technology,materials,0.33008502455635047
+1254699,2017,"QVC Group, Inc.",Retail-Catalog & Mail-Order Houses,consumer,consumer,0.7751306997206859
+12040,2017,FLANIGANS ENTERPRISES INC,Retail-Eating  Places,consumer,consumer,0.9401910092562411
+700841,2017,"RCM TECHNOLOGIES, INC.",Services-Help Supply Services,industrials,industrials,0.8003490388504588
+352915,2017,UNIVERSAL HEALTH SERVICES INC,"Services-General Medical & Surgical Hospitals, NEC",healthcare,healthcare,0.2967705716479221
+1463208,2017,"Transportation & Logistics Systems, Inc.",Transportation Services,industrials,industrials,0.877068753708956
+719209,2017,ISRAMCO INC,Crude Petroleum & Natural Gas,energy,energy,0.9947734398973217
+728447,2017,"EVO Transportation & Energy Services, Inc.",Retail-Auto Dealers & Gasoline Stations,consumer,consumer,0.28485918503906943
+1680132,2017,CANNABIS SUISSE CORP.,Real Estate,real_estate,industrials,0.6319826267479837
+1586372,2017,DTHERA SCIENCES,Services-Miscellaneous Business Services,industrials,healthcare,0.7069157365229395
+1497275,2017,STATE BANK FINANCIAL CORP,State Commercial Banks,financials,financials,0.9966735072824939
+1526119,2017,"Verastem, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9986570842004292
+1520006,2017,Matador Resources Co,Crude Petroleum & Natural Gas,energy,energy,0.9700507932156625
+1509957,2017,Can B Corp,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",industrials,consumer,0.2806904738145592
+812074,2017,"O-I Glass, Inc. /DE/",Glass Containers,materials,industrials,0.4318987008866174
+1487197,2017,BARFRESH FOOD GROUP INC.,"Canned, Frozen & Preservd Fruit, Veg & Food Specialties",consumer,consumer,0.5716626157938542
+1353406,2017,RedHawk Holdings Corp.,Crude Petroleum & Natural Gas,energy,industrials,0.2911912292360456
+92122,2017,SOUTHERN CO,Electric Services,utilities,utilities,0.96523434607507
+890543,2017,INTERNATIONAL BARRIER TECHNOLOGY INC,Miscellaneous Chemical Products,materials,materials,0.4239439288683591
+1102993,2017,LIVEPERSON INC,Services-Prepackaged Software,technology,technology,0.959264392096149
+1542013,2017,"JOEY NEW YORK, INC.","Wholesale-Drugs, Proprietaries & Druggists' Sundries",industrials,healthcare,0.30375204327309996
+1438095,2017,Ultimate Products CORP,"Wholesale-Lumber, Plywood, Millwork & Wood Panels",industrials,industrials,0.2662381704512657
+1056358,2017,MANNATECH INC,Medicinal Chemicals & Botanical Products,healthcare,consumer,0.2510621126133161
+1308606,2017,"SPIRIT REALTY CAPITAL, INC.",Opeators of  Nonresidential Buildings,real_estate,real_estate,0.9918990456456753
+867374,2017,ELECTRONICS FOR IMAGING INC,Computer Communications Equipment,technology,technology,0.4211669235880529
+1005276,2017,MOHEGAN TRIBAL GAMING AUTHORITY,Hotels & Motels,consumer,consumer,0.9252220090581249
+1110783,2017,MONSANTO CO /NEW/,Agricultural Chemicals,materials,consumer,0.2489696262404429
+1096385,2017,VECTREN CORP,Gas & Other Services Combined,utilities,utilities,0.9432423863614395
+1425287,2017,Workhorse Group Inc.,Motor Vehicles & Passenger Car Bodies,industrials,industrials,0.9502922073405489
+72162,2017,"NLI HOLDINGS, INC.",Industrial Inorganic Chemicals,materials,industrials,0.5025438103364285
+1404624,2017,"Affinion Group Holdings, Inc.","Services-Business Services, NEC",industrials,technology,0.40217730833050425
+1546652,2017,VanEck Merk Gold ETF,Commodity Contracts Brokers & Dealers,financials,financials,0.9640667208312239
+1137855,2017,Pacific Gold & Royalty Corp.,Gold and Silver Ores,materials,materials,0.4897705573750464
+1473334,2017,XMax Inc.,Household Furniture,consumer,consumer,0.5080365214047736
+1389125,2017,Frontier Select Fund,Commodity Contracts Brokers & Dealers,financials,financials,0.9799619736994127
+1697730,2017,"QUANTUM BUSINESS STRATEGIES, INC.",Services-Management Consulting Services,industrials,industrials,0.2756047281740899
+1078075,2017,NETSCOUT SYSTEMS INC,Services-Computer Integrated Systems Design,technology,technology,0.9458192052115459
+1327318,2017,"TrueCar, Inc.","Services-Computer Programming, Data Processing, Etc.",technology,technology,0.6029825956025185
+1042642,2017,DISH DBS CORP,"Communications Services, NEC",communications_media,communications_media,0.6565678418181464
+1339970,2017,aTYR PHARMA INC,"Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9958537350406816
+1037676,2017,"ARCH RESOURCES, INC.",Bituminous Coal & Lignite Surface Mining,energy,energy,0.7140895500621184
+1514056,2017,Titan Environmental Solutions Inc.,Services-Computer Programming Services,technology,technology,0.772420008997781
+874710,2017,ALLIED HEALTHCARE PRODUCTS INC,"Orthopedic, Prosthetic & Surgical Appliances & Supplies",healthcare,healthcare,0.6491228479938704
+1505497,2017,"BioRestorative Therapies, Inc.","Services-Misc Health & Allied Services, NEC",healthcare,healthcare,0.9952346962857586
+1428816,2017,"Epoxy, Inc.",Services-Personal Services,consumer,technology,0.8642172873020886
+88572,2017,SECURITY LAND & DEVELOPMENT CORP,Real Estate Dealers (For Their Own Account),real_estate,real_estate,0.6080855135842771
+924717,2017,SURMODICS INC,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9380939611654779
+811222,2017,Cardiff Lexington Corp,Services-Offices & Clinics of  Doctors of  Medicine,healthcare,real_estate,0.33656402963675575
+1018979,2017,AMERISAFE INC,"Fire, Marine & Casualty Insurance",financials,financials,0.8975736176406035
+1127703,2017,PROASSURANCE CORP,"Fire, Marine & Casualty Insurance",financials,financials,0.88387635980071
+1304464,2017,Crestwood Midstream Partners LP,Natural Gas Transmission,utilities,utilities,0.910126050324894
+1604042,2017,DCT Industrial Operating Partnership LP,Real Estate Investment Trusts,real_estate,real_estate,0.9973834023684882
+1133470,2017,CALAVO GROWERS INC,Agricultural Services,consumer,consumer,0.7790661029217649
+1025378,2017,W. P. Carey Inc.,Real Estate Investment Trusts,real_estate,real_estate,0.9778653607905732
+1594864,2017,"Juno Therapeutics, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.3744161725841288
+1369290,2017,"MYOMO, INC.","Orthopedic, Prosthetic & Surgical Appliances & Supplies",healthcare,healthcare,0.8780307756595187
+1636282,2017,"Spyre Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9996695092318624
+1084384,2017,PARETEUM Corp,Services-Computer Integrated Systems Design,technology,technology,0.9753069043367543
+1671013,2017,Cardtronics plc,"Services-Business Services, NEC",industrials,industrials,0.5382130037097974
+1302084,2017,NextSource Materials Inc.,Gold and Silver Ores,materials,materials,0.6868573875983975
+1223533,2017,"Frelii, Inc.",Real Estate,real_estate,healthcare,0.45856535859112835
+1490873,2017,"ECO SCIENCE SOLUTIONS, INC.",Retail-Miscellaneous Retail,consumer,consumer,0.5326379045838229
+1001115,2017,GEOSPACE TECHNOLOGIES CORP,"Measuring & Controlling Devices, NEC",industrials,industrials,0.5744329270090275
+1659166,2017,Fortive Corp,"Industrial Instruments For Measurement, Display, and Control",industrials,industrials,0.7487031511121158
+884940,2017,STEIN MART INC,Retail-Family Clothing Stores,consumer,consumer,0.9778728054252896
+1443089,2017,"WEARABLE HEALTH SOLUTIONS, INC.","Communications Equipment, NEC",technology,industrials,0.4749532134391157
+75340,2017,P&F INDUSTRIES INC,Metalworkg Machinery & Equipment,industrials,industrials,0.8494821052191628
+1552000,2017,MPLX LP,Pipe Lines (No Natural Gas),energy,utilities,0.8034634764297971
+1479094,2017,"STAG Industrial, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.9958323851679042
+1348259,2017,VALIDUS HOLDINGS LTD,"Fire, Marine & Casualty Insurance",financials,financials,0.805815684692347
+1709542,2017,"Electronic Servitor Publication Network, Inc.",Services-Computer Processing & Data Preparation,technology,consumer,0.6176612780702261
+1628468,2017,HUI YING FINANCIAL HOLDINGS Corp,Mortgage Bankers & Loan Correspondents,financials,financials,0.5372296851179047
+1385280,2017,"Cinemark Holdings, Inc.",Services-Motion Picture Theaters,communications_media,consumer,0.40838035186923916
+811596,2017,KAISER ALUMINUM CORP,Rolling Drawing & Extruding of  Nonferrous Metals,materials,materials,0.36170818273594485
+1520048,2017,Permianville Royalty Trust,Crude Petroleum & Natural Gas,energy,energy,0.7964980172903567
+1704795,2017,"Bantec, Inc.",Aircraft,industrials,industrials,0.4227638511920962
+1089815,2017,Elite Health Systems Inc.,"Services-Specialty Outpatient Facilities, NEC",healthcare,industrials,0.2182604922899016
+1438901,2017,"Auto Parts 4Less Group, Inc.","Services-Business Services, NEC",industrials,industrials,0.3437075518752251
+1398137,2017,"Generation Alpha, Inc.",Services-Miscellaneous Business Services,industrials,industrials,0.5132016881344689
+1522327,2017,Entegra Financial Corp.,"Savings Institutions, Not Federally Chartered",financials,financials,0.9950380917093735
+802257,2017,"Mitesco, Inc.","Services-Computer Programming, Data Processing, Etc.",technology,industrials,0.24371328254886393
+1618835,2017,"Evofem Biosciences, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.28891047592994745
+1692063,2017,"Schneider National, Inc.",Trucking (No Local),industrials,industrials,0.9750278783200301
+1693686,2017,Anutra Corp,Grain Mill Products,consumer,consumer,0.5734951962311171
+1651286,2017,"Steadfast Apartment REIT III, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.8753022754775144
+884269,2017,ALPHA PRO TECH LTD,"Orthopedic, Prosthetic & Surgical Appliances & Supplies",healthcare,industrials,0.34652840503325805
+1499807,2017,"K2M GROUP HOLDINGS, INC.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9384846591006268
+1090908,2017,"DETERMINE, INC.",Services-Prepackaged Software,technology,technology,0.8700638431097532
+1080014,2017,"Innoviva, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9162542671692991
+1704235,2017,Quintana Energy Services Inc.,"Oil & Gas Field Services, NEC",energy,energy,0.9115411396464864
+1544229,2017,"Engility Holdings, Inc.",Services-Engineering Services,industrials,industrials,0.7149016554054052
+1511735,2017,YAPPN CORP.,Wholesale-Durable Goods,industrials,industrials,0.29434564156176957
+1156041,2017,"ABUNDIA GLOBAL IMPACT GROUP, INC.",Crude Petroleum & Natural Gas,energy,energy,0.9616902174118993
+788920,2017,PRO DEX INC,Surgical & Medical Instruments & Apparatus,healthcare,industrials,0.7406990728627598
+882508,2017,QUICKLOGIC Corp,Semiconductors & Related Devices,technology,technology,0.9892485873115205
+920371,2017,"Simpson Manufacturing Co., Inc.","Cutlery, Handtools & General Hardware",industrials,industrials,0.5825517592610273
+791915,2017,CYPRESS SEMICONDUCTOR CORP /DE/,Semiconductors & Related Devices,technology,technology,0.7895448364047158
+1418135,2017,Keurig Dr Pepper Inc.,Beverages,consumer,consumer,0.7266552961504099
+71557,2017,"Nuvera Communications, Inc.",Telephone Communications (No Radiotelephone),communications_media,communications_media,0.6502026452667106
+1535079,2017,MCX Technologies Corp,Services-Prepackaged Software,technology,industrials,0.5887156189177892
+1518715,2017,Mechanics Bancorp,State Commercial Banks,financials,financials,0.9865569409951146
+1585644,2017,"WINDSTREAM SERVICES, LLC",Telephone Communications (No Radiotelephone),communications_media,technology,0.4375801179262803
+931059,2017,"Rennova Health, Inc.","Services-General Medical & Surgical Hospitals, NEC",healthcare,healthcare,0.5223361791841992
+1267425,2017,BF Garden Tax Credit Fund V L.P.,Operators of  Apartment Buildings,real_estate,real_estate,0.9505732774840271
+1499717,2017,"Staffing 360 Solutions, Inc.",Services-Help Supply Services,industrials,industrials,0.6385157721745645
+23217,2017,CONAGRA BRANDS INC.,Food and Kindred Products,consumer,consumer,0.84006507935624
+821127,2017,BOSTON PRIVATE FINANCIAL HOLDINGS INC,State Commercial Banks,financials,financials,0.9964678402662707
+1653099,2017,"VIGILANT DIVERSIFIED HOLDINGS, INC./NV",Services-Management Consulting Services,industrials,consumer,0.4796580436915433
+1519061,2017,Trinseo PLC,"Plastic Materials, Synth Resins & Nonvulcan Elastomers",materials,materials,0.6114111499812255
+1492869,2017,"SL GREEN OPERATING PARTNERSHIP, L.P.",Real Estate Investment Trusts,real_estate,real_estate,0.9784855355168699
+912061,2017,NATURAL HEALTH TRENDS CORP,Wholesale-Miscellaneous Nondurable Goods,industrials,consumer,0.3812498274673576
+1163199,2017,FNB BANCORP/CA/,State Commercial Banks,financials,financials,0.6230159117548684
+71829,2017,NPK International Inc.,Services-Miscellaneous Equipment Rental & Leasing,industrials,energy,0.6796786253957722
+1553023,2017,CyrusOne Holdco LLC,Real Estate Investment Trusts,real_estate,real_estate,0.3826200459035175
+1211759,2017,CONNECTURE INC,Services-Prepackaged Software,technology,financials,0.4764923942737133
+1632275,2017,CAT9 Group Inc.,Medicinal Chemicals & Botanical Products,healthcare,consumer,0.48501994991326264
+1280058,2017,BLACKBAUD INC,Services-Prepackaged Software,technology,technology,0.7935562910191262
+886982,2017,GOLDMAN SACHS GROUP INC,"Security Brokers, Dealers & Flotation Companies",financials,financials,0.9582747927700251
+1381197,2017,"Interactive Brokers Group, Inc.","Security Brokers, Dealers & Flotation Companies",financials,financials,0.7185591607883915
+1323648,2017,Community Bankers Trust Corp,State Commercial Banks,financials,financials,0.9793599897252171
+1402479,2017,"MedAvail Holdings, Inc.",Retail-Drug Stores and Proprietary Stores,consumer,healthcare,0.9096979430231257
+1495231,2017,"IZEA Worldwide, Inc.",Services-Advertising,communications_media,technology,0.7612837246239139
+310522,2017,FEDERAL NATIONAL MORTGAGE ASSOCIATION FANNIE MAE,Federal & Federally-Sponsored Credit Agencies,financials,financials,0.6436979181595066
+1450720,2017,Frontier Diversified Fund,Commodity Contracts Brokers & Dealers,financials,financials,0.9799619736994127
+1605331,2017,AI Era Corp.,Patent Owners & Lessors,financials,industrials,0.28928778938930017
+1436425,2017,"HOME BANCORP, INC.","Savings Institutions, Not Federally Chartered",financials,financials,0.9968789658560135
+81061,2017,PUBLIX SUPER MARKETS INC,Retail-Grocery Stores,consumer,consumer,0.8533543145583596
+1575975,2017,Viabuilt Ventures Inc.,Miscellaneous Fabricated Metal Products,industrials,healthcare,0.540031172211725
+1553404,2017,Pacific Green Technologies Inc.,Hazardous Waste Management,utilities,materials,0.3543301273756995
+1634447,2017,"ISUN, INC.",Semiconductors & Related Devices,technology,healthcare,0.4249411068641068
+319016,2017,"Fuse Medical, Inc.","Wholesale-Medical, Dental & Hospital Equipment & Supplies",industrials,consumer,0.20714994083375302
+1590715,2017,American Resources Corp,Silver Ores,energy,energy,0.5541721395320497
+1682745,2017,VERRA MOBILITY Corp,Transportation Services,industrials,industrials,0.3415767866728849
+1495320,2017,"Vera Bradley, Inc.",Leather & Leather Products,materials,consumer,0.9079259412653944
+1527675,2017,WUNONG ASIA PACIFIC Co Ltd,"Services-Business Services, NEC",industrials,materials,0.3533084167818511
+1361983,2017,ORBCOMM Inc.,"Communications Services, NEC",communications_media,technology,0.5315326917153396
+915912,2017,AVALONBAY COMMUNITIES INC,Real Estate Investment Trusts,real_estate,real_estate,0.9345245160655052
+896841,2017,"AVID TECHNOLOGY, INC.",Services-Prepackaged Software,technology,technology,0.5817583735660343
+76321,2017,PARKER DRILLING CO /DE/,Drilling Oil & Gas Wells,energy,energy,0.7453999500905891
+42888,2017,GRACO INC,Pumps & Pumping Equipment,industrials,industrials,0.8416459555877294
+1417028,2017,CANNASYS INC,"Services-Business Services, NEC",industrials,healthcare,0.3315625156752174
+1643301,2017,"Avenir Wellness Solutions, Inc.",Pharmaceutical Preparations,healthcare,industrials,0.2903466198451303
+1660690,2017,"Versum Materials, Inc.",Miscellaneous Chemical Products,materials,industrials,0.5676626625314307
+887396,2017,EMPIRE PETROLEUM CORP,Crude Petroleum & Natural Gas,energy,energy,0.4031008837870882
+1289460,2017,"Texas Roadhouse, Inc.",Retail-Eating  Places,consumer,consumer,0.9753601740116434
+868611,2017,SONIC CORP,Retail-Eating  Places,consumer,consumer,0.9432001268664734
+1617351,2017,"Mu Yan Technology Group Co., Ltd","Wholesale-Drugs, Proprietaries & Druggists' Sundries",industrials,industrials,0.302273421145114
+88000,2017,Horizon Kinetics Holding Corp,Investment Advice,financials,materials,0.5418586232515478
+1109354,2017,BRUKER CORP,Laboratory Analytical Instruments,healthcare,healthcare,0.7214230921679715
+1051512,2017,TELEPHONE & DATA SYSTEMS INC /DE/,Telephone Communications (No Radiotelephone),communications_media,communications_media,0.8185159910272277
+1301611,2017,"LEGACY LIFEPOINT HEALTH, INC.","Services-General Medical & Surgical Hospitals, NEC",healthcare,healthcare,0.9776310916686997
+1699150,2017,Ingersoll Rand Inc.,General Industrial Machinery & Equipment,industrials,industrials,0.9090966919630241
+88205,2017,"SPX Technologies, Inc.",Metalworkg Machinery & Equipment,industrials,industrials,0.2702357971697743
+1590799,2017,Riverview Financial Corp,National Commercial Banks,financials,financials,0.9991858026295957
+1600347,2017,Hapi Metaverse Inc.,Services-Management Consulting Services,industrials,technology,0.7473030394490474
+886137,2017,FINISH LINE INC /IN/,Retail-Shoe Stores,consumer,consumer,0.9892228856755904
+930245,2017,Agassi Sports Entertainment Corp.,Retail-Miscellaneous Retail,consumer,consumer,0.45222161103276143
+1611277,2018,"Helix Technologies, Inc.","Services-Detective, Guard & Armored Car Services",industrials,industrials,0.27706333537541344
+1258602,2018,NELNET INC,Personal Credit Institutions,financials,financials,0.7016721817839268
+920424,2018,VIRTU ITG HOLDINGS LLC,"Security Brokers, Dealers & Flotation Companies",financials,financials,0.4465270558390881
+1680232,2018,"Strategic Storage Trust IV, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.9378784949249315
+1410428,2018,"XWELL, Inc.",Services-Personal Services,consumer,consumer,0.344554071772535
+1335112,2018,"LOGIQ, INC.","Services-Business Services, NEC",industrials,technology,0.66806487600977
+1693415,2018,"Translate Bio, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.999025571298959
+867374,2018,ELECTRONICS FOR IMAGING INC,Computer Communications Equipment,technology,materials,0.31692791619480665
+1393772,2018,"WEED, INC.",Services-Commercial Physical & Biological Research,healthcare,healthcare,0.24342127285503257
+17843,2018,CARPENTER TECHNOLOGY CORP,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",materials,materials,0.6295032484728599
+1694187,2018,"Neon Therapeutics, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9961131517548578
+866706,2018,ESCO TECHNOLOGIES INC,"Communications Equipment, NEC",technology,industrials,0.726603037510978
+23795,2018,"CTO Realty Growth, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.9920912976540989
+1653099,2018,"VIGILANT DIVERSIFIED HOLDINGS, INC./NV",Services-Management Consulting Services,industrials,industrials,0.665628809357992
+1519061,2018,Trinseo PLC,"Plastic Materials, Synth Resins & Nonvulcan Elastomers",materials,materials,0.6764733503010104
+1725911,2018,NetBrands Corp.,Finance Services,financials,consumer,0.5582256984839755
+1498301,2018,"Mahwah Bergen Retail Group, Inc.",Retail-Apparel & Accessory Stores,consumer,consumer,0.8864139798380922
+1089815,2018,Elite Health Systems Inc.,"Services-Specialty Outpatient Facilities, NEC",healthcare,industrials,0.2182604922899016
+1385280,2018,"Cinemark Holdings, Inc.",Services-Motion Picture Theaters,communications_media,consumer,0.33447270412624364
+1568969,2018,Techlott Inc.,Services-Computer Programming Services,technology,healthcare,0.22795961812696405
+719209,2018,ISRAMCO INC,Crude Petroleum & Natural Gas,energy,energy,0.9951367525050498
+1425287,2018,Workhorse Group Inc.,Motor Vehicles & Passenger Car Bodies,industrials,industrials,0.9410498015017361
+912615,2018,URBAN OUTFITTERS INC,Retail-Family Clothing Stores,consumer,consumer,0.985706603580317
+851205,2018,COGNEX CORP,"Industrial Instruments For Measurement, Display, and Control",industrials,technology,0.616611920414065
+1235468,2018,LIQUIDITY SERVICES INC,"Services-Business Services, NEC",industrials,industrials,0.8622057016487671
+1674910,2018,VALVOLINE INC,Miscellaneous Products of  Petroleum & Coal,energy,industrials,0.7709212586605859
+903651,2018,INNODATA INC,Services-Computer Processing & Data Preparation,technology,technology,0.8528279830894421
+1115128,2018,Quotient Technology Inc.,Services-Advertising,communications_media,consumer,0.3121899108616515
+81061,2018,PUBLIX SUPER MARKETS INC,Retail-Grocery Stores,consumer,consumer,0.823516968272328
+314808,2018,Valaris Ltd,Drilling Oil & Gas Wells,energy,energy,0.5723347691821326
+1032208,2018,SEMPRA,Gas & Other Services Combined,utilities,utilities,0.9769492113964878
+92122,2018,SOUTHERN CO,Electric Services,utilities,utilities,0.9797997574825987
+1673431,2018,"South East Asia Development, Corp.",Chemicals & Allied Products,materials,industrials,0.5650075895390239
+811222,2018,Cardiff Lexington Corp,Services-Offices & Clinics of  Doctors of  Medicine,healthcare,real_estate,0.25222823336513467
+76149,2018,PARADISE INC,Sugar & Confectionery Products,consumer,industrials,0.36151120667969155
+1553079,2018,"Empire State Realty OP, L.P.",Real Estate Investment Trusts,real_estate,real_estate,0.9681648552630887
+1401521,2018,AMERICAN COASTAL INSURANCE Corp,"Fire, Marine & Casualty Insurance",financials,financials,0.9857374388882499
+1383097,2018,NAKED BRAND GROUP INC.,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",consumer,consumer,0.9141067395830588
+97745,2018,THERMO FISHER SCIENTIFIC INC.,"Measuring & Controlling Devices, NEC",industrials,healthcare,0.7431048451156281
+916365,2018,TRACTOR SUPPLY CO /DE/,"Retail-Building Materials, Hardware, Garden Supply",consumer,consumer,0.9680538772003875
+1467373,2018,Accenture plc,"Services-Business Services, NEC",industrials,industrials,0.9268433822843322
+1260221,2018,TransDigm Group INC,"Aircraft Parts & Auxiliary Equipment, NEC",industrials,industrials,0.89144533235447
+845698,2018,GRANT PARK FUTURES FUND LIMITED PARTNERSHIP,Commodity Contracts Brokers & Dealers,financials,financials,0.9722002090826339
+1495231,2018,"IZEA Worldwide, Inc.",Services-Advertising,communications_media,technology,0.48778869621700477
+1659166,2018,Fortive Corp,"Industrial Instruments For Measurement, Display, and Control",industrials,industrials,0.4618142714559293
+1308606,2018,"SPIRIT REALTY CAPITAL, INC.",Opeators of  Nonresidential Buildings,real_estate,real_estate,0.9936518018724967
+1536577,2018,Medley LLC,Investment Advice,financials,financials,0.9526562024479462
+1418135,2018,Keurig Dr Pepper Inc.,Beverages,consumer,consumer,0.6116074143565274
+944745,2018,"CIVISTA BANCSHARES, INC.",State Commercial Banks,financials,financials,0.9830876707687766
+37785,2018,FMC CORP,Chemicals & Allied Products,materials,materials,0.6808811844996685
+1443089,2018,"WEARABLE HEALTH SOLUTIONS, INC.","Communications Equipment, NEC",technology,industrials,0.4749532134391157
+1341141,2018,"CatchMark Timber Trust, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.976400259810901
+1443863,2018,BioCorRx Inc.,"Services-Specialty Outpatient Facilities, NEC",healthcare,consumer,0.2660603662281785
+1368761,2018,"Start Scientific, Inc.",Services-Computer Integrated Systems Design,technology,technology,0.307042022971046
+1020710,2018,DXP ENTERPRISES INC,Wholesale-Industrial Machinery & Equipment,industrials,industrials,0.9254506430828867
+277509,2018,FEDERAL SIGNAL CORP /DE/,Motor Vehicles & Passenger Car Bodies,industrials,industrials,0.9564683272189176
+910606,2018,REGENCY CENTERS CORP,Real Estate Investment Trusts,real_estate,real_estate,0.7164591018739453
+1662684,2018,"KULR Technology Group, Inc.",Electronic Components & Accessories,technology,technology,0.937887592283182
+866374,2018,FLEX LTD.,Printed Circuit Boards,technology,technology,0.7474031675324344
+1024095,2018,"Carnegie Development, Inc",Engines & Turbines,industrials,industrials,0.2714654691487557
+50725,2018,GRIFFON CORP,"Metal Doors, Sash, Frames, Moldings & Trim",industrials,industrials,0.575310919449009
+1139812,2018,MB FINANCIAL INC /MD,National Commercial Banks,financials,financials,0.9860247070898892
+1442836,2018,"Mersana Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9973681842906568
+1699039,2018,"Ranger Energy Services, Inc.","Oil & Gas Field Services, NEC",energy,energy,0.9532197289764278
+928576,2018,MIDAMERICAN ENERGY CO,Electric Services,utilities,utilities,0.9799634843653734
+1595627,2018,"Inland Residential Properties Trust, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.9733194647865029
+885245,2018,BUCKLE INC,Retail-Family Clothing Stores,consumer,consumer,0.9786316452988387
+916789,2018,HELEN OF TROY LTD,Electric Housewares & Fans,consumer,industrials,0.42602418927606733
+19411,2018,MAGELLAN HEALTH INC,Services-Hospitals,healthcare,healthcare,0.6174552979079079
+1265131,2018,Hilltop Holdings Inc.,State Commercial Banks,financials,financials,0.9972669626636915
+726513,2018,TRIBUNE MEDIA CO,Television Broadcasting Stations,communications_media,communications_media,0.8136059030413515
+1712189,2018,Target Hospitality Corp.,"Hotels, Rooming Houses, Camps & Other Lodging Places",consumer,healthcare,0.5045227913390358
+10456,2018,BAXTER INTERNATIONAL INC,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.4253102921906699
+1441816,2018,"MongoDB, Inc.",Services-Prepackaged Software,technology,technology,0.9783824511935305
+1495320,2018,"Vera Bradley, Inc.",Leather & Leather Products,materials,consumer,0.9115463233334065
+913277,2018,Clarus Corp,"Sporting & Athletic Goods, NEC",consumer,consumer,0.3260276573976652
+1366744,2018,HOMELAND ENERGY SOLUTIONS LLC,Industrial Organic Chemicals,materials,materials,0.45473943221690366
+1300938,2018,"ABCO Energy, Inc.",Construction - Special Trade Contractors,industrials,industrials,0.8328400870431065
+1666138,2018,Atkore Inc.,"Miscellaneous Electrical Machinery, Equipment & Supplies",industrials,industrials,0.6105477428474156
+1625376,2018,FUTURE INTERNATIONAL GROUP CORP.,Services-Computer Integrated Systems Design,technology,technology,0.6156361041742956
+1650739,2018,"Ajia Innogroup Holdings, Ltd.",Services-Personal Services,consumer,technology,0.455937232501712
+1110607,2018,"Koil Energy Solutions, Inc.",Oil & Gas Field Machinery & Equipment,industrials,industrials,0.6123809053024357
+1005817,2018,TOMPKINS FINANCIAL CORP,State Commercial Banks,financials,financials,0.9962190553423869
+811596,2018,KAISER ALUMINUM CORP,Rolling Drawing & Extruding of  Nonferrous Metals,materials,materials,0.3918517429611141
+935036,2018,"ACI WORLDWIDE, INC.",Services-Prepackaged Software,technology,technology,0.5812640948386658
+1013706,2018,"Wilhelmina International, Inc.",Services-Management Consulting Services,industrials,consumer,0.4857866480702731
+1368637,2018,Petrolia Energy Corp,Crude Petroleum & Natural Gas,energy,energy,0.2930530257852898
+1066194,2018,EGAIN Corp,Services-Prepackaged Software,technology,technology,0.4971197533582507
+1034592,2018,OMNICOMM SYSTEMS INC,"Services-Business Services, NEC",industrials,industrials,0.43163903992248165
+1102993,2018,LIVEPERSON INC,Services-Prepackaged Software,technology,technology,0.9388373120714728
+1634997,2018,"Avangrid, Inc.",Electric Services,utilities,utilities,0.9937637461875315
+1414382,2018,Concrete Leveling Systems Inc,Misc Industrial & Commercial Machinery & Equipment,industrials,consumer,0.5840446090993748
+901491,2018,PAPA JOHNS INTERNATIONAL INC,Retail-Eating  Places,consumer,consumer,0.39771790423190323
+1567503,2018,"TurnKey Capital, Inc.",Services-Management Consulting Services,industrials,industrials,0.5492223463249051
+886137,2018,FINISH LINE INC /IN/,Retail-Shoe Stores,consumer,consumer,0.9815057955995585
+1072379,2018,NORTHWEST BIOTHERAPEUTICS INC,Pharmaceutical Preparations,healthcare,healthcare,0.9835302982899915
+1348911,2018,"KalVista Pharmaceuticals, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.999239573661619
+1023844,2018,NATIONAL HOLDINGS CORP,"Security & Commodity Brokers, Dealers, Exchanges & Services",financials,financials,0.986147614009384
+1490054,2018,"VERDE BIO HOLDINGS, INC.",Crude Petroleum & Natural Gas,energy,industrials,0.5189179789290954
+1206264,2018,SOMNIGROUP INTERNATIONAL INC.,Household Furniture,consumer,consumer,0.4806941611597261
+49196,2018,HUNTINGTON BANCSHARES INC /MD/,National Commercial Banks,financials,financials,0.9831518740180116
+1479681,2018,Nutex Health Inc.,"Services-Business Services, NEC",industrials,industrials,0.5868004581927775
+1636282,2018,"Spyre Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9997129384125503
+849399,2018,Gen Digital Inc.,Services-Prepackaged Software,technology,technology,0.9073837946352143
+90144,2018,SIERRA PACIFIC POWER CO,Electric & Other Services Combined,utilities,utilities,0.9799634843653734
+715579,2018,ACNB CORP,State Commercial Banks,financials,financials,0.9971786437301364
+1088638,2018,"MASTERMIND, INC.",Services-Advertising,communications_media,financials,0.7978157002724053
+1552845,2018,Natur International Corp.,Services-Home Health Care Services,healthcare,consumer,0.468678177468682
+1483646,2018,"BLACKSTAR ENTERPRISE GROUP, INC.",Finance Services,financials,real_estate,0.5448418432377169
+1110647,2018,"OCLARO, INC.",Semiconductors & Related Devices,technology,technology,0.9249168213882564
+1450720,2018,Frontier Diversified Fund,Commodity Contracts Brokers & Dealers,financials,financials,0.9799619736994127
+1594109,2018,GrubHub Inc.,"Services-Business Services, NEC",industrials,technology,0.3237700858814007
+1361658,2018,Travel & Leisure Co.,Hotels & Motels,consumer,consumer,0.3849298656012085
+1410172,2018,"Rubicon Technology, Inc.",Semiconductors & Related Devices,technology,materials,0.37883774475547294
+820771,2018,Goliath Film & Media Holdings,Services-Motion Picture & Video Tape Distribution,communications_media,communications_media,0.4433157839853705
+766792,2018,CVD EQUIPMENT CORP,"Special Industry Machinery, NEC",industrials,industrials,0.6615874922273601
+1003410,2018,DUKE REALTY Ltd PARTNERSHIP/,Real Estate,real_estate,real_estate,0.98367072959047
+1228627,2018,"Opus Genetics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9993136417674239
+1156041,2018,"ABUNDIA GLOBAL IMPACT GROUP, INC.",Crude Petroleum & Natural Gas,energy,energy,0.9555988880380497
+1100412,2018,ARRAY BIOPHARMA INC,Pharmaceutical Preparations,healthcare,healthcare,0.9980037785307587
+1169652,2018,CHANNELADVISOR CORP,Services-Prepackaged Software,technology,technology,0.9085207506316564
+820313,2018,AMPHENOL CORP /DE/,Electronic Connectors,technology,technology,0.5938389629683608
+729986,2018,UNITED BANKSHARES INC/WV,State Commercial Banks,financials,financials,0.995420631255925
+1527190,2018,"National CineMedia, LLC",Services-Advertising,communications_media,communications_media,0.8772230330042405
+1130758,2018,AEI INCOME & GROWTH FUND 24 LLC,Real Estate,real_estate,real_estate,0.9651566012031537
+88205,2018,"SPX Technologies, Inc.",Metalworkg Machinery & Equipment,industrials,industrials,0.26342328743816157
+1713863,2018,"Rafael Holdings, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.25933719938622934
+23217,2018,CONAGRA BRANDS INC.,Food and Kindred Products,consumer,consumer,0.8640380180819628
+43196,2018,"GRAY MEDIA, INC",Television Broadcasting Stations,communications_media,communications_media,0.8777878713913534
+1524872,2018,Thunder Energies Corp,"Special Industry Machinery, NEC",industrials,industrials,0.22201794679853692
+884940,2018,STEIN MART INC,Retail-Family Clothing Stores,consumer,consumer,0.9732036163028279
+1590799,2018,Riverview Financial Corp,National Commercial Banks,financials,financials,0.9990089315651188
+1057060,2018,MARINEMAX INC,Retail-Auto & Home Supply Stores,consumer,industrials,0.6436826928191132
+3153,2018,ALABAMA POWER CO,Electric Services,utilities,utilities,0.9797997574825987
+1458704,2018,Plantation Corp.,Telephone Communications (No Radiotelephone),communications_media,industrials,0.41637219295073236
+95574,2018,"SUPERIOR GROUP OF COMPANIES, INC.",Apparel & Other Finishd Prods of  Fabrics & Similar Matl,consumer,industrials,0.4571828878382792
+1463208,2018,"Transportation & Logistics Systems, Inc.",Transportation Services,industrials,industrials,0.8492901070073784
+37637,2018,"DUKE ENERGY FLORIDA, LLC",Electric Services,utilities,utilities,0.9456133361498876
+1133470,2018,CALAVO GROWERS INC,Agricultural Services,consumer,consumer,0.666627304898184
+711377,2018,NEOGEN CORP,In Vitro & In Vivo Diagnostic Substances,healthcare,healthcare,0.5800604753200371
+1069394,2018,FLEXIBLE SOLUTIONS INTERNATIONAL INC,Miscellaneous Chemical Products,materials,industrials,0.6340026069406655
+1615817,2018,King Merger Sub II LLC,"Oil & Gas Field Services, NEC",energy,energy,0.7088614337369854
+230557,2018,SELECTIVE INSURANCE GROUP INC,"Fire, Marine & Casualty Insurance",financials,financials,0.9322526907290392
+38009,2018,FORD MOTOR CREDIT CO LLC,Miscellaneous Business Credit Institution,financials,financials,0.4750419273219655
+788920,2018,PRO DEX INC,Surgical & Medical Instruments & Apparatus,healthcare,industrials,0.763504883154883
+1351901,2018,Commonwealth Income & Growth Fund VI,Services-Miscellaneous Equipment Rental & Leasing,industrials,industrials,0.6895391849514076
+776867,2018,WHITE MOUNTAINS INSURANCE GROUP LTD,"Fire, Marine & Casualty Insurance",financials,financials,0.9081229021313726
+1516551,2018,"Skye Bioscience, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.5392962075107323
+88941,2018,SEMTECH CORP,Semiconductors & Related Devices,technology,technology,0.9515752533067721
+1138118,2018,"CBRE GROUP, INC.",Real Estate,real_estate,real_estate,0.507782706584301
+1005276,2018,MOHEGAN TRIBAL GAMING AUTHORITY,Hotels & Motels,consumer,consumer,0.6067378903085849
+913144,2018,RENAISSANCERE HOLDINGS LTD,"Fire, Marine & Casualty Insurance",financials,financials,0.8632953389872579
+1374690,2019,"Larimar Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9405103386143981
+1490054,2019,"VERDE BIO HOLDINGS, INC.",Crude Petroleum & Natural Gas,energy,industrials,0.5202099463084813
+949870,2019,BOSTON BEER CO INC,Malt Beverages,consumer,consumer,0.61887909849002
+13156,2019,"Galaxy Gaming, Inc.",Services-Amusement & Recreation Services,consumer,consumer,0.47565103942912823
+1783400,2019,"US Ecology, Inc.",Refuse Systems,utilities,industrials,0.4960109823519484
+1694665,2019,"Evelo Biosciences, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9979418814019508
+1518715,2019,Mechanics Bancorp,State Commercial Banks,financials,financials,0.979546486332201
+1528697,2019,Apawthecary Pets USA,Wholesale-Computers & Peripheral Equipment & Software,industrials,consumer,0.33073786714046227
+1509957,2019,Can B Corp,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",industrials,healthcare,0.4893559212945077
+1019849,2019,"PENSKE AUTOMOTIVE GROUP, INC.",Retail-Auto Dealers & Gasoline Stations,consumer,consumer,0.7949849633222249
+1362004,2019,"ICF International, Inc.",Services-Management Consulting Services,industrials,industrials,0.5332544339543558
+935036,2019,"ACI WORLDWIDE, INC.",Services-Prepackaged Software,technology,technology,0.5608448484613895
+1435375,2019,XG SCIENCES INC,"Plastic Materials, Synth Resins & Nonvulcan Elastomers",materials,materials,0.8084635796150159
+1005276,2019,MOHEGAN TRIBAL GAMING AUTHORITY,Hotels & Motels,consumer,consumer,0.46276987127683467
+1326732,2019,Xencor Inc,Pharmaceutical Preparations,healthcare,healthcare,0.9992288445503162
+1450720,2019,Frontier Diversified Fund,Commodity Contracts Brokers & Dealers,financials,financials,0.9802383550240654
+1755672,2019,"Corteva, Inc.",Agricultural Production-Crops,consumer,materials,0.431915014599296
+1479419,2019,"KALA BIO, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.994552908253993
+29332,2019,DIXIE GROUP INC,Carpets & Rugs,consumer,consumer,0.7259478527125377
+69633,2019,"NAPCO SECURITY TECHNOLOGIES, INC","Communications Equipment, NEC",technology,industrials,0.5636293537445142
+1581552,2019,"Energy 11, L.P.",Crude Petroleum & Natural Gas,energy,energy,0.9556165594125238
+1061164,2019,PEREGRINE INDUSTRIES INC,"General Industrial Machinery & Equipment, NEC",industrials,industrials,0.3156005594271493
+1348911,2019,"KalVista Pharmaceuticals, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9994435859518463
+31462,2019,ECOLAB INC.,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",materials,industrials,0.7627356510229749
+1528356,2019,Genie Energy Ltd.,Electric & Other Services Combined,utilities,utilities,0.3509554687059404
+1372954,2019,Ameritrust Corp,Metal Mining,materials,materials,0.4379446558930941
+1498828,2019,Howard Hughes Corp,Real Estate Investment Trusts,real_estate,real_estate,0.33252642395939913
+1403475,2019,Bank of Marin Bancorp,State Commercial Banks,financials,financials,0.9976469139292647
+1483646,2019,"BLACKSTAR ENTERPRISE GROUP, INC.",Finance Services,financials,real_estate,0.17185315434054854
+352915,2019,UNIVERSAL HEALTH SERVICES INC,"Services-General Medical & Surgical Hospitals, NEC",healthcare,healthcare,0.22085761412072452
+1014473,2019,VERISIGN INC/CA,Services-Computer Programming Services,technology,industrials,0.345535132747768
+1544238,2019,"CARDAX, INC.",Pharmaceutical Preparations,healthcare,healthcare,0.506424090101841
+1052100,2019,WADDELL & REED FINANCIAL INC,"Security Brokers, Dealers & Flotation Companies",financials,financials,0.9884497675482738
+1673358,2019,"Yum China Holdings, Inc.",Retail-Eating  Places,consumer,consumer,0.9465237152109297
+1341141,2019,"CatchMark Timber Trust, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.9817299826611496
+916365,2019,TRACTOR SUPPLY CO /DE/,"Retail-Building Materials, Hardware, Garden Supply",consumer,consumer,0.9666269489104293
+901491,2019,PAPA JOHNS INTERNATIONAL INC,Retail-Eating  Places,consumer,consumer,0.9422959663234155
+1056087,2019,MCCLATCHY CO,Newspapers: Publishing or  Publishing & Printing,communications_media,communications_media,0.295712309389492
+1016169,2019,"ANTARES PHARMA, INC.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9856797182946273
+1780097,2019,"Baudax Bio, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9918775603339717
+1339970,2019,aTYR PHARMA INC,"Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.998673088328663
+1124198,2019,FLUOR CORP,Heavy Construction Other Than Bldg Const - Contractors,industrials,industrials,0.864844819732351
+1666138,2019,Atkore Inc.,"Miscellaneous Electrical Machinery, Equipment & Supplies",industrials,industrials,0.48807540497815427
+1066194,2019,EGAIN Corp,Services-Prepackaged Software,technology,technology,0.5662500707752138
+1760026,2019,Regenerative Medical Technology Group Inc.,"Retail-Retail Stores, NEC",consumer,consumer,0.2661260354315409
+1490873,2019,"ECO SCIENCE SOLUTIONS, INC.",Retail-Miscellaneous Retail,consumer,consumer,0.44264180107144785
+1505497,2019,"BioRestorative Therapies, Inc.","Services-Misc Health & Allied Services, NEC",healthcare,healthcare,0.5818570122720848
+1514056,2019,Titan Environmental Solutions Inc.,Services-Computer Programming Services,technology,industrials,0.4573265967668643
+1178727,2019,COMSovereign Holding Corp.,"Communications Equipment, NEC",technology,technology,0.9183905348839561
+916789,2019,HELEN OF TROY LTD,Electric Housewares & Fans,consumer,industrials,0.38053977372880704
+56873,2019,KROGER CO,Retail-Grocery Stores,consumer,consumer,0.9649047886731313
+1473334,2019,XMax Inc.,Household Furniture,consumer,industrials,0.3680030142284531
+1560327,2019,"Rapid7, Inc.",Services-Prepackaged Software,technology,technology,0.8860201250754776
+1462120,2019,"Live Oak Bancshares, Inc.",State Commercial Banks,financials,financials,0.8749085989556475
+1035201,2019,CALIFORNIA WATER SERVICE GROUP,Water Supply,utilities,industrials,0.4606431278309244
+1035983,2019,COMFORT SYSTEMS USA INC,Electrical Work,industrials,industrials,0.9643305779397499
+1377167,2019,"Financial Gravity Companies, Inc.",Finance Services,financials,financials,0.6989814956215898
+81020,2019,"Duke Energy Indiana, LLC",Electric Services,utilities,utilities,0.9814335102839464
+1616788,2019,LEGACY VENTURES INTERNATIONAL INC.,Surgical & Medical Instruments & Apparatus,healthcare,consumer,0.2640887384489314
+1700849,2019,Vado Corp.,Services-Advertising,communications_media,industrials,0.5836421714519611
+4457,2019,U-Haul Holding Co /NV/,Services-Auto Rental & Leasing (No Drivers),industrials,industrials,0.4458547961030163
+1280058,2019,BLACKBAUD INC,Services-Prepackaged Software,technology,technology,0.8409110961572781
+728387,2019,"Perspective Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.6005087053896369
+1632275,2019,CAT9 Group Inc.,Medicinal Chemicals & Botanical Products,healthcare,industrials,0.3984860142334122
+1469367,2019,Sunrun Inc.,Construction - Special Trade Contractors,industrials,industrials,0.44190200905728716
+355573,2019,REAL ESTATE ASSOCIATES LTD IV,Real Estate,real_estate,real_estate,0.8730750852718595
+1729427,2019,"CNS Pharmaceuticals, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.971670898544471
+708819,2019,MCDERMOTT INTERNATIONAL INC,Fabricated Plate Work (Boiler Shops),industrials,financials,0.7007148532917696
+1396033,2019,"LL Flooring Holdings, Inc.",Retail-Lumber & Other Building Materials Dealers,consumer,consumer,0.7110623554968885
+1138978,2019,"Novo Integrated Sciences, Inc.",Engines & Turbines,industrials,healthcare,0.9729213919763053
+719413,2019,HECLA MINING CO/DE/,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),materials,materials,0.8602349306893465
+1307954,2019,Huntsman CORP,Chemicals & Allied Products,materials,materials,0.6141720347753901
+1690820,2019,CARVANA CO.,Retail-Auto Dealers & Gasoline Stations,consumer,industrials,0.4071401277848279
+1692063,2019,"Schneider National, Inc.",Trucking (No Local),industrials,industrials,0.953285512201434
+1467373,2019,Accenture plc,"Services-Business Services, NEC",industrials,industrials,0.8732887486722275
+1659617,2019,"Moleculin Biotech, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9948722562534136
+703604,2019,"Distribution Solutions Group, Inc.","Wholesale-Machinery, Equipment & Supplies",industrials,industrials,0.8849204537844586
+915358,2019,SIGMATRON INTERNATIONAL INC,Printed Circuit Boards,technology,industrials,0.582373137183161
+27673,2019,DEERE JOHN CAPITAL CORP,Short-Term Business Credit Institutions,financials,industrials,0.5955799074096351
+81061,2019,PUBLIX SUPER MARKETS INC,Retail-Grocery Stores,consumer,consumer,0.8458888604816401
+1050377,2019,PC CONNECTION INC,Wholesale-Computers & Peripheral Equipment & Software,industrials,technology,0.6220889170449987
+766792,2019,CVD EQUIPMENT CORP,"Special Industry Machinery, NEC",industrials,industrials,0.6584646144689162
+1460329,2019,"Fluent, Inc.",Services-Advertising,communications_media,technology,0.38763618164155605
+1662684,2019,"KULR Technology Group, Inc.",Electronic Components & Accessories,technology,technology,0.5478325264867295
+1267425,2019,BF Garden Tax Credit Fund V L.P.,Operators of  Apartment Buildings,real_estate,real_estate,0.9509557882448398
+1261249,2019,AGILE THERAPEUTICS INC,Pharmaceutical Preparations,healthcare,healthcare,0.9068843192628809
+1025378,2019,W. P. Carey Inc.,Real Estate Investment Trusts,real_estate,real_estate,0.9797808050239745
+1563922,2019,Greenbacker Renewable Energy Co LLC,Electric Services,utilities,real_estate,0.4388804804249183
+783280,2019,DUKE REALTY CORP,Real Estate Investment Trusts,real_estate,real_estate,0.9812747842454561
+50725,2019,GRIFFON CORP,"Metal Doors, Sash, Frames, Moldings & Trim",industrials,industrials,0.5035066854621527
+1778784,2019,"Provident Bancorp, Inc. /MD/","Savings Institutions, Not Federally Chartered",financials,financials,0.9910033672437771
+1439222,2019,"AGIOS PHARMACEUTICALS, INC.",Pharmaceutical Preparations,healthcare,healthcare,0.9985459645681078
+1492869,2019,"SL GREEN OPERATING PARTNERSHIP, L.P.",Real Estate Investment Trusts,real_estate,real_estate,0.9842550103351195
+1420565,2019,"Rein Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9980130806987388
+1376231,2019,"VPR Brands, LP.",Services-Prepackaged Software,technology,consumer,0.47602800963852665
+1716558,2019,"American Homes 4 Rent, L.P.",Real Estate Investment Trusts,real_estate,real_estate,0.9855540466430504
+1103090,2019,"REFLECT SCIENTIFIC, INC.",Laboratory Apparatus & Furniture,industrials,industrials,0.35724181462146626
+1351901,2019,Commonwealth Income & Growth Fund VI,Services-Miscellaneous Equipment Rental & Leasing,industrials,industrials,0.6903717800792827
+1087423,2019,RED HAT INC,"Services-Computer Programming, Data Processing, Etc.",technology,technology,0.9864263815803325
+1572386,2019,"GREENWAY TECHNOLOGIES, INC. & SUBSIDIARIES",Industrial Organic Chemicals,materials,materials,0.312308408902984
+70487,2019,NRC HEALTH,Services-Commercial Physical & Biological Research,healthcare,healthcare,0.2713356329150483
+712770,2019,ONE LIBERTY PROPERTIES INC,Real Estate Investment Trusts,real_estate,real_estate,0.9898437402525915
+1438901,2019,"Auto Parts 4Less Group, Inc.","Services-Business Services, NEC",industrials,consumer,0.45629997047217574
+1069530,2019,"FILANA THERAPEUTICS, INC.",Pharmaceutical Preparations,healthcare,healthcare,0.9978168170435171
+1357615,2019,"KBR, INC.",Heavy Construction Other Than Bldg Const - Contractors,industrials,industrials,0.9695651476247852
+1581164,2019,"Extended Stay America, Inc.",Hotels & Motels,consumer,consumer,0.961009922774957
+1411207,2019,Allison Transmission Holdings Inc,Motor Vehicle Parts & Accessories,industrials,industrials,0.928958461925251
+1659207,2019,Fellazo Corp,Commercial Printing,communications_media,consumer,0.4161835590024593
+894405,2019,ARCBEST CORP /TX/,Trucking (No Local),industrials,industrials,0.9201582212957642
+71829,2019,NPK International Inc.,Services-Miscellaneous Equipment Rental & Leasing,industrials,energy,0.6678412246296255
+97745,2019,THERMO FISHER SCIENTIFIC INC.,"Measuring & Controlling Devices, NEC",industrials,industrials,0.4317157924151997
+1110607,2019,"Koil Energy Solutions, Inc.",Oil & Gas Field Machinery & Equipment,industrials,industrials,0.9231953557164636
+1443863,2019,BioCorRx Inc.,"Services-Specialty Outpatient Facilities, NEC",healthcare,consumer,0.27077354117194563
+1142417,2019,"NEXSTAR MEDIA GROUP, INC.",Television Broadcasting Stations,communications_media,communications_media,0.9866187799773047
+1772757,2019,DraftKings Holdings Inc.,Services-Miscellaneous Amusement & Recreation,consumer,healthcare,0.4557395200323971
+812796,2019,"SOLIGENIX, INC.",Pharmaceutical Preparations,healthcare,healthcare,0.995710352544196
+1304280,2019,Novelis Inc.,Rolling Drawing & Extruding of  Nonferrous Metals,materials,materials,0.8945387548990635
+33488,2019,ESCALADE INC,"Sporting & Athletic Goods, NEC",consumer,consumer,0.6982041769818026
+90168,2019,SIFCO INDUSTRIES INC,Aircraft Engines & Engine Parts,industrials,industrials,0.6289656654938682
+1042074,2019,"CymaBay Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9940435318538471
+1337553,2019,AERIE PHARMACEUTICALS INC,"Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9943496687780504
+71557,2019,"Nuvera Communications, Inc.",Telephone Communications (No Radiotelephone),communications_media,communications_media,0.7465009719662565
+1552000,2019,MPLX LP,Pipe Lines (No Natural Gas),energy,utilities,0.4885172793453483
+1674910,2019,VALVOLINE INC,Miscellaneous Products of  Petroleum & Coal,energy,industrials,0.7692697527230948
+849399,2019,Gen Digital Inc.,Services-Prepackaged Software,technology,technology,0.8889277172619942
+74145,2019,OKLAHOMA GAS & ELECTRIC CO,Electric Services,utilities,utilities,0.9001473303328958
+37785,2019,FMC CORP,Chemicals & Allied Products,materials,industrials,0.31706023863671423
+1541884,2019,PROLUNG INC,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.985082872845548
+1708035,2019,Ecovyst Inc.,Chemicals & Allied Products,materials,materials,0.5370785943879063
+97216,2019,TEREX CORP,"Industrial Trucks, Tractors, Trailors & Stackers",industrials,industrials,0.9118673272156143
+1417663,2019,"SANUWAVE Health, Inc.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9799719046455525
+1500198,2019,NEUROONE MEDICAL TECHNOLOGIES Corp,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.831617178702679
+105132,2019,WD 40 CO,Miscellaneous Chemical Products,materials,industrials,0.3968042062455622
+1558441,2019,INDUSTRIAL PROPERTY TRUST,Real Estate Investment Trusts,real_estate,real_estate,0.996370949169819
+1563536,2019,E-Qure Corp.,Wholesale-Misc Durable Goods,industrials,healthcare,0.9930919354618666
+38009,2019,FORD MOTOR CREDIT CO LLC,Miscellaneous Business Credit Institution,financials,financials,0.48350238440551335
+1020710,2019,DXP ENTERPRISES INC,Wholesale-Industrial Machinery & Equipment,industrials,industrials,0.9216981489458979
+1483195,2019,Oritani Financial Corp,State Commercial Banks,financials,financials,0.7231985177321881
+3153,2019,ALABAMA POWER CO,Electric Services,utilities,utilities,0.9770366458233908
+1069394,2019,FLEXIBLE SOLUTIONS INTERNATIONAL INC,Miscellaneous Chemical Products,materials,materials,0.5708049529801116
+1575858,2019,Purebase Corp,Agricultural Chemicals,materials,materials,0.719666859724756
+1510247,2019,"LGBTQ Loyalty Holdings, Inc.",Services-Computer Processing & Data Preparation,technology,technology,0.2570541405269307
+915778,2019,DSP GROUP INC /DE/,Semiconductors & Related Devices,technology,technology,0.9947865578265322
+1725911,2019,NetBrands Corp.,Finance Services,financials,consumer,0.6048142436210042
+728447,2019,"EVO Transportation & Energy Services, Inc.",Retail-Auto Dealers & Gasoline Stations,consumer,industrials,0.7488400483046689
+1680062,2019,"ACM Research, Inc.","Special Industry Machinery, NEC",industrials,industrials,0.44555537512617416
+1235468,2019,LIQUIDITY SERVICES INC,"Services-Business Services, NEC",industrials,industrials,0.8690402225275922
+1696898,2019,Chee Corp.,Miscellaneous Manufacturing Industries,consumer,industrials,0.5440826686603546
+1168081,2019,Desert Hawk Gold Corp.,Gold and Silver Ores,materials,financials,0.2938042116974428
+1321834,2019,"Q/C TECHNOLOGIES, INC.",In Vitro & In Vivo Diagnostic Substances,healthcare,healthcare,0.7862645384372434
+1759424,2019,"Evil Empire Designs, Inc.","Motorcycles, Bicycles & Parts",industrials,industrials,0.4044609754833262
+1002910,2019,AMEREN CORP,Electric & Other Services Combined,utilities,utilities,0.9732533764571099
+1227654,2019,COMPASS MINERALS INTERNATIONAL INC,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),materials,materials,0.7734165057498359
+1385799,2019,Advanced Biomedical Technologies Inc.,"Orthopedic, Prosthetic & Surgical Appliances & Supplies",healthcare,healthcare,0.7437843812782383
+820313,2019,AMPHENOL CORP /DE/,Electronic Connectors,technology,technology,0.5647775382870353
+92487,2019,SOUTHWESTERN ELECTRIC POWER CO,Electric Services,utilities,utilities,0.9831438442578261
+1680581,2019,"Fulcrum Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9996230062953324
+1664740,2019,MBC FUNDING II CORP.,Real Estate Investment Trusts,real_estate,financials,0.3684138962005311
+1571398,2019,VECTA INC.,"Savings Institution, Federally Chartered",financials,financials,0.9960778278799677
+43196,2019,"GRAY MEDIA, INC",Television Broadcasting Stations,communications_media,communications_media,0.7760501704453833
+1682852,2019,"Moderna, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.8519598686009099
+1680689,2019,"Natural Resource Holdings, Inc.",Retail-Nonstore Retailers,consumer,industrials,0.28850899197810415
+88941,2019,SEMTECH CORP,Semiconductors & Related Devices,technology,technology,0.9562612497404831
+314808,2019,Valaris Ltd,Drilling Oil & Gas Wells,energy,energy,0.6232028886174367
+90144,2019,SIERRA PACIFIC POWER CO,Electric & Other Services Combined,utilities,utilities,0.9815250821418173
+1581874,2019,"Terra Secured Income Fund 5, LLC",Real Estate Investment Trusts,real_estate,real_estate,0.9603523171448743
+230557,2019,SELECTIVE INSURANCE GROUP INC,"Fire, Marine & Casualty Insurance",financials,financials,0.9642303439766977
+1388658,2019,"iRhythm Holdings, Inc.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.8664338826720434
+1682745,2019,VERRA MOBILITY Corp,Transportation Services,industrials,industrials,0.901726546048148
+1487197,2019,BARFRESH FOOD GROUP INC.,"Canned, Frozen & Preservd Fruit, Veg & Food Specialties",consumer,consumer,0.6017868984321532
+910606,2019,REGENCY CENTERS CORP,Real Estate Investment Trusts,real_estate,real_estate,0.9539101293816753
+1694187,2019,"Neon Therapeutics, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9968101522909697
+1437283,2019,"REGO PAYMENT ARCHITECTURES, INC.",Services-Prepackaged Software,technology,technology,0.7639758857967419
+1520048,2019,Permianville Royalty Trust,Crude Petroleum & Natural Gas,energy,energy,0.5231657336732968
+1280600,2019,ACCELERON PHARMA INC,"Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9965107619047127
+1594109,2019,GrubHub Inc.,"Services-Business Services, NEC",industrials,technology,0.3362095885690469
+1657788,2019,"Kimbell Royalty Partners, LP",Crude Petroleum & Natural Gas,energy,energy,0.5003785411346897
+1304464,2019,Crestwood Midstream Partners LP,Natural Gas Transmission,utilities,utilities,0.9381532722310528
+754811,2019,U S GLOBAL INVESTORS INC,Investment Advice,financials,financials,0.9183926391270285
+40987,2019,GENUINE PARTS CO,Wholesale-Motor Vehicle Supplies & New Parts,industrials,industrials,0.4654853497472949
+1568969,2019,Techlott Inc.,Services-Computer Programming Services,technology,technology,0.539354715043582
+1029744,2019,SONIC FOUNDRY INC,Radio & Tv Broadcasting & Communications Equipment,technology,technology,0.9197523540664103
+709337,2019,FARMERS NATIONAL BANC CORP /OH/,State Commercial Banks,financials,financials,0.9980456397105639
+1267426,2020,BCTC V ASSIGNOR CORP,Operators of  Apartment Buildings,real_estate,real_estate,0.9276578440659715
+1501570,2020,"Veritex Holdings, Inc.",State Commercial Banks,financials,financials,0.9847637416832491
+1385799,2020,Advanced Biomedical Technologies Inc.,"Orthopedic, Prosthetic & Surgical Appliances & Supplies",healthcare,healthcare,0.7525149998576932
+1083643,2020,"FAUQUIER BANKSHARES, INC.",State Commercial Banks,financials,financials,0.9990103912108385
+1708035,2020,Ecovyst Inc.,Chemicals & Allied Products,materials,materials,0.5992954185543292
+1792789,2020,"DoorDash, Inc.","Services-Business Services, NEC",industrials,technology,0.4728018319445247
+1718108,2020,"Surface Oncology, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9954160091706089
+1361658,2020,Travel & Leisure Co.,Hotels & Motels,consumer,industrials,0.39722764376749975
+69633,2020,"NAPCO SECURITY TECHNOLOGIES, INC","Communications Equipment, NEC",technology,industrials,0.6150288852305545
+1712463,2020,Ranpak Holdings Corp.,Converted Paper & Paperboard Prods (No Contaners/Boxes),materials,industrials,0.3948501774846065
+1677576,2020,INNOVATIVE INDUSTRIAL PROPERTIES INC,Real Estate,real_estate,real_estate,0.990120541717388
+1173204,2020,Cineverse Corp.,Services-Video Tape Rental,communications_media,communications_media,0.5030884419414768
+913277,2020,Clarus Corp,"Sporting & Athletic Goods, NEC",consumer,consumer,0.3036860195349214
+63330,2020,MAUI LAND & PINEAPPLE CO INC,Real Estate,real_estate,real_estate,0.5840787894208007
+903419,2020,ALERUS FINANCIAL CORP,National Commercial Banks,financials,financials,0.882377697581338
+230557,2020,SELECTIVE INSURANCE GROUP INC,"Fire, Marine & Casualty Insurance",financials,financials,0.9547147354834644
+1285550,2020,"ClearPoint Neuro, Inc.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9980415293020449
+1227654,2020,COMPASS MINERALS INTERNATIONAL INC,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),materials,materials,0.7691383144829014
+916789,2020,HELEN OF TROY LTD,Electric Housewares & Fans,consumer,materials,0.3311544414007324
+1520048,2020,Permianville Royalty Trust,Crude Petroleum & Natural Gas,energy,energy,0.5231657336732968
+277509,2020,FEDERAL SIGNAL CORP /DE/,Motor Vehicles & Passenger Car Bodies,industrials,industrials,0.9593546751117138
+1321834,2020,"Q/C TECHNOLOGIES, INC.",In Vitro & In Vivo Diagnostic Substances,healthcare,healthcare,0.3375612341431134
+753308,2020,NEXTERA ENERGY INC,Electric Services,utilities,utilities,0.9419906357406675
+1567900,2020,REALLOYS INC.,Metal Mining,materials,technology,0.9404091585881849
+10456,2020,BAXTER INTERNATIONAL INC,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.6179850558018123
+1375793,2020,"Metalert, Inc.",Radio & Tv Broadcasting & Communications Equipment,technology,technology,0.6361566260676766
+1448597,2020,AUGUSTA GOLD CORP.,Metal Mining,materials,materials,0.7990173950888513
+1025378,2020,W. P. Carey Inc.,Real Estate Investment Trusts,real_estate,real_estate,0.966246412127125
+1353406,2020,RedHawk Holdings Corp.,Crude Petroleum & Natural Gas,energy,healthcare,0.6515415521862514
+1381197,2020,"Interactive Brokers Group, Inc.","Security Brokers, Dealers & Flotation Companies",financials,financials,0.654460760507288
+1453593,2020,"Xtant Medical Holdings, Inc.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9133165427313029
+1200375,2020,"CODEXIS, INC.",Industrial Organic Chemicals,materials,healthcare,0.5082579955253718
+704172,2020,PHI GROUP INC,Services-Management Services,industrials,financials,0.2706066212294348
+875582,2020,NORTHERN TECHNOLOGIES INTERNATIONAL CORP,"Coating, Engraving & Allied Services",industrials,industrials,0.406741986049826
+1649094,2020,"Vaxcyte, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9954892554764101
+1696898,2020,Chee Corp.,Miscellaneous Manufacturing Industries,consumer,industrials,0.5435511416802172
+1361983,2020,ORBCOMM Inc.,"Communications Services, NEC",communications_media,industrials,0.6085033864419634
+1498828,2020,Howard Hughes Corp,Real Estate Investment Trusts,real_estate,real_estate,0.35310105182276097
+13156,2020,"Galaxy Gaming, Inc.",Services-Amusement & Recreation Services,consumer,consumer,0.428521940485186
+1437283,2020,"REGO PAYMENT ARCHITECTURES, INC.",Services-Prepackaged Software,technology,technology,0.7340885795291252
+1535079,2020,MCX Technologies Corp,Services-Prepackaged Software,technology,industrials,0.5322612254013777
+314489,2020,FIRST BUSEY CORP /NV/,State Commercial Banks,financials,financials,0.9201483108187493
+944745,2020,"CIVISTA BANCSHARES, INC.",State Commercial Banks,financials,financials,0.9688965735136943
+1617351,2020,"Mu Yan Technology Group Co., Ltd","Wholesale-Drugs, Proprietaries & Druggists' Sundries",industrials,consumer,0.5265848773684718
+88205,2020,"SPX Technologies, Inc.",Metalworkg Machinery & Equipment,industrials,healthcare,0.22429636812168532
+1729944,2020,"IMAC Holdings, Inc.","Services-Specialty Outpatient Facilities, NEC",healthcare,healthcare,0.9904003739654949
+1222840,2020,"RETAIL PROPERTIES OF AMERICA, INC.",Real Estate Investment Trusts,real_estate,real_estate,0.9796990838898452
+1401914,2020,"Dare Bioscience, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9934347806311352
+1103795,2020,"QS Energy, Inc.",Oil & Gas Field Machinery & Equipment,industrials,industrials,0.4262995867178074
+1014473,2020,VERISIGN INC/CA,Services-Computer Programming Services,technology,industrials,0.32772157368736227
+1520006,2020,Matador Resources Co,Crude Petroleum & Natural Gas,energy,energy,0.9834278379348763
+1771706,2020,Vireo Growth Inc.,Pharmaceutical Preparations,healthcare,healthcare,0.20807259774243184
+1585521,2020,"Zoom Communications, Inc.","Services-Computer Programming, Data Processing, Etc.",technology,technology,0.9521032498673376
+1671013,2020,Cardtronics plc,"Services-Business Services, NEC",industrials,industrials,0.6148049186036142
+1327607,2020,First Western Financial Inc,State Commercial Banks,financials,financials,0.990468128093855
+1169652,2020,CHANNELADVISOR CORP,Services-Prepackaged Software,technology,technology,0.8232950072162621
+1521332,2020,Aptiv PLC,Motor Vehicle Parts & Accessories,industrials,industrials,0.5671852214776063
+1376231,2020,"VPR Brands, LP.",Services-Prepackaged Software,technology,consumer,0.45947752284330123
+898174,2020,REINSURANCE GROUP OF AMERICA INC,Life Insurance,financials,financials,0.7011133507835235
+1716621,2020,"Flyte Aviation, Inc.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9873277375434594
+928576,2020,MIDAMERICAN ENERGY CO,Electric Services,utilities,utilities,0.981592876922153
+1799191,2020,"Starling Oncology, Inc.",Services-Offices & Clinics of  Doctors of  Medicine,healthcare,healthcare,0.7583519662172029
+711377,2020,NEOGEN CORP,In Vitro & In Vivo Diagnostic Substances,healthcare,healthcare,0.5703395165793936
+1634379,2020,"Metacrine, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9974246154785665
+1634997,2020,"Avangrid, Inc.",Electric Services,utilities,utilities,0.9926530575931798
+1468679,2020,American CryoStem Corp,"Services-Misc Health & Allied Services, NEC",healthcare,healthcare,0.6501762547711464
+777917,2020,PRUCO LIFE INSURANCE CO,Life Insurance,financials,financials,0.9732697134758859
+1713863,2020,"Rafael Holdings, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.8101524164554564
+63296,2020,MATTHEWS INTERNATIONAL CORP,Nonferrous Foundries (Castings),materials,industrials,0.7645690395518157
+1176948,2020,Ares Management Corp,Investment Advice,financials,financials,0.7430504944881816
+1473334,2020,XMax Inc.,Household Furniture,consumer,consumer,0.2394142071682772
+1416697,2020,"Blue Line Protection Group, Inc.",Retail-Miscellaneous Retail,consumer,industrials,0.5079547284127711
+1673431,2020,"South East Asia Development, Corp.",Chemicals & Allied Products,materials,industrials,0.5853008937206228
+50725,2020,GRIFFON CORP,"Metal Doors, Sash, Frames, Moldings & Trim",industrials,industrials,0.6080377269243525
+1772757,2020,DraftKings Holdings Inc.,Services-Miscellaneous Amusement & Recreation,consumer,technology,0.35503916362518706
+1141103,2020,CROSS COUNTRY HEALTHCARE INC,Services-Help Supply Services,industrials,technology,0.39552802851805596
+1109354,2020,BRUKER CORP,Laboratory Analytical Instruments,healthcare,healthcare,0.6383521088953833
+1262039,2020,"Fortinet, Inc.","Computer Peripheral Equipment, NEC",technology,technology,0.9908337486646626
+1759509,2020,"Lyft, Inc.","Services-Business Services, NEC",industrials,technology,0.4026163868847269
+1078075,2020,NETSCOUT SYSTEMS INC,Services-Computer Integrated Systems Design,technology,technology,0.8759683711824355
+1701758,2020,Lovesac Co,Retail-Furniture Stores,consumer,consumer,0.7309352796964736
+1235468,2020,LIQUIDITY SERVICES INC,"Services-Business Services, NEC",industrials,industrials,0.9305426010400434
+798359,2020,CENTERSPACE,Real Estate Investment Trusts,real_estate,real_estate,0.9247225609057537
+1171155,2020,"RADIANT LOGISTICS, INC",Arrangement of  Transportation of  Freight & Cargo,industrials,industrials,0.9793724705810869
+319016,2020,"Fuse Medical, Inc.","Wholesale-Medical, Dental & Hospital Equipment & Supplies",industrials,financials,0.2667704916470647
+87050,2020,Neonode Inc.,"Electronic Components, NEC",technology,technology,0.6803923915478798
+72205,2020,NOBILITY HOMES INC,Mobile Homes,materials,materials,0.3977636880479272
+1163668,2020,"SOUTH PLAINS FINANCIAL, INC.",State Commercial Banks,financials,financials,0.9925302786742866
+910679,2020,WVS FINANCIAL CORP,"Savings Institutions, Not Federally Chartered",financials,financials,0.9222090869732534
+1460702,2020,FF EAI Robotics Ecosystem Inc.,Finance Services,financials,healthcare,0.9969876468860428
+1161728,2020,MGE ENERGY INC,"Electric, Gas & Sanitary Services",utilities,utilities,0.9780016785815756
+1766502,2020,"Chewy, Inc.",Retail-Catalog & Mail-Order Houses,consumer,consumer,0.6259977371213707
+1621832,2020,"Aqua Metals, Inc.",Secondary Smelting & Refining of  Nonferrous Metals,materials,materials,0.30850594634108364
+29332,2020,DIXIE GROUP INC,Carpets & Rugs,consumer,consumer,0.7749328893081895
+1260221,2020,TransDigm Group INC,"Aircraft Parts & Auxiliary Equipment, NEC",industrials,industrials,0.9279360783000358
+49196,2020,HUNTINGTON BANCSHARES INC /MD/,National Commercial Banks,financials,financials,0.9830503730171324
+775368,2020,ALLEGHANY CORP /DE,"Fire, Marine & Casualty Insurance",financials,financials,0.8527588786842176
+1442836,2020,"Mersana Therapeutics, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9976406328873888
+1401521,2020,AMERICAN COASTAL INSURANCE Corp,"Fire, Marine & Casualty Insurance",financials,financials,0.9845254147775185
+797542,2020,QUANTUM X LABS INC.,Services-Prepackaged Software,technology,industrials,0.28926960560182796
+1351901,2020,Commonwealth Income & Growth Fund VI,Services-Miscellaneous Equipment Rental & Leasing,industrials,industrials,0.697949793660522
+97745,2020,THERMO FISHER SCIENTIFIC INC.,"Measuring & Controlling Devices, NEC",industrials,industrials,0.4257293273859788
+92122,2020,SOUTHERN CO,Electric Services,utilities,utilities,0.9762492039029521
+1358654,2020,"RED METAL RESOURCES, LTD.",Metal Mining,materials,materials,0.6868705924725869
+1106644,2020,"CHINA PHARMA HOLDINGS, INC.",Pharmaceutical Preparations,healthcare,healthcare,0.8946143553220726
+76282,2020,PARK OHIO HOLDINGS CORP,Metal Forgings & Stampings,industrials,industrials,0.9759087492447264
+1393584,2020,American Well Corp,"Services-Business Services, NEC",industrials,technology,0.7244535330214014
+1795139,2020,Green Thumb Industries Inc.,Agricultural Production-Crops,consumer,consumer,0.49602804747706825
+100591,2020,ARGAN INC,Construction - Special Trade Contractors,industrials,industrials,0.9350239139927878
+1003410,2020,DUKE REALTY Ltd PARTNERSHIP/,Real Estate,real_estate,real_estate,0.9810873900702208
+924095,2020,"Metavesco, Inc.",Finance Services,financials,financials,0.4154155645405433
+1694665,2020,"Evelo Biosciences, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9990271053096511
+1811109,2020,"Applied UV, Inc.",Electric Lighting & Wiring Equipment,industrials,industrials,0.5664558211701822
+1413754,2020,"MARIZYME, INC.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.7770665740749132
+1462120,2020,"Live Oak Bancshares, Inc.",State Commercial Banks,financials,financials,0.8796213901371976
+719955,2020,WILLIAMS SONOMA INC,"Retail-Home Furniture, Furnishings & Equipment Stores",consumer,consumer,0.9804020514309529
+1549145,2020,"BLUE BIOFUELS, INC.",Industrial Organic Chemicals,materials,materials,0.4569779268168274
+1643301,2020,"Avenir Wellness Solutions, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.987013021105131
+1553079,2020,"Empire State Realty OP, L.P.",Real Estate Investment Trusts,real_estate,real_estate,0.9569014368271475
+1323648,2020,Community Bankers Trust Corp,State Commercial Banks,financials,financials,0.9819943285896966
+1394319,2020,"Tracon Pharmaceuticals, Inc.","Biological Products, (No Diagnostic Substances)",healthcare,healthcare,0.9964713460440828
+315131,2020,PHX MINERALS INC.,Crude Petroleum & Natural Gas,energy,energy,0.9218683675320136
+1016169,2020,"ANTARES PHARMA, INC.",Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.9376007420561789
+1805651,2020,"MARKETWISE, INC.",Services-Prepackaged Software,technology,healthcare,0.3503402239700565
+1307954,2020,Huntsman CORP,Chemicals & Allied Products,materials,industrials,0.34815854163462695
+1679363,2020,"Morphic Holding, Inc.",Pharmaceutical Preparations,healthcare,healthcare,0.9986006299410217
+1475841,2020,National Bank Holdings Corp,National Commercial Banks,financials,financials,0.9729592717817789
+1114995,2020,IMPINJ INC,"Electronic Components, NEC",technology,technology,0.939959270876189
+55242,2020,KENNAMETAL INC,"Machine Tools, Metal Cutting Types",industrials,industrials,0.9047177549949506
+912061,2020,NATURAL HEALTH TRENDS CORP,Wholesale-Miscellaneous Nondurable Goods,industrials,healthcare,0.39912290799593203
+884624,2020,Orthofix Medical Inc.,Surgical & Medical Instruments & Apparatus,healthcare,healthcare,0.6369429786430189
+90144,2020,SIERRA PACIFIC POWER CO,Electric & Other Services Combined,utilities,utilities,0.981592876922153
+1594109,2020,GrubHub Inc.,"Services-Business Services, NEC",industrials,technology,0.4156438238778026
+818677,2020,SECURITY FEDERAL CORP,State Commercial Banks,financials,financials,0.9895692268131044
+1600347,2020,Hapi Metaverse Inc.,Services-Management Consulting Services,industrials,technology,0.735488267036571
+1712189,2020,Target Hospitality Corp.,"Hotels, Rooming Houses, Camps & Other Lodging Places",consumer,industrials,0.36178222737415006
+1393052,2020,VEEVA SYSTEMS INC,Services-Prepackaged Software,technology,technology,0.6881618458805426
+1479681,2020,Nutex Health Inc.,"Services-Business Services, NEC",industrials,industrials,0.2700983510404888
+1524872,2020,Thunder Energies Corp,"Special Industry Machinery, NEC",industrials,consumer,0.2781460490653191
+1629210,2020,Paramount Gold Nevada Corp.,Metal Mining,materials,materials,0.8049137820176414
+1657312,2020,Verona Pharma plc,Pharmaceutical Preparations,healthcare,healthcare,0.9978953087450995
+1798562,2020,TMC the metals Co Inc.,Metal Mining,materials,industrials,0.6897652733036954
+861459,2020,GRANITE CONSTRUCTION INC,Heavy Construction Other Than Bldg Const - Contractors,industrials,industrials,0.7075793751864856
+4457,2020,U-Haul Holding Co /NV/,Services-Auto Rental & Leasing (No Drivers),industrials,industrials,0.4530814384552844
+1617406,2020,Park Hotels & Resorts Inc.,Hotels & Motels,consumer,real_estate,0.8295210695901231
+901491,2020,PAPA JOHNS INTERNATIONAL INC,Retail-Eating  Places,consumer,consumer,0.871100403381048
+1487952,2020,"Vishay Precision Group, Inc.",Electronic Components & Accessories,technology,industrials,0.7981946880167177
+849146,2020,Lifevantage Corp,Pharmaceutical Preparations,healthcare,healthcare,0.3070676216958227
+1053691,2020,CervoMed Inc.,Pharmaceutical Preparations,healthcare,healthcare,0.9874106971541837
+1466258,2020,Trane Technologies plc,Auto Controls For Regulating Residential & Comml Environments,industrials,industrials,0.8261152641862088
+1013706,2020,"Wilhelmina International, Inc.",Services-Management Consulting Services,industrials,consumer,0.4804485018185189
+1163739,2020,NABORS INDUSTRIES LTD,Drilling Oil & Gas Wells,energy,energy,0.5591597679073996
+1430723,2020,"ServisFirst Bancshares, Inc.",State Commercial Banks,financials,financials,0.9839125484582308
+811222,2020,Cardiff Lexington Corp,Services-Offices & Clinics of  Doctors of  Medicine,healthcare,real_estate,0.6375870237507201
+1810491,2020,"Anghami (DE), Inc.",Radio Broadcasting Stations,communications_media,industrials,0.7169155756905099
+1537028,2020,"Independence Contract Drilling, Inc.",Drilling Oil & Gas Wells,energy,energy,0.9716544412586632
+1142417,2020,"NEXSTAR MEDIA GROUP, INC.",Television Broadcasting Stations,communications_media,communications_media,0.9893399757088407
+1561032,2020,"National Healthcare Properties, Inc.",Real Estate Investment Trusts,real_estate,real_estate,0.9870053953965258
+727634,2020,iSign Solutions Inc.,Services-Prepackaged Software,technology,technology,0.775923599638762
+1125259,2020,Carnival UK Ltd.,Water Transportation,industrials,industrials,0.41463346418581
+1603145,2020,"XPLR Infrastructure, LP",Electric Services,utilities,utilities,0.7353421491236101
+1571398,2020,VECTA INC.,"Savings Institution, Federally Chartered",financials,financials,0.9958247261433727
+1772921,2020,OneWater Marine Inc.,Retail-Auto & Home Supply Stores,consumer,consumer,0.528752203473495
+1669811,2020,"Donnelley Financial Solutions, Inc.",Services-Miscellaneous Business Services,industrials,technology,0.6511545788166307
+37785,2020,FMC CORP,Chemicals & Allied Products,materials,industrials,0.471362767096408

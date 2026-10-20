@@ -1,0 +1,12 @@
+$ uv run python sectors/baseline.py --c 10 30 100 300 1000      (run 2: wider C grid)
+
+3,879 training filings x 210,300 word columns
+  C=10     val macro F1 0.716
+  C=30     val macro F1 0.733
+  C=100    val macro F1 0.741
+  C=300    val macro F1 0.729
+  C=1000   val macro F1 0.735
+
+Best C=100.  TEST macro F1 0.751  accuracy 0.746
+Train 42.0s total; predict 2 ms per 1,000 filings
+(per-sector table, confusion matrix and top words: out/tfidf_logreg_*.csv)

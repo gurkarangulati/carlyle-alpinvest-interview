@@ -1,0 +1,31 @@
+dev: 8525 queries, universe 9945 companies, 14163 aliases
+  exact             0.3s
+  fuzzy             5.1s
+  tfidf             1.1s
+  tfidf_noalias     1.0s
+hybrid thresholds chosen on dev: {'min_score': 70, 'min_margin': 0, 'precision': 0.9908, 'coverage': 0.9987}
+  hybrid            1.9s
+
+Top-1 accuracy by type (hybrid: abstain counts as a miss)
+method          exact  fuzzy  hybrid  tfidf  tfidf_noalias
+type                                                      
+abbreviation    0.991  0.936   0.991  0.994          0.991
+all             0.714  0.936   0.990  0.964          0.613
+ampersand       1.000  0.875   1.000  1.000          0.979
+case_punct      0.988  0.929   0.986  0.988          0.994
+former_name     0.992  0.931   0.993  0.992          0.132
+former_variant  0.749  0.931   0.992  0.977          0.123
+suffix          0.990  0.921   0.998  0.994          0.992
+the             0.993  0.917   0.990  0.990          0.997
+ticker          0.999  0.999   0.999  0.999          0.999
+typo            0.000  0.926   0.977  0.881          0.894
+
+Overall
+       method    n  top1  top5   mrr  secs_per_1k_queries  abstain_rate  precision_answered
+        exact 8525 0.714 0.719 0.717                0.034           NaN                 NaN
+        fuzzy 8525 0.936 0.999 0.966                0.594           NaN                 NaN
+        tfidf 8525 0.964 0.990 0.976                0.134           NaN                 NaN
+tfidf_noalias 8525 0.613 0.653 0.630                0.123           NaN                 NaN
+       hybrid 8525 0.990 0.997 0.993                0.218         0.001               0.991
+saved matching/results/eval_dev.csv and matching/out/preds_dev.csv
+logged to MLflow experiment 'matching'

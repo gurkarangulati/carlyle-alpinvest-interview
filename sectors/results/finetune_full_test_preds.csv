@@ -1,0 +1,854 @@
+cik,year,name,sector,pred,confidence
+1042642,2016,DISH DBS CORP,communications_media,communications_media,0.9623283
+1662574,2016,"Grom Social Enterprises, Inc.",technology,industrials,0.85234946
+1016169,2016,"ANTARES PHARMA, INC.",healthcare,healthcare,0.9792027
+1503707,2016,"NorthStar Healthcare Income, Inc.",real_estate,healthcare,0.38806853
+1659207,2016,Fellazo Corp,communications_media,communications_media,0.60080326
+898174,2016,REINSURANCE GROUP OF AMERICA INC,financials,financials,0.9928439
+1627811,2016,Mr. Amazing Loans Corp,financials,financials,0.9875822
+912615,2016,URBAN OUTFITTERS INC,consumer,consumer,0.9751423
+788329,2016,JOHNSON OUTDOORS INC,consumer,industrials,0.8238748
+1631282,2016,DATASEA INC.,technology,industrials,0.7531332
+727634,2016,iSign Solutions Inc.,technology,technology,0.9384201
+791915,2016,CYPRESS SEMICONDUCTOR CORP /DE/,technology,technology,0.9628558
+1334586,2016,JAMMIN JAVA CORP.,consumer,consumer,0.64181715
+1032208,2016,SEMPRA,utilities,utilities,0.93680835
+1078075,2016,NETSCOUT SYSTEMS INC,technology,technology,0.7302702
+1577882,2016,Vortex Blockchain Technologies Inc.,materials,materials,0.7892937
+1098996,2016,ORANCO INC,consumer,materials,0.8141194
+1542013,2016,"JOEY NEW YORK, INC.",industrials,materials,0.66054285
+1093207,2016,CROSSROADS SYSTEMS INC,technology,financials,0.63322765
+1456016,2016,"Griffin Capital Essential Asset REIT, Inc.",real_estate,real_estate,0.9861428
+1304280,2016,Novelis Inc.,materials,materials,0.9078249
+945699,2016,"IXYS, LLC",technology,technology,0.9625352
+351569,2016,Ameris Bancorp,financials,financials,0.99364954
+1672754,2016,Rich Uncles Real Estate Investment Trust I,real_estate,real_estate,0.98589593
+1003410,2016,DUKE REALTY Ltd PARTNERSHIP/,real_estate,real_estate,0.98614454
+1087294,2016,CUMBERLAND PHARMACEUTICALS INC,healthcare,healthcare,0.97870034
+1404624,2016,"Affinion Group Holdings, Inc.",industrials,industrials,0.57135105
+1300938,2016,"ABCO Energy, Inc.",industrials,industrials,0.83939475
+1510295,2016,Marathon Petroleum Corp,energy,energy,0.9256352
+741516,2016,AMERICAN NATIONAL BANKSHARES INC.,financials,financials,0.9937257
+1446714,2016,"Macquarie Equipment Leasing Fund, LLC",industrials,real_estate,0.8717271
+864749,2016,TRIMBLE INC.,industrials,industrials,0.9813317
+1122020,2016,"PCS Edventures!, Inc.",consumer,industrials,0.93622833
+36506,2016,MACKINAC FINANCIAL CORP /MI/,financials,financials,0.97062767
+1572386,2016,"GREENWAY TECHNOLOGIES, INC. & SUBSIDIARIES",materials,communications_media,0.3391458
+316709,2016,SCHWAB CHARLES CORP,financials,financials,0.99325824
+1324772,2016,Apigee Corp,technology,technology,0.8816843
+1605331,2016,AI Era Corp.,financials,industrials,0.36021292
+1035201,2016,CALIFORNIA WATER SERVICE GROUP,utilities,utilities,0.9631847
+883984,2016,ICU MEDICAL INC/DE,healthcare,healthcare,0.98094535
+725876,2016,Function(x) Inc.,technology,communications_media,0.9210544
+1452872,2016,"ARC Group, Inc.",financials,consumer,0.9730541
+22252,2016,COMARCO INC,technology,industrials,0.3380955
+88572,2016,SECURITY LAND & DEVELOPMENT CORP,real_estate,real_estate,0.9752371
+1672326,2016,"Yuma Energy, Inc.",energy,energy,0.967029
+1080014,2016,"Innoviva, Inc.",healthcare,healthcare,0.97732794
+1092570,2016,FULLNET COMMUNICATIONS INC,communications_media,communications_media,0.89943177
+1628908,2016,"Evolent Health, Inc.",industrials,technology,0.52171576
+1469367,2016,Sunrun Inc.,industrials,industrials,0.33632454
+88205,2016,"SPX Technologies, Inc.",industrials,industrials,0.36707827
+1201792,2016,AMERICAN PUBLIC EDUCATION INC,consumer,consumer,0.92960954
+1106644,2016,"CHINA PHARMA HOLDINGS, INC.",healthcare,healthcare,0.9723155
+722723,2016,"HANGER, INC.",healthcare,healthcare,0.95859313
+1522327,2016,Entegra Financial Corp.,financials,financials,0.99366707
+1620702,2016,"TERRAFORM GLOBAL, INC.",utilities,utilities,0.9626785
+1505497,2016,"BioRestorative Therapies, Inc.",healthcare,healthcare,0.9688044
+1573766,2016,Sky Constant Century Inc.,financials,financials,0.9770916
+922330,2016,REGI U S INC,industrials,utilities,0.71590596
+1464865,2016,"Accredited Solutions, Inc.",consumer,materials,0.9604474
+70318,2016,TENET HEALTHCARE CORP,healthcare,healthcare,0.9163942
+1294632,2016,IASIS Healthcare LLC,healthcare,financials,0.8977021
+1540729,2016,Foresight Energy LP,energy,energy,0.89941645
+74208,2016,"UDR, Inc.",real_estate,real_estate,0.9872334
+1499717,2016,"Staffing 360 Solutions, Inc.",industrials,industrials,0.9509121
+1017793,2016,SUN BANCORP INC /NJ/,financials,financials,0.9935523
+1490636,2016,"G-Estate Liquidation Stores, Inc.",consumer,consumer,0.9764732
+797542,2016,QUANTUM X LABS INC.,technology,healthcare,0.5959097
+1610114,2016,New Senior Investment Group Inc.,real_estate,real_estate,0.98599696
+1528061,2016,Community Choice Financial Inc.,financials,financials,0.9676292
+78311,2016,SoOum Corp.,industrials,industrials,0.8346362
+1110607,2016,"Koil Energy Solutions, Inc.",industrials,energy,0.5478597
+818677,2016,SECURITY FEDERAL CORP,financials,financials,0.99365413
+1537028,2016,"Independence Contract Drilling, Inc.",energy,energy,0.94414365
+887343,2016,"COLUMBIA BANKING SYSTEM, INC.",financials,financials,0.99351865
+1507277,2016,Park Sterling Corp,financials,financials,0.99285007
+1606180,2016,"AAC Holdings, Inc.",healthcare,healthcare,0.92598754
+1483195,2016,Oritani Financial Corp,financials,financials,0.99117404
+1127703,2016,PROASSURANCE CORP,financials,financials,0.99323034
+799288,2016,"LANDS' END, INC.",consumer,technology,0.88099927
+1124198,2016,FLUOR CORP,industrials,industrials,0.943365
+100591,2016,ARGAN INC,industrials,industrials,0.97203606
+1027838,2016,TACTILE SYSTEMS TECHNOLOGY INC,healthcare,healthcare,0.94800895
+1103795,2016,"QS Energy, Inc.",industrials,utilities,0.68712616
+1378125,2016,Toga Ltd,technology,consumer,0.77563506
+1495231,2016,"IZEA Worldwide, Inc.",communications_media,technology,0.52508247
+1374690,2016,"Larimar Therapeutics, Inc.",healthcare,healthcare,0.9840134
+944696,2016,"Capital Financial Holdings, Inc",financials,financials,0.9913935
+1659617,2016,"Moleculin Biotech, Inc.",healthcare,healthcare,0.9815409
+1285550,2016,"ClearPoint Neuro, Inc.",healthcare,healthcare,0.97863925
+736772,2016,CNB FINANCIAL CORP/PA,financials,financials,0.9938346
+1567503,2016,"TurnKey Capital, Inc.",industrials,industrials,0.7388397
+1329842,2016,Federal Home Loan Bank of New York,financials,financials,0.993343
+1357615,2016,"KBR, INC.",industrials,industrials,0.97870743
+1438423,2016,EVERSPIN TECHNOLOGIES INC.,technology,technology,0.97090924
+20639,2016,AmBase Corp,real_estate,real_estate,0.98447704
+729986,2016,UNITED BANKSHARES INC/WV,financials,financials,0.9937231
+3153,2016,ALABAMA POWER CO,utilities,utilities,0.98365027
+1676580,2016,VISION ENERGY Corp,materials,industrials,0.3453401
+1532158,2016,"Rebel Group, Inc.",consumer,industrials,0.4615429
+711665,2016,"Gadsden Properties, Inc.",real_estate,healthcare,0.9066454
+1574815,2016,"BMC STOCK HOLDINGS, INC.",consumer,industrials,0.8947454
+1236275,2016,"QXO, Inc.",industrials,technology,0.9140505
+1133470,2016,CALAVO GROWERS INC,consumer,consumer,0.96149564
+1464300,2016,"ALL MARKETING SOLUTIONS, INC.",financials,financials,0.7010699
+1512890,2016,Excel Corp,financials,industrials,0.88000435
+27673,2016,DEERE JOHN CAPITAL CORP,financials,financials,0.740986
+1652871,2016,UNICOBE CORP.,industrials,industrials,0.46450463
+886982,2016,GOLDMAN SACHS GROUP INC,financials,financials,0.9929053
+949870,2016,BOSTON BEER CO INC,consumer,consumer,0.9615772
+1453122,2016,"3DX Industries, Inc.",communications_media,materials,0.48822156
+708819,2016,MCDERMOTT INTERNATIONAL INC,industrials,industrials,0.95072794
+1415332,2016,Lithium Corp,materials,healthcare,0.24446337
+1089815,2016,Elite Health Systems Inc.,healthcare,healthcare,0.9702711
+87050,2016,Neonode Inc.,technology,technology,0.8802263
+712515,2016,ELECTRONIC ARTS INC.,technology,communications_media,0.5992308
+1156041,2016,"ABUNDIA GLOBAL IMPACT GROUP, INC.",energy,energy,0.9689744
+1087423,2016,RED HAT INC,technology,technology,0.9535227
+1156815,2016,WNC HOUSING TAX CREDIT FUND VI LP SERIES 10,real_estate,real_estate,0.9723903
+88941,2016,SEMTECH CORP,technology,technology,0.9641814
+71829,2016,NPK International Inc.,industrials,energy,0.51237893
+1018979,2016,AMERISAFE INC,financials,financials,0.99181104
+100517,2016,"United Airlines Holdings, Inc.",industrials,industrials,0.94896996
+1367832,2016,AURORA DIAGNOSTICS HOLDINGS LLC,healthcare,healthcare,0.9687436
+812074,2016,"O-I Glass, Inc. /DE/",materials,materials,0.5861487
+1402479,2016,"MedAvail Holdings, Inc.",consumer,healthcare,0.9584714
+98752,2016,TOROTEL INC,technology,materials,0.48601064
+1518548,2016,"Xfuels, Inc.",consumer,consumer,0.695895
+948072,2016,BIRNER DENTAL MANAGEMENT SERVICES INC,healthcare,healthcare,0.49230283
+1293971,2016,"bluebird bio, Inc.",healthcare,healthcare,0.9832629
+1436425,2016,"HOME BANCORP, INC.",financials,financials,0.99361366
+828530,2016,ADMIRAL FINANCIAL CORP,financials,real_estate,0.9471142
+1001601,2016,"MGT CAPITAL INVESTMENTS, INC.",financials,financials,0.5169542
+1223533,2016,"Frelii, Inc.",real_estate,real_estate,0.96649617
+1401257,2016,"FORUM ENERGY TECHNOLOGIES, INC.",industrials,energy,0.8500748
+1103090,2016,"REFLECT SCIENTIFIC, INC.",industrials,industrials,0.8186065
+1616788,2016,LEGACY VENTURES INTERNATIONAL INC.,healthcare,consumer,0.87545204
+1007019,2016,COFFEE HOLDING CO INC,consumer,consumer,0.965137
+719413,2016,HECLA MINING CO/DE/,materials,materials,0.9182522
+1497275,2016,STATE BANK FINANCIAL CORP,financials,financials,0.9930889
+1682325,2016,GTY Technology Holdings Inc.,technology,financials,0.2894074
+1568969,2016,Techlott Inc.,technology,healthcare,0.24446337
+910679,2016,WVS FINANCIAL CORP,financials,financials,0.99282104
+928576,2016,MIDAMERICAN ENERGY CO,utilities,utilities,0.98325527
+40987,2016,GENUINE PARTS CO,industrials,industrials,0.9041916
+1553023,2016,CyrusOne Holdco LLC,real_estate,real_estate,0.98712546
+921113,2016,LIBERTY PROPERTY LIMITED PARTNERSHIP,real_estate,real_estate,0.9864173
+1490873,2016,"ECO SCIENCE SOLUTIONS, INC.",consumer,consumer,0.55642295
+1280058,2016,BLACKBAUD INC,technology,technology,0.8924489
+743870,2016,RANCON REALTY FUND IV,real_estate,real_estate,0.98232424
+884624,2016,Orthofix Medical Inc.,healthcare,healthcare,0.97669524
+1005817,2016,TOMPKINS FINANCIAL CORP,financials,financials,0.993443
+804269,2016,"General Motors Financial Company, Inc.",financials,financials,0.91162515
+849399,2016,Gen Digital Inc.,technology,technology,0.8573064
+870753,2016,NUMEREX CORP /PA/,technology,technology,0.878481
+314489,2016,FIRST BUSEY CORP /NV/,financials,financials,0.99386436
+931015,2016,Polaris Inc.,industrials,industrials,0.9384092
+1324410,2016,Guaranty Bancorp,financials,financials,0.99367344
+4457,2016,U-Haul Holding Co /NV/,industrials,industrials,0.7949293
+769397,2016,"Autodesk, Inc.",technology,technology,0.9669206
+1629702,2016,"LONG TERM CARE OPERATIONS 360, INC.",healthcare,consumer,0.57813764
+1402453,2016,Her Imports,technology,communications_media,0.48391548
+1580670,2016,"LGI Homes, Inc.",industrials,real_estate,0.86605394
+1653099,2016,"VIGILANT DIVERSIFIED HOLDINGS, INC./NV",industrials,industrials,0.7757984
+31462,2016,ECOLAB INC.,materials,materials,0.7027761
+1114927,2016,FIRST NORTHERN COMMUNITY BANCORP,financials,financials,0.98874086
+1398137,2016,"Generation Alpha, Inc.",industrials,materials,0.48750865
+1617351,2016,"Mu Yan Technology Group Co., Ltd",industrials,industrials,0.5355923
+1327318,2016,"TrueCar, Inc.",technology,technology,0.75626844
+943034,2016,AUTOSCOPE TECHNOLOGIES CORP,industrials,technology,0.5399864
+29534,2016,DOLLAR GENERAL CORP,consumer,consumer,0.9801459
+1450708,2016,"Aurum, Inc.",technology,materials,0.58321935
+1001171,2016,BROADWAY FINANCIAL CORP \DE\,financials,financials,0.99352247
+1114220,2016,KERYX BIOPHARMACEUTICALS INC,healthcare,healthcare,0.9808257
+1323648,2016,Community Bankers Trust Corp,financials,financials,0.99373466
+1389772,2016,FIRST PRIORITY FINANCIAL CORP.,financials,financials,0.99355376
+889936,2016,"PRIVATEBANCORP, INC",financials,financials,0.9938414
+1446152,2016,"SAUER ENERGY, INC.",industrials,energy,0.9687169
+1434842,2016,Forbes Energy Services Ltd.,energy,energy,0.9668979
+1416697,2016,"Blue Line Protection Group, Inc.",consumer,industrials,0.9002899
+939767,2016,"EXELIXIS, INC.",healthcare,healthcare,0.9829754
+1552845,2016,Natur International Corp.,healthcare,healthcare,0.9338928
+822370,2016,"Emmaus Life Sciences, Inc.",healthcare,healthcare,0.71400577
+1625941,2017,ARES INDUSTRIAL REAL ESTATE INCOME TRUST Inc.,real_estate,real_estate,0.9864551
+1139812,2017,MB FINANCIAL INC /MD,financials,financials,0.99379927
+1610114,2017,New Senior Investment Group Inc.,real_estate,real_estate,0.9860169
+4457,2017,U-Haul Holding Co /NV/,industrials,industrials,0.794323
+1106644,2017,"CHINA PHARMA HOLDINGS, INC.",healthcare,healthcare,0.9717049
+1016708,2017,"RenovaCare, Inc.",healthcare,materials,0.58846205
+1651577,2017,Capstone Systems Inc,materials,materials,0.44458145
+861838,2017,"Aceragen, Inc.",healthcare,healthcare,0.97588646
+98752,2017,TOROTEL INC,technology,materials,0.7754293
+1401914,2017,"Dare Bioscience, Inc.",healthcare,healthcare,0.97764915
+1227654,2017,COMPASS MINERALS INTERNATIONAL INC,materials,materials,0.9482523
+1156815,2017,WNC HOUSING TAX CREDIT FUND VI LP SERIES 10,real_estate,real_estate,0.9723903
+1191334,2017,CHUN CAN CAPITAL GROUP,technology,technology,0.5509459
+825542,2017,SCOTTS MIRACLE-GRO CO,materials,materials,0.7038425
+1659183,2017,nDivision Inc.,technology,healthcare,0.24446337
+1254699,2017,"QVC Group, Inc.",consumer,communications_media,0.52751917
+12040,2017,FLANIGANS ENTERPRISES INC,consumer,consumer,0.9686377
+700841,2017,"RCM TECHNOLOGIES, INC.",industrials,industrials,0.96766776
+352915,2017,UNIVERSAL HEALTH SERVICES INC,healthcare,healthcare,0.897817
+1463208,2017,"Transportation & Logistics Systems, Inc.",industrials,industrials,0.38786194
+719209,2017,ISRAMCO INC,energy,energy,0.96392506
+728447,2017,"EVO Transportation & Energy Services, Inc.",consumer,industrials,0.77088416
+1680132,2017,CANNABIS SUISSE CORP.,real_estate,industrials,0.46450463
+1586372,2017,DTHERA SCIENCES,industrials,healthcare,0.94542515
+1497275,2017,STATE BANK FINANCIAL CORP,financials,financials,0.9930864
+1526119,2017,"Verastem, Inc.",healthcare,healthcare,0.98206747
+1520006,2017,Matador Resources Co,energy,energy,0.9713647
+1509957,2017,Can B Corp,industrials,technology,0.7696444
+812074,2017,"O-I Glass, Inc. /DE/",materials,materials,0.822127
+1487197,2017,BARFRESH FOOD GROUP INC.,consumer,consumer,0.9690466
+1353406,2017,RedHawk Holdings Corp.,energy,energy,0.40402564
+92122,2017,SOUTHERN CO,utilities,utilities,0.9834108
+890543,2017,INTERNATIONAL BARRIER TECHNOLOGY INC,materials,industrials,0.5226294
+1102993,2017,LIVEPERSON INC,technology,technology,0.9636262
+1542013,2017,"JOEY NEW YORK, INC.",industrials,consumer,0.46838638
+1438095,2017,Ultimate Products CORP,industrials,industrials,0.2762754
+1056358,2017,MANNATECH INC,healthcare,healthcare,0.86753035
+1308606,2017,"SPIRIT REALTY CAPITAL, INC.",real_estate,real_estate,0.98526925
+867374,2017,ELECTRONICS FOR IMAGING INC,technology,technology,0.3399263
+1005276,2017,MOHEGAN TRIBAL GAMING AUTHORITY,consumer,consumer,0.9713253
+1110783,2017,MONSANTO CO /NEW/,materials,materials,0.8586889
+1096385,2017,VECTREN CORP,utilities,utilities,0.976777
+1425287,2017,Workhorse Group Inc.,industrials,industrials,0.9840315
+72162,2017,"NLI HOLDINGS, INC.",materials,materials,0.8508004
+1404624,2017,"Affinion Group Holdings, Inc.",industrials,industrials,0.5713955
+1546652,2017,VanEck Merk Gold ETF,financials,financials,0.9227824
+1137855,2017,Pacific Gold & Royalty Corp.,materials,materials,0.95677227
+1473334,2017,XMax Inc.,consumer,consumer,0.8395181
+1389125,2017,Frontier Select Fund,financials,financials,0.99114954
+1697730,2017,"QUANTUM BUSINESS STRATEGIES, INC.",industrials,industrials,0.47551307
+1078075,2017,NETSCOUT SYSTEMS INC,technology,technology,0.6526055
+1327318,2017,"TrueCar, Inc.",technology,technology,0.9271564
+1042642,2017,DISH DBS CORP,communications_media,communications_media,0.96231824
+1339970,2017,aTYR PHARMA INC,healthcare,healthcare,0.96578395
+1037676,2017,"ARCH RESOURCES, INC.",energy,energy,0.89735466
+1514056,2017,Titan Environmental Solutions Inc.,technology,industrials,0.7837973
+874710,2017,ALLIED HEALTHCARE PRODUCTS INC,healthcare,healthcare,0.5633731
+1505497,2017,"BioRestorative Therapies, Inc.",healthcare,healthcare,0.97089237
+1428816,2017,"Epoxy, Inc.",consumer,technology,0.94763595
+88572,2017,SECURITY LAND & DEVELOPMENT CORP,real_estate,real_estate,0.97527254
+924717,2017,SURMODICS INC,healthcare,healthcare,0.9780563
+811222,2017,Cardiff Lexington Corp,healthcare,consumer,0.8249821
+1018979,2017,AMERISAFE INC,financials,financials,0.99181104
+1127703,2017,PROASSURANCE CORP,financials,financials,0.9932549
+1304464,2017,Crestwood Midstream Partners LP,utilities,utilities,0.89171916
+1604042,2017,DCT Industrial Operating Partnership LP,real_estate,real_estate,0.9871623
+1133470,2017,CALAVO GROWERS INC,consumer,consumer,0.9642829
+1025378,2017,W. P. Carey Inc.,real_estate,real_estate,0.9864007
+1594864,2017,"Juno Therapeutics, Inc.",healthcare,materials,0.5955875
+1369290,2017,"MYOMO, INC.",healthcare,healthcare,0.9732397
+1636282,2017,"Spyre Therapeutics, Inc.",healthcare,healthcare,0.97926486
+1084384,2017,PARETEUM Corp,technology,technology,0.96967083
+1671013,2017,Cardtronics plc,industrials,industrials,0.7753392
+1302084,2017,NextSource Materials Inc.,materials,materials,0.85229975
+1223533,2017,"Frelii, Inc.",real_estate,healthcare,0.7143243
+1490873,2017,"ECO SCIENCE SOLUTIONS, INC.",consumer,consumer,0.56607556
+1001115,2017,GEOSPACE TECHNOLOGIES CORP,industrials,energy,0.811324
+1659166,2017,Fortive Corp,industrials,industrials,0.95009077
+884940,2017,STEIN MART INC,consumer,consumer,0.98113054
+1443089,2017,"WEARABLE HEALTH SOLUTIONS, INC.",technology,industrials,0.48072395
+75340,2017,P&F INDUSTRIES INC,industrials,industrials,0.9261062
+1552000,2017,MPLX LP,energy,energy,0.58684486
+1479094,2017,"STAG Industrial, Inc.",real_estate,real_estate,0.9864074
+1348259,2017,VALIDUS HOLDINGS LTD,financials,financials,0.9929762
+1709542,2017,"Electronic Servitor Publication Network, Inc.",technology,consumer,0.53718454
+1628468,2017,HUI YING FINANCIAL HOLDINGS Corp,financials,financials,0.8744235
+1385280,2017,"Cinemark Holdings, Inc.",communications_media,consumer,0.7266766
+811596,2017,KAISER ALUMINUM CORP,materials,materials,0.9280283
+1520048,2017,Permianville Royalty Trust,energy,energy,0.9534137
+1704795,2017,"Bantec, Inc.",industrials,consumer,0.95614827
+1089815,2017,Elite Health Systems Inc.,healthcare,healthcare,0.9702711
+1438901,2017,"Auto Parts 4Less Group, Inc.",industrials,healthcare,0.81081545
+1398137,2017,"Generation Alpha, Inc.",industrials,materials,0.48750865
+1522327,2017,Entegra Financial Corp.,financials,financials,0.99365366
+802257,2017,"Mitesco, Inc.",technology,consumer,0.7351303
+1618835,2017,"Evofem Biosciences, Inc.",healthcare,healthcare,0.827568
+1692063,2017,"Schneider National, Inc.",industrials,industrials,0.9874421
+1693686,2017,Anutra Corp,consumer,technology,0.5813378
+1651286,2017,"Steadfast Apartment REIT III, Inc.",real_estate,real_estate,0.9863116
+884269,2017,ALPHA PRO TECH LTD,healthcare,industrials,0.7761673
+1499807,2017,"K2M GROUP HOLDINGS, INC.",healthcare,healthcare,0.9613036
+1090908,2017,"DETERMINE, INC.",technology,industrials,0.5015354
+1080014,2017,"Innoviva, Inc.",healthcare,healthcare,0.9804482
+1704235,2017,Quintana Energy Services Inc.,energy,energy,0.96689737
+1544229,2017,"Engility Holdings, Inc.",industrials,industrials,0.92416656
+1511735,2017,YAPPN CORP.,industrials,industrials,0.5960142
+1156041,2017,"ABUNDIA GLOBAL IMPACT GROUP, INC.",energy,energy,0.9690034
+788920,2017,PRO DEX INC,healthcare,healthcare,0.88315535
+882508,2017,QUICKLOGIC Corp,technology,technology,0.9454468
+920371,2017,"Simpson Manufacturing Co., Inc.",industrials,industrials,0.92639995
+791915,2017,CYPRESS SEMICONDUCTOR CORP /DE/,technology,technology,0.8590343
+1418135,2017,Keurig Dr Pepper Inc.,consumer,consumer,0.972469
+71557,2017,"Nuvera Communications, Inc.",communications_media,communications_media,0.93572134
+1535079,2017,MCX Technologies Corp,technology,industrials,0.9248284
+1518715,2017,Mechanics Bancorp,financials,financials,0.9932586
+1585644,2017,"WINDSTREAM SERVICES, LLC",communications_media,utilities,0.6693078
+931059,2017,"Rennova Health, Inc.",healthcare,healthcare,0.92410433
+1267425,2017,BF Garden Tax Credit Fund V L.P.,real_estate,real_estate,0.7589429
+1499717,2017,"Staffing 360 Solutions, Inc.",industrials,industrials,0.93353146
+23217,2017,CONAGRA BRANDS INC.,consumer,consumer,0.9683183
+821127,2017,BOSTON PRIVATE FINANCIAL HOLDINGS INC,financials,financials,0.99355596
+1653099,2017,"VIGILANT DIVERSIFIED HOLDINGS, INC./NV",industrials,industrials,0.75195
+1519061,2017,Trinseo PLC,materials,materials,0.94956714
+1492869,2017,"SL GREEN OPERATING PARTNERSHIP, L.P.",real_estate,real_estate,0.98716915
+912061,2017,NATURAL HEALTH TRENDS CORP,industrials,consumer,0.820321
+1163199,2017,FNB BANCORP/CA/,financials,financials,0.7561207
+71829,2017,NPK International Inc.,industrials,industrials,0.6680847
+1553023,2017,CyrusOne Holdco LLC,real_estate,real_estate,0.98691076
+1211759,2017,CONNECTURE INC,technology,financials,0.9160587
+1632275,2017,CAT9 Group Inc.,healthcare,industrials,0.4795927
+1280058,2017,BLACKBAUD INC,technology,technology,0.775347
+886982,2017,GOLDMAN SACHS GROUP INC,financials,financials,0.99340457
+1381197,2017,"Interactive Brokers Group, Inc.",financials,financials,0.9198899
+1323648,2017,Community Bankers Trust Corp,financials,financials,0.9937198
+1402479,2017,"MedAvail Holdings, Inc.",consumer,healthcare,0.9588406
+1495231,2017,"IZEA Worldwide, Inc.",communications_media,technology,0.715076
+310522,2017,FEDERAL NATIONAL MORTGAGE ASSOCIATION FANNIE MAE,financials,financials,0.7777806
+1450720,2017,Frontier Diversified Fund,financials,financials,0.99114954
+1605331,2017,AI Era Corp.,financials,industrials,0.50756174
+1436425,2017,"HOME BANCORP, INC.",financials,financials,0.9936575
+81061,2017,PUBLIX SUPER MARKETS INC,consumer,consumer,0.9738623
+1575975,2017,Viabuilt Ventures Inc.,industrials,healthcare,0.97661656
+1553404,2017,Pacific Green Technologies Inc.,utilities,healthcare,0.23610796
+1634447,2017,"ISUN, INC.",technology,energy,0.46509743
+319016,2017,"Fuse Medical, Inc.",industrials,healthcare,0.8660627
+1590715,2017,American Resources Corp,energy,industrials,0.40254164
+1682745,2017,VERRA MOBILITY Corp,industrials,industrials,0.40478778
+1495320,2017,"Vera Bradley, Inc.",materials,consumer,0.93352354
+1527675,2017,WUNONG ASIA PACIFIC Co Ltd,industrials,healthcare,0.23610796
+1361983,2017,ORBCOMM Inc.,communications_media,industrials,0.8202009
+915912,2017,AVALONBAY COMMUNITIES INC,real_estate,real_estate,0.9876366
+896841,2017,"AVID TECHNOLOGY, INC.",technology,technology,0.60569704
+76321,2017,PARKER DRILLING CO /DE/,energy,energy,0.7747872
+42888,2017,GRACO INC,industrials,industrials,0.8947074
+1417028,2017,CANNASYS INC,industrials,consumer,0.4149267
+1643301,2017,"Avenir Wellness Solutions, Inc.",healthcare,healthcare,0.94783145
+1660690,2017,"Versum Materials, Inc.",materials,industrials,0.47610477
+887396,2017,EMPIRE PETROLEUM CORP,energy,energy,0.96580964
+1289460,2017,"Texas Roadhouse, Inc.",consumer,consumer,0.97489005
+868611,2017,SONIC CORP,consumer,consumer,0.97594464
+1617351,2017,"Mu Yan Technology Group Co., Ltd",industrials,industrials,0.5355923
+88000,2017,Horizon Kinetics Holding Corp,financials,materials,0.8296085
+1109354,2017,BRUKER CORP,healthcare,healthcare,0.90526974
+1051512,2017,TELEPHONE & DATA SYSTEMS INC /DE/,communications_media,communications_media,0.94884986
+1301611,2017,"LEGACY LIFEPOINT HEALTH, INC.",healthcare,healthcare,0.93490726
+1699150,2017,Ingersoll Rand Inc.,industrials,industrials,0.9869118
+88205,2017,"SPX Technologies, Inc.",industrials,industrials,0.36707827
+1590799,2017,Riverview Financial Corp,financials,financials,0.9937848
+1600347,2017,Hapi Metaverse Inc.,industrials,technology,0.62819225
+886137,2017,FINISH LINE INC /IN/,consumer,consumer,0.97905344
+930245,2017,Agassi Sports Entertainment Corp.,consumer,consumer,0.9470623
+1611277,2018,"Helix Technologies, Inc.",industrials,technology,0.92955494
+1258602,2018,NELNET INC,financials,financials,0.9907578
+920424,2018,VIRTU ITG HOLDINGS LLC,financials,industrials,0.5566245
+1680232,2018,"Strategic Storage Trust IV, Inc.",real_estate,real_estate,0.88920575
+1410428,2018,"XWELL, Inc.",consumer,consumer,0.9540664
+1335112,2018,"LOGIQ, INC.",industrials,technology,0.95957595
+1693415,2018,"Translate Bio, Inc.",healthcare,healthcare,0.9786453
+867374,2018,ELECTRONICS FOR IMAGING INC,technology,technology,0.87081546
+1393772,2018,"WEED, INC.",healthcare,materials,0.85143584
+17843,2018,CARPENTER TECHNOLOGY CORP,materials,materials,0.945496
+1694187,2018,"Neon Therapeutics, Inc.",healthcare,healthcare,0.98288363
+866706,2018,ESCO TECHNOLOGIES INC,technology,industrials,0.95860636
+23795,2018,"CTO Realty Growth, Inc.",real_estate,real_estate,0.9836363
+1653099,2018,"VIGILANT DIVERSIFIED HOLDINGS, INC./NV",industrials,industrials,0.78983504
+1519061,2018,Trinseo PLC,materials,materials,0.94956714
+1725911,2018,NetBrands Corp.,financials,consumer,0.9399555
+1498301,2018,"Mahwah Bergen Retail Group, Inc.",consumer,consumer,0.98024416
+1089815,2018,Elite Health Systems Inc.,healthcare,healthcare,0.96995753
+1385280,2018,"Cinemark Holdings, Inc.",communications_media,consumer,0.72659886
+1568969,2018,Techlott Inc.,technology,healthcare,0.24446337
+719209,2018,ISRAMCO INC,energy,energy,0.9638863
+1425287,2018,Workhorse Group Inc.,industrials,industrials,0.9813906
+912615,2018,URBAN OUTFITTERS INC,consumer,consumer,0.97319275
+851205,2018,COGNEX CORP,industrials,technology,0.45404232
+1235468,2018,LIQUIDITY SERVICES INC,industrials,industrials,0.850612
+1674910,2018,VALVOLINE INC,energy,industrials,0.6397321
+903651,2018,INNODATA INC,technology,technology,0.5634334
+1115128,2018,Quotient Technology Inc.,communications_media,communications_media,0.65231806
+81061,2018,PUBLIX SUPER MARKETS INC,consumer,consumer,0.9739804
+314808,2018,Valaris Ltd,energy,energy,0.9400718
+1032208,2018,SEMPRA,utilities,utilities,0.98297334
+92122,2018,SOUTHERN CO,utilities,utilities,0.9832118
+1673431,2018,"South East Asia Development, Corp.",materials,energy,0.24544534
+811222,2018,Cardiff Lexington Corp,healthcare,consumer,0.8309317
+76149,2018,PARADISE INC,consumer,industrials,0.6823359
+1553079,2018,"Empire State Realty OP, L.P.",real_estate,real_estate,0.98569345
+1401521,2018,AMERICAN COASTAL INSURANCE Corp,financials,financials,0.9928725
+1383097,2018,NAKED BRAND GROUP INC.,consumer,consumer,0.6816074
+97745,2018,THERMO FISHER SCIENTIFIC INC.,industrials,healthcare,0.940495
+916365,2018,TRACTOR SUPPLY CO /DE/,consumer,consumer,0.98050904
+1467373,2018,Accenture plc,industrials,industrials,0.9705673
+1260221,2018,TransDigm Group INC,industrials,industrials,0.9800382
+845698,2018,GRANT PARK FUTURES FUND LIMITED PARTNERSHIP,financials,financials,0.9923503
+1495231,2018,"IZEA Worldwide, Inc.",communications_media,technology,0.7430943
+1659166,2018,Fortive Corp,industrials,industrials,0.92705566
+1308606,2018,"SPIRIT REALTY CAPITAL, INC.",real_estate,real_estate,0.9860589
+1536577,2018,Medley LLC,financials,financials,0.98076504
+1418135,2018,Keurig Dr Pepper Inc.,consumer,consumer,0.9723741
+944745,2018,"CIVISTA BANCSHARES, INC.",financials,financials,0.9935229
+37785,2018,FMC CORP,materials,materials,0.9062762
+1443089,2018,"WEARABLE HEALTH SOLUTIONS, INC.",technology,industrials,0.48072395
+1341141,2018,"CatchMark Timber Trust, Inc.",real_estate,real_estate,0.9840528
+1443863,2018,BioCorRx Inc.,healthcare,healthcare,0.5561201
+1368761,2018,"Start Scientific, Inc.",technology,healthcare,0.90572095
+1020710,2018,DXP ENTERPRISES INC,industrials,industrials,0.9818534
+277509,2018,FEDERAL SIGNAL CORP /DE/,industrials,industrials,0.97979075
+910606,2018,REGENCY CENTERS CORP,real_estate,real_estate,0.98472124
+1662684,2018,"KULR Technology Group, Inc.",technology,technology,0.4983818
+866374,2018,FLEX LTD.,technology,technology,0.6652482
+1024095,2018,"Carnegie Development, Inc",industrials,industrials,0.47513336
+50725,2018,GRIFFON CORP,industrials,industrials,0.7346579
+1139812,2018,MB FINANCIAL INC /MD,financials,financials,0.9937987
+1442836,2018,"Mersana Therapeutics, Inc.",healthcare,healthcare,0.9838949
+1699039,2018,"Ranger Energy Services, Inc.",energy,energy,0.8829109
+928576,2018,MIDAMERICAN ENERGY CO,utilities,utilities,0.9844913
+1595627,2018,"Inland Residential Properties Trust, Inc.",real_estate,real_estate,0.9875416
+885245,2018,BUCKLE INC,consumer,consumer,0.98002565
+916789,2018,HELEN OF TROY LTD,consumer,consumer,0.5846038
+19411,2018,MAGELLAN HEALTH INC,healthcare,healthcare,0.46615922
+1265131,2018,Hilltop Holdings Inc.,financials,financials,0.99387425
+726513,2018,TRIBUNE MEDIA CO,communications_media,communications_media,0.9533404
+1712189,2018,Target Hospitality Corp.,consumer,financials,0.32159227
+10456,2018,BAXTER INTERNATIONAL INC,healthcare,healthcare,0.97966397
+1441816,2018,"MongoDB, Inc.",technology,technology,0.9650792
+1495320,2018,"Vera Bradley, Inc.",materials,consumer,0.924114
+913277,2018,Clarus Corp,consumer,consumer,0.57161456
+1366744,2018,HOMELAND ENERGY SOLUTIONS LLC,materials,materials,0.93939775
+1300938,2018,"ABCO Energy, Inc.",industrials,industrials,0.82955676
+1666138,2018,Atkore Inc.,industrials,industrials,0.9263351
+1625376,2018,FUTURE INTERNATIONAL GROUP CORP.,technology,healthcare,0.29437155
+1650739,2018,"Ajia Innogroup Holdings, Ltd.",consumer,industrials,0.44064203
+1110607,2018,"Koil Energy Solutions, Inc.",industrials,energy,0.8540056
+1005817,2018,TOMPKINS FINANCIAL CORP,financials,financials,0.99345595
+811596,2018,KAISER ALUMINUM CORP,materials,materials,0.94539213
+935036,2018,"ACI WORLDWIDE, INC.",technology,technology,0.82258934
+1013706,2018,"Wilhelmina International, Inc.",industrials,industrials,0.7874797
+1368637,2018,Petrolia Energy Corp,energy,energy,0.85353935
+1066194,2018,EGAIN Corp,technology,technology,0.5669189
+1034592,2018,OMNICOMM SYSTEMS INC,industrials,healthcare,0.7626724
+1102993,2018,LIVEPERSON INC,technology,technology,0.915581
+1634997,2018,"Avangrid, Inc.",utilities,utilities,0.98119193
+1414382,2018,Concrete Leveling Systems Inc,industrials,materials,0.74642766
+901491,2018,PAPA JOHNS INTERNATIONAL INC,consumer,consumer,0.9705866
+1567503,2018,"TurnKey Capital, Inc.",industrials,industrials,0.80934167
+886137,2018,FINISH LINE INC /IN/,consumer,consumer,0.97854143
+1072379,2018,NORTHWEST BIOTHERAPEUTICS INC,healthcare,healthcare,0.9820489
+1348911,2018,"KalVista Pharmaceuticals, Inc.",healthcare,healthcare,0.98280776
+1023844,2018,NATIONAL HOLDINGS CORP,financials,financials,0.98957646
+1490054,2018,"VERDE BIO HOLDINGS, INC.",energy,industrials,0.7620868
+1206264,2018,SOMNIGROUP INTERNATIONAL INC.,consumer,consumer,0.95537555
+49196,2018,HUNTINGTON BANCSHARES INC /MD/,financials,financials,0.99338794
+1479681,2018,Nutex Health Inc.,industrials,technology,0.8302748
+1636282,2018,"Spyre Therapeutics, Inc.",healthcare,healthcare,0.97906715
+849399,2018,Gen Digital Inc.,technology,technology,0.9125166
+90144,2018,SIERRA PACIFIC POWER CO,utilities,utilities,0.9844913
+715579,2018,ACNB CORP,financials,financials,0.9936547
+1088638,2018,"MASTERMIND, INC.",communications_media,industrials,0.35755906
+1552845,2018,Natur International Corp.,healthcare,consumer,0.94427556
+1483646,2018,"BLACKSTAR ENTERPRISE GROUP, INC.",financials,financials,0.89519686
+1110647,2018,"OCLARO, INC.",technology,technology,0.9364662
+1450720,2018,Frontier Diversified Fund,financials,financials,0.99114954
+1594109,2018,GrubHub Inc.,industrials,industrials,0.5461835
+1361658,2018,Travel & Leisure Co.,consumer,real_estate,0.9082908
+1410172,2018,"Rubicon Technology, Inc.",technology,materials,0.5015326
+820771,2018,Goliath Film & Media Holdings,communications_media,healthcare,0.77177244
+766792,2018,CVD EQUIPMENT CORP,industrials,materials,0.5594528
+1003410,2018,DUKE REALTY Ltd PARTNERSHIP/,real_estate,real_estate,0.98661023
+1228627,2018,"Opus Genetics, Inc.",healthcare,healthcare,0.9819733
+1156041,2018,"ABUNDIA GLOBAL IMPACT GROUP, INC.",energy,energy,0.96912956
+1100412,2018,ARRAY BIOPHARMA INC,healthcare,healthcare,0.9831861
+1169652,2018,CHANNELADVISOR CORP,technology,technology,0.94862497
+820313,2018,AMPHENOL CORP /DE/,technology,industrials,0.59451604
+729986,2018,UNITED BANKSHARES INC/WV,financials,financials,0.9936906
+1527190,2018,"National CineMedia, LLC",communications_media,communications_media,0.6476634
+1130758,2018,AEI INCOME & GROWTH FUND 24 LLC,real_estate,real_estate,0.94190186
+88205,2018,"SPX Technologies, Inc.",industrials,industrials,0.37836036
+1713863,2018,"Rafael Holdings, Inc.",healthcare,real_estate,0.80804956
+23217,2018,CONAGRA BRANDS INC.,consumer,consumer,0.96574247
+43196,2018,"GRAY MEDIA, INC",communications_media,communications_media,0.9569032
+1524872,2018,Thunder Energies Corp,industrials,healthcare,0.6115208
+884940,2018,STEIN MART INC,consumer,consumer,0.9796943
+1590799,2018,Riverview Financial Corp,financials,financials,0.9937006
+1057060,2018,MARINEMAX INC,consumer,consumer,0.96865743
+3153,2018,ALABAMA POWER CO,utilities,utilities,0.9832118
+1458704,2018,Plantation Corp.,communications_media,consumer,0.31578472
+95574,2018,"SUPERIOR GROUP OF COMPANIES, INC.",consumer,industrials,0.3889745
+1463208,2018,"Transportation & Logistics Systems, Inc.",industrials,industrials,0.9860919
+37637,2018,"DUKE ENERGY FLORIDA, LLC",utilities,utilities,0.9784788
+1133470,2018,CALAVO GROWERS INC,consumer,consumer,0.9643841
+711377,2018,NEOGEN CORP,healthcare,healthcare,0.9614645
+1069394,2018,FLEXIBLE SOLUTIONS INTERNATIONAL INC,materials,materials,0.6922857
+1615817,2018,King Merger Sub II LLC,energy,energy,0.964226
+230557,2018,SELECTIVE INSURANCE GROUP INC,financials,financials,0.9926117
+38009,2018,FORD MOTOR CREDIT CO LLC,financials,industrials,0.8555377
+788920,2018,PRO DEX INC,healthcare,healthcare,0.6632234
+1351901,2018,Commonwealth Income & Growth Fund VI,industrials,financials,0.33333427
+776867,2018,WHITE MOUNTAINS INSURANCE GROUP LTD,financials,financials,0.992469
+1516551,2018,"Skye Bioscience, Inc.",healthcare,healthcare,0.5387053
+88941,2018,SEMTECH CORP,technology,technology,0.96552384
+1138118,2018,"CBRE GROUP, INC.",real_estate,real_estate,0.98329943
+1005276,2018,MOHEGAN TRIBAL GAMING AUTHORITY,consumer,consumer,0.9712676
+913144,2018,RENAISSANCERE HOLDINGS LTD,financials,financials,0.9926543
+1374690,2019,"Larimar Therapeutics, Inc.",healthcare,healthcare,0.98155034
+1490054,2019,"VERDE BIO HOLDINGS, INC.",energy,industrials,0.7751942
+949870,2019,BOSTON BEER CO INC,consumer,consumer,0.96028084
+13156,2019,"Galaxy Gaming, Inc.",consumer,consumer,0.9722856
+1783400,2019,"US Ecology, Inc.",utilities,utilities,0.940895
+1694665,2019,"Evelo Biosciences, Inc.",healthcare,healthcare,0.9836325
+1518715,2019,Mechanics Bancorp,financials,financials,0.9940195
+1528697,2019,Apawthecary Pets USA,industrials,consumer,0.78191596
+1509957,2019,Can B Corp,industrials,technology,0.6547992
+1019849,2019,"PENSKE AUTOMOTIVE GROUP, INC.",consumer,consumer,0.91892254
+1362004,2019,"ICF International, Inc.",industrials,industrials,0.975045
+935036,2019,"ACI WORLDWIDE, INC.",technology,technology,0.8305731
+1435375,2019,XG SCIENCES INC,materials,technology,0.24912503
+1005276,2019,MOHEGAN TRIBAL GAMING AUTHORITY,consumer,consumer,0.9657968
+1326732,2019,Xencor Inc,healthcare,healthcare,0.98109186
+1450720,2019,Frontier Diversified Fund,financials,financials,0.9911862
+1755672,2019,"Corteva, Inc.",consumer,materials,0.947333
+1479419,2019,"KALA BIO, Inc.",healthcare,healthcare,0.98222715
+29332,2019,DIXIE GROUP INC,consumer,materials,0.61893684
+69633,2019,"NAPCO SECURITY TECHNOLOGIES, INC",technology,technology,0.67133987
+1581552,2019,"Energy 11, L.P.",energy,energy,0.96820295
+1061164,2019,PEREGRINE INDUSTRIES INC,industrials,industrials,0.54600096
+1348911,2019,"KalVista Pharmaceuticals, Inc.",healthcare,healthcare,0.9831139
+31462,2019,ECOLAB INC.,materials,energy,0.56559306
+1528356,2019,Genie Energy Ltd.,utilities,utilities,0.9663411
+1372954,2019,Ameritrust Corp,materials,materials,0.51447576
+1498828,2019,Howard Hughes Corp,real_estate,real_estate,0.9233871
+1403475,2019,Bank of Marin Bancorp,financials,financials,0.99357647
+1483646,2019,"BLACKSTAR ENTERPRISE GROUP, INC.",financials,financials,0.8933473
+352915,2019,UNIVERSAL HEALTH SERVICES INC,healthcare,healthcare,0.6667729
+1014473,2019,VERISIGN INC/CA,technology,technology,0.43268654
+1544238,2019,"CARDAX, INC.",healthcare,healthcare,0.9653742
+1052100,2019,WADDELL & REED FINANCIAL INC,financials,financials,0.9915924
+1673358,2019,"Yum China Holdings, Inc.",consumer,consumer,0.9675896
+1341141,2019,"CatchMark Timber Trust, Inc.",real_estate,real_estate,0.98418856
+916365,2019,TRACTOR SUPPLY CO /DE/,consumer,consumer,0.98031485
+901491,2019,PAPA JOHNS INTERNATIONAL INC,consumer,consumer,0.96987873
+1056087,2019,MCCLATCHY CO,communications_media,communications_media,0.93966633
+1016169,2019,"ANTARES PHARMA, INC.",healthcare,healthcare,0.9791115
+1780097,2019,"Baudax Bio, Inc.",healthcare,healthcare,0.9815538
+1339970,2019,aTYR PHARMA INC,healthcare,healthcare,0.9784315
+1124198,2019,FLUOR CORP,industrials,industrials,0.9771036
+1666138,2019,Atkore Inc.,industrials,industrials,0.9263351
+1066194,2019,EGAIN Corp,technology,technology,0.9216525
+1760026,2019,Regenerative Medical Technology Group Inc.,consumer,consumer,0.8106142
+1490873,2019,"ECO SCIENCE SOLUTIONS, INC.",consumer,industrials,0.3381612
+1505497,2019,"BioRestorative Therapies, Inc.",healthcare,healthcare,0.9745092
+1514056,2019,Titan Environmental Solutions Inc.,technology,consumer,0.4135584
+1178727,2019,COMSovereign Holding Corp.,technology,communications_media,0.9323998
+916789,2019,HELEN OF TROY LTD,consumer,consumer,0.5988051
+56873,2019,KROGER CO,consumer,consumer,0.9752343
+1473334,2019,XMax Inc.,consumer,consumer,0.8829333
+1560327,2019,"Rapid7, Inc.",technology,technology,0.9233175
+1462120,2019,"Live Oak Bancshares, Inc.",financials,financials,0.9936287
+1035201,2019,CALIFORNIA WATER SERVICE GROUP,utilities,utilities,0.9656745
+1035983,2019,COMFORT SYSTEMS USA INC,industrials,industrials,0.98322254
+1377167,2019,"Financial Gravity Companies, Inc.",financials,industrials,0.8107133
+81020,2019,"Duke Energy Indiana, LLC",utilities,utilities,0.97096777
+1616788,2019,LEGACY VENTURES INTERNATIONAL INC.,healthcare,consumer,0.88245887
+1700849,2019,Vado Corp.,communications_media,technology,0.41430715
+4457,2019,U-Haul Holding Co /NV/,industrials,industrials,0.9792698
+1280058,2019,BLACKBAUD INC,technology,technology,0.6258543
+728387,2019,"Perspective Therapeutics, Inc.",healthcare,healthcare,0.88680285
+1632275,2019,CAT9 Group Inc.,healthcare,industrials,0.48712718
+1469367,2019,Sunrun Inc.,industrials,utilities,0.44926786
+355573,2019,REAL ESTATE ASSOCIATES LTD IV,real_estate,real_estate,0.9833264
+1729427,2019,"CNS Pharmaceuticals, Inc.",healthcare,healthcare,0.98046184
+708819,2019,MCDERMOTT INTERNATIONAL INC,industrials,industrials,0.78058165
+1396033,2019,"LL Flooring Holdings, Inc.",consumer,consumer,0.97415316
+1138978,2019,"Novo Integrated Sciences, Inc.",industrials,healthcare,0.9431779
+719413,2019,HECLA MINING CO/DE/,materials,materials,0.93426424
+1307954,2019,Huntsman CORP,materials,materials,0.9109421
+1690820,2019,CARVANA CO.,consumer,industrials,0.86821127
+1692063,2019,"Schneider National, Inc.",industrials,industrials,0.98736423
+1467373,2019,Accenture plc,industrials,industrials,0.96351975
+1659617,2019,"Moleculin Biotech, Inc.",healthcare,healthcare,0.9807356
+703604,2019,"Distribution Solutions Group, Inc.",industrials,industrials,0.98749024
+915358,2019,SIGMATRON INTERNATIONAL INC,technology,industrials,0.6295747
+27673,2019,DEERE JOHN CAPITAL CORP,financials,financials,0.740986
+81061,2019,PUBLIX SUPER MARKETS INC,consumer,consumer,0.9729925
+1050377,2019,PC CONNECTION INC,industrials,industrials,0.45830068
+766792,2019,CVD EQUIPMENT CORP,industrials,materials,0.5594528
+1460329,2019,"Fluent, Inc.",communications_media,communications_media,0.78906244
+1662684,2019,"KULR Technology Group, Inc.",technology,technology,0.6934894
+1267425,2019,BF Garden Tax Credit Fund V L.P.,real_estate,real_estate,0.7589429
+1261249,2019,AGILE THERAPEUTICS INC,healthcare,healthcare,0.9756404
+1025378,2019,W. P. Carey Inc.,real_estate,real_estate,0.9871295
+1563922,2019,Greenbacker Renewable Energy Co LLC,utilities,utilities,0.96357006
+783280,2019,DUKE REALTY CORP,real_estate,real_estate,0.9866062
+50725,2019,GRIFFON CORP,industrials,industrials,0.5988577
+1778784,2019,"Provident Bancorp, Inc. /MD/",financials,financials,0.99022734
+1439222,2019,"AGIOS PHARMACEUTICALS, INC.",healthcare,healthcare,0.9827779
+1492869,2019,"SL GREEN OPERATING PARTNERSHIP, L.P.",real_estate,real_estate,0.9871409
+1420565,2019,"Rein Therapeutics, Inc.",healthcare,healthcare,0.98252964
+1376231,2019,"VPR Brands, LP.",technology,consumer,0.2674657
+1716558,2019,"American Homes 4 Rent, L.P.",real_estate,real_estate,0.98766124
+1103090,2019,"REFLECT SCIENTIFIC, INC.",industrials,industrials,0.8186065
+1351901,2019,Commonwealth Income & Growth Fund VI,industrials,financials,0.53627247
+1087423,2019,RED HAT INC,technology,technology,0.96707255
+1572386,2019,"GREENWAY TECHNOLOGIES, INC. & SUBSIDIARIES",materials,energy,0.4395186
+70487,2019,NRC HEALTH,healthcare,healthcare,0.916962
+712770,2019,ONE LIBERTY PROPERTIES INC,real_estate,real_estate,0.98628324
+1438901,2019,"Auto Parts 4Less Group, Inc.",industrials,healthcare,0.8296701
+1069530,2019,"FILANA THERAPEUTICS, INC.",healthcare,healthcare,0.98148715
+1357615,2019,"KBR, INC.",industrials,industrials,0.9726001
+1581164,2019,"Extended Stay America, Inc.",consumer,consumer,0.9518241
+1411207,2019,Allison Transmission Holdings Inc,industrials,industrials,0.98204523
+1659207,2019,Fellazo Corp,communications_media,communications_media,0.34359857
+894405,2019,ARCBEST CORP /TX/,industrials,industrials,0.986145
+71829,2019,NPK International Inc.,industrials,industrials,0.5642214
+97745,2019,THERMO FISHER SCIENTIFIC INC.,industrials,healthcare,0.94087046
+1110607,2019,"Koil Energy Solutions, Inc.",industrials,energy,0.8205733
+1443863,2019,BioCorRx Inc.,healthcare,healthcare,0.77542263
+1142417,2019,"NEXSTAR MEDIA GROUP, INC.",communications_media,communications_media,0.943744
+1772757,2019,DraftKings Holdings Inc.,consumer,technology,0.3781638
+812796,2019,"SOLIGENIX, INC.",healthcare,healthcare,0.9814674
+1304280,2019,Novelis Inc.,materials,materials,0.8814851
+33488,2019,ESCALADE INC,consumer,consumer,0.9119431
+90168,2019,SIFCO INDUSTRIES INC,industrials,industrials,0.7520991
+1042074,2019,"CymaBay Therapeutics, Inc.",healthcare,healthcare,0.9828555
+1337553,2019,AERIE PHARMACEUTICALS INC,healthcare,healthcare,0.9815501
+71557,2019,"Nuvera Communications, Inc.",communications_media,communications_media,0.93132186
+1552000,2019,MPLX LP,energy,energy,0.5629049
+1674910,2019,VALVOLINE INC,energy,industrials,0.7819011
+849399,2019,Gen Digital Inc.,technology,technology,0.92234606
+74145,2019,OKLAHOMA GAS & ELECTRIC CO,utilities,utilities,0.9834381
+37785,2019,FMC CORP,materials,materials,0.73645943
+1541884,2019,PROLUNG INC,healthcare,healthcare,0.981486
+1708035,2019,Ecovyst Inc.,materials,industrials,0.48473126
+97216,2019,TEREX CORP,industrials,industrials,0.985485
+1417663,2019,"SANUWAVE Health, Inc.",healthcare,healthcare,0.981055
+1500198,2019,NEUROONE MEDICAL TECHNOLOGIES Corp,healthcare,healthcare,0.9660016
+105132,2019,WD 40 CO,materials,industrials,0.9798519
+1558441,2019,INDUSTRIAL PROPERTY TRUST,real_estate,real_estate,0.98679
+1563536,2019,E-Qure Corp.,industrials,healthcare,0.946813
+38009,2019,FORD MOTOR CREDIT CO LLC,financials,industrials,0.8532451
+1020710,2019,DXP ENTERPRISES INC,industrials,industrials,0.9818522
+1483195,2019,Oritani Financial Corp,financials,financials,0.9877587
+3153,2019,ALABAMA POWER CO,utilities,utilities,0.98325586
+1069394,2019,FLEXIBLE SOLUTIONS INTERNATIONAL INC,materials,materials,0.8547371
+1575858,2019,Purebase Corp,materials,technology,0.37987167
+1510247,2019,"LGBTQ Loyalty Holdings, Inc.",technology,technology,0.9420713
+915778,2019,DSP GROUP INC /DE/,technology,technology,0.97133374
+1725911,2019,NetBrands Corp.,financials,consumer,0.9409335
+728447,2019,"EVO Transportation & Energy Services, Inc.",consumer,industrials,0.96538305
+1680062,2019,"ACM Research, Inc.",industrials,technology,0.93127894
+1235468,2019,LIQUIDITY SERVICES INC,industrials,industrials,0.83011913
+1696898,2019,Chee Corp.,consumer,industrials,0.46450463
+1168081,2019,Desert Hawk Gold Corp.,materials,materials,0.9573495
+1321834,2019,"Q/C TECHNOLOGIES, INC.",healthcare,healthcare,0.9742606
+1759424,2019,"Evil Empire Designs, Inc.",industrials,industrials,0.8263453
+1002910,2019,AMEREN CORP,utilities,utilities,0.98129845
+1227654,2019,COMPASS MINERALS INTERNATIONAL INC,materials,materials,0.95159435
+1385799,2019,Advanced Biomedical Technologies Inc.,healthcare,healthcare,0.9585112
+820313,2019,AMPHENOL CORP /DE/,technology,industrials,0.6224495
+92487,2019,SOUTHWESTERN ELECTRIC POWER CO,utilities,utilities,0.9824066
+1680581,2019,"Fulcrum Therapeutics, Inc.",healthcare,healthcare,0.9810533
+1664740,2019,MBC FUNDING II CORP.,real_estate,financials,0.63484895
+1571398,2019,VECTA INC.,financials,financials,0.9902098
+43196,2019,"GRAY MEDIA, INC",communications_media,communications_media,0.95498335
+1682852,2019,"Moderna, Inc.",healthcare,healthcare,0.8240084
+1680689,2019,"Natural Resource Holdings, Inc.",consumer,consumer,0.55289596
+88941,2019,SEMTECH CORP,technology,technology,0.9636768
+314808,2019,Valaris Ltd,energy,energy,0.9471212
+90144,2019,SIERRA PACIFIC POWER CO,utilities,utilities,0.984571
+1581874,2019,"Terra Secured Income Fund 5, LLC",real_estate,real_estate,0.9866724
+230557,2019,SELECTIVE INSURANCE GROUP INC,financials,financials,0.9925237
+1388658,2019,"iRhythm Holdings, Inc.",healthcare,healthcare,0.9592463
+1682745,2019,VERRA MOBILITY Corp,industrials,industrials,0.9749772
+1487197,2019,BARFRESH FOOD GROUP INC.,consumer,consumer,0.96980023
+910606,2019,REGENCY CENTERS CORP,real_estate,real_estate,0.9863511
+1694187,2019,"Neon Therapeutics, Inc.",healthcare,healthcare,0.98288363
+1437283,2019,"REGO PAYMENT ARCHITECTURES, INC.",technology,materials,0.3275169
+1520048,2019,Permianville Royalty Trust,energy,energy,0.91230273
+1280600,2019,ACCELERON PHARMA INC,healthcare,healthcare,0.98255587
+1594109,2019,GrubHub Inc.,industrials,industrials,0.6701593
+1657788,2019,"Kimbell Royalty Partners, LP",energy,energy,0.89129335
+1304464,2019,Crestwood Midstream Partners LP,utilities,utilities,0.8909143
+754811,2019,U S GLOBAL INVESTORS INC,financials,industrials,0.3430789
+40987,2019,GENUINE PARTS CO,industrials,industrials,0.9685361
+1568969,2019,Techlott Inc.,technology,technology,0.9532674
+1029744,2019,SONIC FOUNDRY INC,technology,technology,0.49175116
+709337,2019,FARMERS NATIONAL BANC CORP /OH/,financials,financials,0.9934203
+1267426,2020,BCTC V ASSIGNOR CORP,real_estate,real_estate,0.5667574
+1501570,2020,"Veritex Holdings, Inc.",financials,financials,0.9934731
+1385799,2020,Advanced Biomedical Technologies Inc.,healthcare,healthcare,0.95876247
+1083643,2020,"FAUQUIER BANKSHARES, INC.",financials,financials,0.9935328
+1708035,2020,Ecovyst Inc.,materials,materials,0.59741974
+1792789,2020,"DoorDash, Inc.",industrials,industrials,0.9240064
+1718108,2020,"Surface Oncology, Inc.",healthcare,healthcare,0.98312426
+1361658,2020,Travel & Leisure Co.,consumer,consumer,0.49740022
+69633,2020,"NAPCO SECURITY TECHNOLOGIES, INC",technology,technology,0.87304723
+1712463,2020,Ranpak Holdings Corp.,materials,materials,0.8880731
+1677576,2020,INNOVATIVE INDUSTRIAL PROPERTIES INC,real_estate,real_estate,0.98639536
+1173204,2020,Cineverse Corp.,communications_media,communications_media,0.89306957
+913277,2020,Clarus Corp,consumer,consumer,0.70651186
+63330,2020,MAUI LAND & PINEAPPLE CO INC,real_estate,real_estate,0.9805712
+903419,2020,ALERUS FINANCIAL CORP,financials,financials,0.9921347
+230557,2020,SELECTIVE INSURANCE GROUP INC,financials,financials,0.99306715
+1285550,2020,"ClearPoint Neuro, Inc.",healthcare,healthcare,0.97792906
+1227654,2020,COMPASS MINERALS INTERNATIONAL INC,materials,materials,0.9517194
+916789,2020,HELEN OF TROY LTD,consumer,consumer,0.50801563
+1520048,2020,Permianville Royalty Trust,energy,energy,0.91230273
+277509,2020,FEDERAL SIGNAL CORP /DE/,industrials,industrials,0.9824981
+1321834,2020,"Q/C TECHNOLOGIES, INC.",healthcare,healthcare,0.4865081
+753308,2020,NEXTERA ENERGY INC,utilities,utilities,0.98210996
+1567900,2020,REALLOYS INC.,materials,technology,0.71018195
+10456,2020,BAXTER INTERNATIONAL INC,healthcare,healthcare,0.9669846
+1375793,2020,"Metalert, Inc.",technology,healthcare,0.90510976
+1448597,2020,AUGUSTA GOLD CORP.,materials,materials,0.9417354
+1025378,2020,W. P. Carey Inc.,real_estate,real_estate,0.98673254
+1353406,2020,RedHawk Holdings Corp.,energy,healthcare,0.6128053
+1381197,2020,"Interactive Brokers Group, Inc.",financials,financials,0.9802721
+1453593,2020,"Xtant Medical Holdings, Inc.",healthcare,healthcare,0.96481454
+1200375,2020,"CODEXIS, INC.",materials,healthcare,0.9064424
+704172,2020,PHI GROUP INC,industrials,financials,0.9836676
+875582,2020,NORTHERN TECHNOLOGIES INTERNATIONAL CORP,industrials,materials,0.8269177
+1649094,2020,"Vaxcyte, Inc.",healthcare,healthcare,0.974392
+1696898,2020,Chee Corp.,consumer,industrials,0.46450463
+1361983,2020,ORBCOMM Inc.,communications_media,industrials,0.8406108
+1498828,2020,Howard Hughes Corp,real_estate,real_estate,0.91277474
+13156,2020,"Galaxy Gaming, Inc.",consumer,consumer,0.9702702
+1437283,2020,"REGO PAYMENT ARCHITECTURES, INC.",technology,real_estate,0.5816747
+1535079,2020,MCX Technologies Corp,technology,industrials,0.86812496
+314489,2020,FIRST BUSEY CORP /NV/,financials,financials,0.9938251
+944745,2020,"CIVISTA BANCSHARES, INC.",financials,financials,0.9935953
+1617351,2020,"Mu Yan Technology Group Co., Ltd",industrials,materials,0.55558604
+88205,2020,"SPX Technologies, Inc.",industrials,industrials,0.37836036
+1729944,2020,"IMAC Holdings, Inc.",healthcare,healthcare,0.9701137
+1222840,2020,"RETAIL PROPERTIES OF AMERICA, INC.",real_estate,real_estate,0.9864959
+1401914,2020,"Dare Bioscience, Inc.",healthcare,healthcare,0.97948945
+1103795,2020,"QS Energy, Inc.",industrials,utilities,0.5750506
+1014473,2020,VERISIGN INC/CA,technology,technology,0.43268654
+1520006,2020,Matador Resources Co,energy,energy,0.9524556
+1771706,2020,Vireo Growth Inc.,healthcare,healthcare,0.49049887
+1585521,2020,"Zoom Communications, Inc.",technology,technology,0.970594
+1671013,2020,Cardtronics plc,industrials,industrials,0.86368227
+1327607,2020,First Western Financial Inc,financials,financials,0.9935628
+1169652,2020,CHANNELADVISOR CORP,technology,technology,0.9445178
+1521332,2020,Aptiv PLC,industrials,industrials,0.9281038
+1376231,2020,"VPR Brands, LP.",technology,consumer,0.53501177
+898174,2020,REINSURANCE GROUP OF AMERICA INC,financials,financials,0.9927893
+1716621,2020,"Flyte Aviation, Inc.",healthcare,healthcare,0.9821783
+928576,2020,MIDAMERICAN ENERGY CO,utilities,utilities,0.98276097
+1799191,2020,"Starling Oncology, Inc.",healthcare,healthcare,0.96033543
+711377,2020,NEOGEN CORP,healthcare,healthcare,0.9595045
+1634379,2020,"Metacrine, Inc.",healthcare,healthcare,0.9831838
+1634997,2020,"Avangrid, Inc.",utilities,utilities,0.98256
+1468679,2020,American CryoStem Corp,healthcare,healthcare,0.5312698
+777917,2020,PRUCO LIFE INSURANCE CO,financials,financials,0.99302083
+1713863,2020,"Rafael Holdings, Inc.",healthcare,healthcare,0.7080019
+63296,2020,MATTHEWS INTERNATIONAL CORP,materials,industrials,0.84059
+1176948,2020,Ares Management Corp,financials,financials,0.95724446
+1473334,2020,XMax Inc.,consumer,consumer,0.74900067
+1416697,2020,"Blue Line Protection Group, Inc.",consumer,industrials,0.786024
+1673431,2020,"South East Asia Development, Corp.",materials,energy,0.426412
+50725,2020,GRIFFON CORP,industrials,industrials,0.60224074
+1772757,2020,DraftKings Holdings Inc.,consumer,consumer,0.4101266
+1141103,2020,CROSS COUNTRY HEALTHCARE INC,industrials,industrials,0.78563833
+1109354,2020,BRUKER CORP,healthcare,healthcare,0.96360415
+1262039,2020,"Fortinet, Inc.",technology,technology,0.96894765
+1759509,2020,"Lyft, Inc.",industrials,industrials,0.9774818
+1078075,2020,NETSCOUT SYSTEMS INC,technology,industrials,0.8561966
+1701758,2020,Lovesac Co,consumer,consumer,0.90843296
+1235468,2020,LIQUIDITY SERVICES INC,industrials,industrials,0.82475007
+798359,2020,CENTERSPACE,real_estate,real_estate,0.9869249
+1171155,2020,"RADIANT LOGISTICS, INC",industrials,industrials,0.98336214
+319016,2020,"Fuse Medical, Inc.",industrials,healthcare,0.9663156
+87050,2020,Neonode Inc.,technology,technology,0.81014735
+72205,2020,NOBILITY HOMES INC,materials,consumer,0.9080976
+1163668,2020,"SOUTH PLAINS FINANCIAL, INC.",financials,financials,0.993668
+910679,2020,WVS FINANCIAL CORP,financials,financials,0.9927931
+1460702,2020,FF EAI Robotics Ecosystem Inc.,financials,healthcare,0.9766492
+1161728,2020,MGE ENERGY INC,utilities,utilities,0.98138094
+1766502,2020,"Chewy, Inc.",consumer,consumer,0.9047317
+1621832,2020,"Aqua Metals, Inc.",materials,materials,0.81186634
+29332,2020,DIXIE GROUP INC,consumer,materials,0.5807439
+1260221,2020,TransDigm Group INC,industrials,industrials,0.98004216
+49196,2020,HUNTINGTON BANCSHARES INC /MD/,financials,financials,0.99322367
+775368,2020,ALLEGHANY CORP /DE,financials,financials,0.99253684
+1442836,2020,"Mersana Therapeutics, Inc.",healthcare,healthcare,0.98189986
+1401521,2020,AMERICAN COASTAL INSURANCE Corp,financials,financials,0.9928845
+797542,2020,QUANTUM X LABS INC.,technology,healthcare,0.8007811
+1351901,2020,Commonwealth Income & Growth Fund VI,industrials,financials,0.53627247
+97745,2020,THERMO FISHER SCIENTIFIC INC.,industrials,healthcare,0.91381484
+92122,2020,SOUTHERN CO,utilities,utilities,0.9831118
+1358654,2020,"RED METAL RESOURCES, LTD.",materials,materials,0.7063149
+1106644,2020,"CHINA PHARMA HOLDINGS, INC.",healthcare,healthcare,0.972652
+76282,2020,PARK OHIO HOLDINGS CORP,industrials,industrials,0.98003674
+1393584,2020,American Well Corp,industrials,industrials,0.3131526
+1795139,2020,Green Thumb Industries Inc.,consumer,consumer,0.9464765
+100591,2020,ARGAN INC,industrials,industrials,0.96692735
+1003410,2020,DUKE REALTY Ltd PARTNERSHIP/,real_estate,real_estate,0.9866131
+924095,2020,"Metavesco, Inc.",financials,financials,0.8514889
+1694665,2020,"Evelo Biosciences, Inc.",healthcare,healthcare,0.983174
+1811109,2020,"Applied UV, Inc.",industrials,healthcare,0.95825034
+1413754,2020,"MARIZYME, INC.",healthcare,healthcare,0.93911487
+1462120,2020,"Live Oak Bancshares, Inc.",financials,financials,0.9936678
+719955,2020,WILLIAMS SONOMA INC,consumer,consumer,0.9757095
+1549145,2020,"BLUE BIOFUELS, INC.",materials,materials,0.34383345
+1643301,2020,"Avenir Wellness Solutions, Inc.",healthcare,healthcare,0.9756762
+1553079,2020,"Empire State Realty OP, L.P.",real_estate,real_estate,0.9856711
+1323648,2020,Community Bankers Trust Corp,financials,financials,0.99384755
+1394319,2020,"Tracon Pharmaceuticals, Inc.",healthcare,healthcare,0.9829075
+315131,2020,PHX MINERALS INC.,energy,materials,0.9468176
+1016169,2020,"ANTARES PHARMA, INC.",healthcare,healthcare,0.97834045
+1805651,2020,"MARKETWISE, INC.",technology,financials,0.34565085
+1307954,2020,Huntsman CORP,materials,materials,0.69205767
+1679363,2020,"Morphic Holding, Inc.",healthcare,healthcare,0.98243964
+1475841,2020,National Bank Holdings Corp,financials,financials,0.99350935
+1114995,2020,IMPINJ INC,technology,technology,0.97022384
+55242,2020,KENNAMETAL INC,industrials,materials,0.6546779
+912061,2020,NATURAL HEALTH TRENDS CORP,industrials,consumer,0.5982351
+884624,2020,Orthofix Medical Inc.,healthcare,healthcare,0.9660749
+90144,2020,SIERRA PACIFIC POWER CO,utilities,utilities,0.98276097
+1594109,2020,GrubHub Inc.,industrials,industrials,0.66394824
+818677,2020,SECURITY FEDERAL CORP,financials,financials,0.9936527
+1600347,2020,Hapi Metaverse Inc.,industrials,technology,0.79356563
+1712189,2020,Target Hospitality Corp.,consumer,industrials,0.46398667
+1393052,2020,VEEVA SYSTEMS INC,technology,technology,0.48914707
+1479681,2020,Nutex Health Inc.,industrials,healthcare,0.95408076
+1524872,2020,Thunder Energies Corp,industrials,industrials,0.56941766
+1629210,2020,Paramount Gold Nevada Corp.,materials,materials,0.9547579
+1657312,2020,Verona Pharma plc,healthcare,healthcare,0.9809817
+1798562,2020,TMC the metals Co Inc.,materials,industrials,0.7004607
+861459,2020,GRANITE CONSTRUCTION INC,industrials,industrials,0.9007122
+4457,2020,U-Haul Holding Co /NV/,industrials,industrials,0.9792479
+1617406,2020,Park Hotels & Resorts Inc.,consumer,real_estate,0.9764133
+901491,2020,PAPA JOHNS INTERNATIONAL INC,consumer,consumer,0.9691946
+1487952,2020,"Vishay Precision Group, Inc.",technology,industrials,0.89096487
+849146,2020,Lifevantage Corp,healthcare,healthcare,0.9384974
+1053691,2020,CervoMed Inc.,healthcare,healthcare,0.9827928
+1466258,2020,Trane Technologies plc,industrials,industrials,0.9383096
+1013706,2020,"Wilhelmina International, Inc.",industrials,industrials,0.7626724
+1163739,2020,NABORS INDUSTRIES LTD,energy,energy,0.506778
+1430723,2020,"ServisFirst Bancshares, Inc.",financials,financials,0.99347717
+811222,2020,Cardiff Lexington Corp,healthcare,consumer,0.7896815
+1810491,2020,"Anghami (DE), Inc.",communications_media,communications_media,0.69969976
+1537028,2020,"Independence Contract Drilling, Inc.",energy,energy,0.96230555
+1142417,2020,"NEXSTAR MEDIA GROUP, INC.",communications_media,communications_media,0.95751804
+1561032,2020,"National Healthcare Properties, Inc.",real_estate,real_estate,0.9870591
+727634,2020,iSign Solutions Inc.,technology,technology,0.7953862
+1125259,2020,Carnival UK Ltd.,industrials,industrials,0.95129436
+1603145,2020,"XPLR Infrastructure, LP",utilities,utilities,0.9799427
+1571398,2020,VECTA INC.,financials,financials,0.9902098
+1772921,2020,OneWater Marine Inc.,consumer,utilities,0.416125
+1669811,2020,"Donnelley Financial Solutions, Inc.",industrials,industrials,0.5981259
+37785,2020,FMC CORP,materials,materials,0.6496405

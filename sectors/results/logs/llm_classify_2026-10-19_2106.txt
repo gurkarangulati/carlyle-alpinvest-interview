@@ -1,0 +1,33 @@
+$ uv run python sectors/llm_classify.py --provider bedrock --pile test --shots 5
+
+bedrock us.anthropic.claude-haiku-4-5-20251001-v1:0, guide v1, 5 shots: 853 test filings, 8 at a time
+                      precision    recall  f1-score   support
+
+communications_media      0.917     0.688     0.786        32
+            consumer      0.614     0.765     0.681       102
+              energy      0.574     0.816     0.674        38
+          financials      0.848     0.918     0.882       122
+          healthcare      0.818     0.867     0.842       135
+         industrials      0.802     0.536     0.643       166
+           materials      0.854     0.695     0.766        59
+         real_estate      0.919     0.919     0.919        62
+          technology      0.669     0.767     0.715       103
+           utilities      0.912     0.912     0.912        34
+
+            accuracy                          0.770       853
+           macro avg      0.793     0.788     0.782       853
+        weighted avg      0.783     0.770     0.768       853
+
+  test_macro_f1      0.7819
+  test_accuracy      0.7702
+  cost_usd           2.3158
+  cost_per_1k_usd    2.7149
+  latency_median_s   0.6258
+  latency_p95_s      0.7748
+  wall_seconds       70.0658
+  avg_tokens_in      2547.5123
+  avg_tokens_out     33.4865
+  errors             0
+  invalid_answers    0
+logged MLflow run llm_classify_bedrock_fewshot5
+{"saved": "sectors/out/llm_classify_bedrock_fewshot5_test_preds.csv"}

@@ -1,0 +1,34 @@
+20 business sections, 43 mentions found, 81% linked, the rest abstained
+documents where the filer's own name was found and linked to its CIK: 16 of 20
+                                  doc_name                                                                            mention decision                                 match_name  score
+Sincerity Applied Materials Holdings Corp.                                         Sincerity Applied Materials Holdings Corp.    match Sincerity Applied Materials Holdings Corp.  100.0
+Sincerity Applied Materials Holdings Corp.                                                       Sincerity Australia Pty Ltd.  abstain                  Flux Power Holdings, Inc.   62.7
+Sincerity Applied Materials Holdings Corp.                                                                       Symbid Corp.    match Sincerity Applied Materials Holdings Corp.  100.0
+                       GLOBAL PAYMENTS INC                                                               Global Payments Inc.    match                        GLOBAL PAYMENTS INC  100.0
+                       GLOBAL PAYMENTS INC                                                    Heartland Payment Systems, Inc.    match                                 Usio, Inc.   85.1
+                  Nevada Canyon Gold Corp.                                                        Tech Foundry Ventures, Inc.    match                   Nevada Canyon Gold Corp.  100.0
+                  Nevada Canyon Gold Corp.                                                           Nevada Canyon Gold Corp.    match                   Nevada Canyon Gold Corp.  100.0
+                  Nevada Canyon Gold Corp.                                                     Nevada Canyon Gold Corporation    match                   Nevada Canyon Gold Corp.  100.0
+                  Nevada Canyon Gold Corp.                                                       Walker River Resources Corp.    match                           Lifevantage Corp   85.7
+                   ENERPAC TOOL GROUP CORP                                                                Actuant Corporation    match                    ENERPAC TOOL GROUP CORP  100.0
+                                CHASE CORP Primary Operating Divisions and Facilities and Industry Segments Chase Corporation  abstain                                 CHASE CORP   56.7
+                                CHASE CORP                                                                   Paper Tyger, LLC    match                     Billerud Americas Corp   72.7
+                    TIMBERLAND BANCORP INC                                                           Timberland Bancorp, Inc.    match                     TIMBERLAND BANCORP INC  100.0
+                    TIMBERLAND BANCORP INC                                                     Timberland Service Corporation  abstain               CatchMark Timber Trust, Inc.   69.2
+                    TIMBERLAND BANCORP INC                                              Federal Deposit Insurance Corporation  abstain            AMERICAN COASTAL INSURANCE Corp   62.7
+                           MACROGENICS INC                                                                  MacroGenics, Inc.    match                            MACROGENICS INC  100.0
+                        LITTELFUSE INC /DE                                                                   Littelfuse, Inc.    match                         LITTELFUSE INC /DE  100.0
+                        LITTELFUSE INC /DE                                                      Mosaic and Potash Corporation    match                                  MOSAIC CO   76.1
+                        LITTELFUSE INC /DE                                                                       SymCom, Inc.  abstain                Trinity Place Holdings Inc.   60.0
+      Kyto Technology & Life Science, Inc.                                                               Kyto Biopharma, Inc.    match       Kyto Technology & Life Science, Inc.  100.0
+      Kyto Technology & Life Science, Inc.                                                                       Twelve, Inc.    match       Kyto Technology & Life Science, Inc.   92.9
+      Kyto Technology & Life Science, Inc.                                                       Florida Business Corporation  abstain                   DUKE ENERGY FLORIDA, LLC   62.9
+      Kyto Technology & Life Science, Inc.                                                  President of Kyto Biopharma, Inc.    match       Kyto Technology & Life Science, Inc.   84.1
+      Kyto Technology & Life Science, Inc.                                                     Bylaws of Kyto Biopharma, Inc.    match       Kyto Technology & Life Science, Inc.   86.8
+             COLUMBIA BANKING SYSTEM, INC.                                                      Columbia Banking System, Inc.    match              COLUMBIA BANKING SYSTEM, INC.  100.0
+                              NANOMIX Corp                                                          Boston Therapeutics, Inc.    match                               NANOMIX Corp  100.0
+                              NANOMIX Corp                                                          Avanyx Therapeutics, Inc.    match                               NANOMIX Corp  100.0
+                          BEL FUSE INC /NJ                                                                      Bel Fuse Inc.    match                           BEL FUSE INC /NJ  100.0
+                          BEL FUSE INC /NJ                                                                           ABB Ltd.    match                                    ABB LTD  100.0
+                          BEL FUSE INC /NJ                                                               Emerson Electric Co.    match                        EMERSON ELECTRIC CO  100.0
+saved matching/results/mentions_demo.csv

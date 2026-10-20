@@ -1,0 +1,115 @@
+agent: 91 questions on 40 filings, model us.anthropic.claude-haiku-4-5-20251001-v1:0
+loading filing texts...
+  [1/91] 1693415 text    done                 3.6s  elapsed 4s  eta 328s
+  [2/91] 1693415 revenue done                 8.2s  elapsed 8s  eta 367s
+  [3/91] 1505497 revenue done                 5.0s  elapsed 9s  eta 252s
+  [4/91] 1693415 text    done                10.8s  elapsed 11s  eta 235s
+  [5/91] 1505497 growth  needs_human_review   6.4s  elapsed 15s  eta 253s
+  [6/91] 1505497 text    done                 1.9s  elapsed 17s  eta 235s
+  [7/91] 1505497 text    needs_human_review  10.1s  elapsed 21s  eta 250s
+  [8/91] 1693415 text    done                20.8s  elapsed 21s  eta 216s
+  [9/91] 949870 revenue done                 4.9s  elapsed 22s  eta 196s
+  [10/91] 949870 text    done                 5.6s  elapsed 27s  eta 220s
+  [11/91] 949870 growth  done                 6.3s  elapsed 27s  eta 197s
+  [12/91] 949870 text    done                 3.7s  elapsed 31s  eta 203s
+  [13/91] 1020710 revenue done                 3.8s  elapsed 31s  eta 186s
+  [14/91] 1505497 text    needs_human_review  22.7s  elapsed 31s  eta 172s
+  [15/91] 1020710 text    done                 3.5s  elapsed 35s  eta 176s
+  [16/91] 1020710 growth  done                 4.6s  elapsed 35s  eta 166s
+  [17/91] 1020710 text    done                 6.4s  elapsed 41s  eta 179s
+  [18/91] 1381197 revenue done                 6.5s  elapsed 42s  eta 170s
+  [19/91] 1381197 growth  done                 6.6s  elapsed 48s  eta 181s
+  [20/91] 949870 text    done                27.1s  elapsed 48s  eta 170s
+  [21/91] 1381197 text    done                 2.6s  elapsed 51s  eta 169s
+  [22/91] 1020710 text    needs_human_review  23.4s  elapsed 54s  eta 170s
+  [23/91] 1381197 text    done                 6.6s  elapsed 54s  eta 161s
+  [24/91] 1381197 text    done                14.9s  elapsed 57s  eta 159s
+  [25/91] 1051512 growth  done                 5.9s  elapsed 60s  eta 159s
+  [26/91] 1718108 revenue done                 6.7s  elapsed 61s  eta 153s
+  [27/91] 1016169 revenue done                 4.8s  elapsed 65s  eta 154s
+  [28/91] 1718108 growth  needs_human_review   8.2s  elapsed 65s  eta 146s
+  [29/91] 1016169 growth  needs_human_review   5.4s  elapsed 67s  eta 142s
+  [30/91] 31462 revenue done                 5.0s  elapsed 70s  eta 142s
+  [31/91] 1178727 revenue done                 3.8s  elapsed 70s  eta 136s
+  [32/91] 31462 growth  done                 6.6s  elapsed 72s  eta 132s
+  [33/91] 1414382 revenue done                 2.7s  elapsed 73s  eta 128s
+  [34/91] 1759509 revenue done                 2.6s  elapsed 74s  eta 125s
+  [35/91] 1414382 growth  done                 5.0s  elapsed 75s  eta 121s
+  [36/91] 1759509 growth  done                 3.2s  elapsed 76s  eta 116s
+  [37/91] 1103090 revenue done                 2.6s  elapsed 77s  eta 112s
+  [38/91] 1103090 growth  done                 4.2s  elapsed 80s  eta 111s
+  [39/91] 1206264 revenue done                 4.7s  elapsed 81s  eta 107s
+  [40/91] 1206264 growth  done                 6.2s  elapsed 83s  eta 106s
+  [41/91] 1725911 revenue done                 4.5s  elapsed 84s  eta 103s
+  [42/91] 1725911 growth  done                 4.6s  elapsed 85s  eta 99s
+  [43/91] 1051512 revenue done                39.4s  elapsed 90s  eta 100s
+  [44/91] 1110647 growth  done                 6.6s  elapsed 91s  eta 97s
+  [45/91] 1032208 revenue done                 6.5s  elapsed 92s  eta 94s
+  [46/91] 1110647 revenue done                 9.1s  elapsed 92s  eta 90s
+  [47/91] 1514056 revenue done                 3.4s  elapsed 94s  eta 88s
+  [48/91] 1632275 revenue done                 3.9s  elapsed 96s  eta 86s
+  [49/91] 1032208 growth  done                 6.5s  elapsed 96s  eta 83s
+  [50/91] 1514056 growth  done                 6.3s  elapsed 98s  eta 80s
+  [51/91] 1632275 growth  done                 4.2s  elapsed 98s  eta 77s
+  [52/91] 1025378 revenue done                 7.4s  elapsed 104s  eta 78s
+  [53/91] 105132 growth  needs_human_review   6.4s  elapsed 105s  eta 75s
+  [54/91] 1025378 growth  done                 9.7s  elapsed 106s  eta 73s
+  [55/91] 1524872 revenue done                 2.7s  elapsed 106s  eta 70s
+  [56/91] 105132 revenue needs_human_review   8.4s  elapsed 106s  eta 66s
+  [57/91] 851205 revenue done                 3.9s  elapsed 109s  eta 65s
+  [58/91] 851205 growth  done                 4.1s  elapsed 110s  eta 63s
+  [59/91] 944696 growth  done                 4.0s  elapsed 110s  eta 60s
+  [60/91] 944696 revenue done                 4.6s  elapsed 111s  eta 57s
+  [61/91] 1553079 revenue done                 6.3s  elapsed 115s  eta 56s
+  [62/91] 1553079 growth  done                 6.0s  elapsed 116s  eta 54s
+  [63/91] 1552000 revenue done                 6.4s  elapsed 117s  eta 52s
+  [64/91] 1552000 growth  done                 7.6s  elapsed 118s  eta 50s
+  [65/91] 776867 revenue done                 6.5s  elapsed 121s  eta 49s
+  [66/91] 776867 growth  done                 6.1s  elapsed 122s  eta 46s
+  [67/91] 945699 growth  needs_human_review   6.1s  elapsed 125s  eta 45s
+  [68/91] 945699 revenue done                 9.9s  elapsed 127s  eta 43s
+  [69/91] 1137855 revenue done                 6.3s  elapsed 128s  eta 41s
+  [70/91] 74208 revenue done                 6.5s  elapsed 129s  eta 39s
+  [71/91] 74208 growth  done                 5.5s  elapsed 130s  eta 37s
+  [72/91] 1014473 revenue done                 3.6s  elapsed 130s  eta 34s
+  [73/91] 1443863 revenue done                 3.7s  elapsed 133s  eta 33s
+  [74/91] 1438423 revenue done                 3.5s  elapsed 134s  eta 31s
+  [75/91] 1443863 growth  done                 5.0s  elapsed 135s  eta 29s
+  [76/91] 1438423 growth  done                 2.8s  elapsed 135s  eta 27s
+  [77/91] 1014473 growth  needs_human_review   9.0s  elapsed 137s  eta 25s
+  [78/91] 1490054 revenue done                 3.6s  elapsed 137s  eta 23s
+  [79/91] 1490054 growth  done                 4.7s  elapsed 140s  eta 21s
+  [80/91] 1460329 revenue done                 3.5s  elapsed 141s  eta 19s
+  [81/91] 1171155 revenue needs_human_review   7.7s  elapsed 143s  eta 18s
+  [82/91] 1460329 growth  done                 4.7s  elapsed 144s  eta 16s
+  [83/91] 4457 revenue done                 3.6s  elapsed 144s  eta 14s
+  [84/91] 1171155 growth  needs_human_review   8.3s  elapsed 145s  eta 12s
+  [85/91] 4457 growth  done                 3.6s  elapsed 147s  eta 10s
+  [86/91] 1540729 revenue done                 4.5s  elapsed 149s  eta 9s
+  [87/91] 944745 growth  done                 5.8s  elapsed 150s  eta 7s
+  [88/91] 944745 revenue done                 6.4s  elapsed 151s  eta 5s
+  [89/91] 1540729 growth  done                 4.5s  elapsed 151s  eta 3s
+  [90/91] 277509 growth  done                 6.8s  elapsed 157s  eta 2s
+  [91/91] 277509 revenue needs_human_review   9.7s  elapsed 159s  eta 0s
+
+kind                    growth  revenue    text     all
+n                           36       40      15      91
+abstention_rate           0.25     0.25   0.067    0.22
+citation_valid_rate        1.0      1.0     1.0     1.0
+grounded_rate            0.806    0.925     0.8   0.857
+review_rate              0.194    0.075     0.2   0.143
+error_rate                 0.0      0.0     0.0     0.0
+avg_tool_calls           4.694    4.025     4.0   4.286
+cost_usd                 0.968    0.978   0.637   2.583
+cost_per_1k_usd          26.89   24.441  42.464  28.381
+latency_median_s         5.943    4.857   6.637   5.762
+latency_p95_s            8.498    9.675    24.5  17.851
+accuracy_1               0.944     0.75     NaN   0.842
+accuracy_5               0.972     0.85     NaN   0.908
+in_text_rate               0.5    0.625     NaN   0.566
+answered_accuracy_5      0.963    0.833     NaN   0.895
+abstained_correctly        1.0      0.9     NaN   0.947
+accuracy_5_not_flagged   0.966    0.865     NaN   0.909
+
+logged MLflow run qa_agent
+{"summary": "extraction/results/qa_eval_agent.csv", "per_question": "extraction/out/qa_preds_agent.csv"}

@@ -1,0 +1,38 @@
+[project]
+name = "carlyle-alpinvest-interview"
+version = "0.1.0"
+description = "Sector classification, company matching and number extraction on public SEC 10-K filings"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "boto3>=1.43.115",
+    "fastapi>=0.150.0",
+    "google-genai>=2.31.0",
+    "httpx>=0.28.1",
+    "langgraph>=1.2.16",
+    "mlflow>=3.17.1",
+    "pandas>=3.0.6",
+    "pydantic>=2.14.1",
+    "rapidfuzz>=3.14.6",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+deploy = [
+    "aws-cdk-lib>=2.273.0",
+    "constructs>=10.8.1",
+]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+]
+ml = [
+    "accelerate>=1.15.0",
+    "peft>=0.21.2",
+    "torch>=2.14.1",
+    "transformers>=5.20.2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
